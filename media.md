@@ -6,15 +6,18 @@ title: Media
 
 
 
-## Conference
+## Podcasts
 
-- [Contrastive Retrospection: honing in on critical steps for rapid learning and generalization in RL](https://proceedings.neurips.cc/paper_files/paper/2023/file/6357d6d068622c962391081d296bed69-Paper-Conference.pdf) <br>Chen Sun, Wannan Yang, Thomas Jiralerspong, Dane Malenfant, Benjamin Alsbury-Nealy, Yoshua Bengio, & Blake Aaron Richards<br>Thirty-Seventh Conference on Neural Information Processing Systems.<br> New Orleans, United States of America. December, 2024<br>
+[Rethinking AI through Indigenous culture with Dane Malenfant from McGill University and Mila](https://open.spotify.com/episode/2Gc9sDFepnOB121YQSGdqY?si=RwOPZyowTP6ioNuq48n0LA) <br>Mélissa M'Raidi-Kechichian<br>Activists Of Tech — The responsible tech podcast<br> 2024<br>
+
+[Dane Malenfant: Embedding the Indigenous Value of Reciprocity into AI Systems.](https://open.spotify.com/episode/0Wuvh4xdqjfWgHWhnyBsQg?si=J43bLLaLTd24WhbPU5b1FA) <br>Allison Cohen<br>The World We Are Building Podcast <br>2024<br>
 
 ---
 
-## Workshop
-- [Causality Mining in Fiction](https://ceur-ws.org/Vol-3117/paper3.pdf) <br>Margaret Meehan, Dane Malenfant, Andrew Piper<br> In Proceedings of Text2Story - Fifth Workshop on Narrative Extraction From Texts held in conjunction with the 44th European Conference on Information Retrieva. <br>Stavanger, Norway. April, 2022<br>
+## Articles
 
-- [Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States](https://openreview.net/pdf?id=apB72N0nxF) <br>Itai Epstein, Dane Malenfant, Sara Parker, Cella Wardrop<br> 2024 Harms and Risks of AI in the Military. <br> Montréal, Canada. December, 2024
+[Celebrating International Pi Day with the Office of Indigenous Initiatives]([https://ceur-ws.org/Vol-3117/paper3.pdf](https://www.mcgill.ca/science/channels/news/celebrating-international-pi-day-office-indigenous-initiatives-358312)) <br>Christine Pilonr<br> Office of Science Communication, McGill University <br> April 2024<br>
+
+
 
 <br>
