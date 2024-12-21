@@ -4,11 +4,11 @@ permalink: /publications/index.html
 title: Publications
 ---
 
-
-
 ## Conference
 
 - [Contrastive Retrospection: honing in on critical steps for rapid learning and generalization in RL](https://proceedings.neurips.cc/paper_files/paper/2023/file/6357d6d068622c962391081d296bed69-Paper-Conference.pdf) <br>Chen Sun, Wannan Yang, Thomas Jiralerspong, Dane Malenfant, Benjamin Alsbury-Nealy, Yoshua Bengio, & Blake Aaron Richards<br>Thirty-Seventh Conference on Neural Information Processing Systems.<br> New Orleans, United States of America. December, 2024<br>
+
+  <br>
 
 ---
 
