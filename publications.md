@@ -14,8 +14,7 @@ title: Publications
 
 ## Workshop
 
-[Causality Mining in Fiction](https://ceur-ws.org/Vol-3117/paper3.pdf) <br>Margaret Meehan, **Dane Malenfant**, Andrew Piper<br> In Proceedings of *Text2Story - Fifth Workshop on Narrative Extraction From Texts held in conjunction with the 44th European Conference on Information Retrieval* <br>Stavanger, Norway<br> April, 2022<br>
-
+[Causality Mining in Fiction](https://ceur-ws.org/Vol-3117/paper3.pdf) <br>Margaret Meehan, **Dane Malenfant**, Andrew Piper<br> In Proceedings of *Text2Story - Fifth Workshop on Narrative Extraction From Texts held in conjunction with the 44th European Conference on Information Retrieval* <br>Stavanger, Norway<br> April, 2022<br> \
 [Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States](https://openreview.net/pdf?id=apB72N0nxF) <br>Itai Epstein, **Dane Malenfant**, Sara Parker, Cella Wardrop<br> *2024 Harms and Risks of AI in the Military* <br> Montréal, Canada<br> December, 2024<br>
 
 <br>
