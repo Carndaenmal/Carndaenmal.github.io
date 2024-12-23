@@ -9,6 +9,7 @@ title: Media
 ## Podcasts
 
 [Rethinking AI through Indigenous culture with Dane Malenfant from McGill University and Mila](https://open.spotify.com/episode/2Gc9sDFepnOB121YQSGdqY?si=RwOPZyowTP6ioNuq48n0LA) <br>Mélissa M'Raidi-Kechichian<br>Activists Of Tech — The responsible tech podcast <br>November 2024<br>
+
 [Dane Malenfant: Embedding the Indigenous Value of Reciprocity into AI Systems](https://open.spotify.com/episode/0Wuvh4xdqjfWgHWhnyBsQg?si=J43bLLaLTd24WhbPU5b1FA) <br>Allison Cohen<br>The World We Are Building Podcast <br>November 2024<br>
 
 ---
