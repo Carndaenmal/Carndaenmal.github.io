@@ -4,8 +4,6 @@ permalink: /awards/index.html
 title: Awards
 ---
 
-> Update: 20th Sep 2024
-
 ## Awards
 
 - 2024：**Best Poster Award** ($300)<br>Montréal AI and Neuroscience Conference
