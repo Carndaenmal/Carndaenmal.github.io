@@ -15,8 +15,6 @@ My current research has been generously funded by the Natural Sciences and Engin
 \
 Previously, I completed a bachelors in computer science with psychology at McGill University and, before that, a certificate in French as a Second Language at the [University of Regina](https://www.uregina.ca/)  <br>
 
-
-
 ---
 
 ### Research Interests
