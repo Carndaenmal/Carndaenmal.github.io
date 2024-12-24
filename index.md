@@ -6,7 +6,7 @@ layout: page
 
 
 
-<img src="https://www.danemalenfant.com/rathlyn.png" style='border:1px solid #523946' >
+<img src="https://www.danemalenfant.com/rathlyn.png" style='border:2px solid #523946' >
 
 
 
