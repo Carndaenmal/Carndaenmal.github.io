@@ -4,10 +4,8 @@ layout: page
 
 
 <img src="https://www.danemalenfant.com/rathlyn.png" class="floatpic" >
+
 ## Dane Malenfant
-
-
-
 
 \
 I am a second year MSc. research student in Computer Science at [McGill University](https://www.mcgill.ca/) and [Mila - The Québec AI Institute](https://mila.quebec/en), and very fortunatey supervised by [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/). <br> 
