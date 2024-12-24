@@ -36,11 +36,11 @@ Currently, I am an advisory board member of [Indigneous Pathdfinders in AI](http
 ### Selected News and Updates
 
 - **December 2024** I presented results of my ongoing taditional reciprocity at the *[Indigenous in AI/ML event](https://neurips.cc/virtual/2024/109201)* at NeurIPS 2024 <br>
-\
+
 - **Novemeber 2024** I very happily attended the [Abudent Intelligences](https://abundant-intelligences.net/) (who also funded me!) retreat in Aotearoa / New Zealand <br>
-\
+
 - **October 2024** I won best masters student poster prize at [MAIN 2024](https://drive.google.com/file/d/1yxyfPw87ULkreqzvTBHjj7yfrAFOFu1r/view) <br>
-\
+
 - **July 2024** I attended the [Huamn Aligned AI summer school](https://humanaligned.ai/) in Prague, Czechia! Then I went to Berlin to vists friends and for the museuums, art and culture
 
 <br>
