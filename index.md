@@ -11,7 +11,7 @@ layout: page
 
 
 \
-I am a second year MSc. research student in Computer Science at [McGill University](https://www.mcgill.ca/) and [Mila - The Québec AI Institute](https://mila.quebec/en), and very fortunatey supervised by [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/). <br> 
+Tānishi, wīpēsākāstēw. I am a second year MSc. research student in Computer Science at [McGill University](https://www.mcgill.ca/) and [Mila - The Québec AI Institute](https://mila.quebec/en), and very fortunatey supervised by [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/). <br> 
 \
 My current research has been generously funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) and the Indigenous Studies Program at McGill University, and supported computationally supported by the Digital Research Alliance of Canada (DRAC) and the Innovation, Development and Technologies (IDT) team at Mila.<br>  
 \
