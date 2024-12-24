@@ -30,6 +30,6 @@ title: Media
 
 ## Radio
 
-[Native America Calling: Safeguards on Artificial Intelligence](https://www.nativeamericacalling.com/tuesday-april-23-2024-safeguards-on-artificial-intelligence/)<br>Shawn Spruce<br>Native America Calling<br>April 2024<br>\
+[Native America Calling: Safeguards on Artificial Intelligence](https://www.nativeamericacalling.com/tuesday-april-23-2024-safeguards-on-artificial-intelligence/)<br>Shawn Spruce<br>Native America Calling<br>April 2024<br>
 
 <br>
