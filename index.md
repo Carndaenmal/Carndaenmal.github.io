@@ -21,7 +21,7 @@ Previously, I completed a bachelors in computer science with psychology at McGil
 
 ### Research Interests
 
-- **<font color="#730000"> Cooperative behaviour</font>** in multi-agent environments and what constitutes the defintion of an agent in an environment
+- **<font color="#730000"> Cooperative behaviour</font>** in multi-agent environments and what constitutes the defintion of an <font color="#730000">agent</font> in an environment
 - The **<font color="#730000"> Credit Assignment Problem</font>** in structural, temporal and long-term flavours
 - **<font color="#730000">Neuro-Inspired</font>** algorithms to improve the sample efficiency of good agent behaviour
 
@@ -33,9 +33,15 @@ Currently, I am an advisory board member of [Indigneous Pathdfinders in AI](http
 
 ---
 
-### News and Updates
+### Selected News and Updates
 
-**December 2024** I presented results of my ongoing taditional reciprocity at NeurIPS 2024
+**December 2024** I presented results of my ongoing taditional reciprocity at the *[Indigenous in AI/ML event](https://neurips.cc/virtual/2024/109201)* at NeurIPS 2024 <br>
+\
+**Novemeber 2024** I very happily attended the [Abudent Intelligences](https://abundant-intelligences.net/) (who also funded me!) retreat in Aotearoa / New Zealand <br>
+\
+**October 2024** I won best masters student poster prize at [MAIN 2024](https://drive.google.com/file/d/1yxyfPw87ULkreqzvTBHjj7yfrAFOFu1r/view) <br>
+\
+**July 2024** I attended the [Huamn Aligned AI summer school](https://humanaligned.ai/) in Prague, Czechia! Then I went to Berlin to vists friends and for the museuums, art and culture
 
 <br>
 
