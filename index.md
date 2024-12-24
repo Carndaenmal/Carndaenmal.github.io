@@ -9,11 +9,11 @@ layout: page
 <img src="https://www.danemalenfant.com/rathlyn.png" class="floatpic">
 
 \
-I am a second year MSc. research student in Computer Science at [McGill University](https://www.mcgill.ca/) and [Mila - The Québec AI Institute](https://mila.quebec/en), and very fortunatey superviced by [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/). <br> 
+I am a second year MSc. research student in Computer Science at [McGill University](https://www.mcgill.ca/) and [Mila - The Québec AI Institute](https://mila.quebec/en), and very fortunatey supervised by [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/). <br> 
 \
 My current research has been generously funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) and the Indigenous Studies Program at McGill University, and supported computationally supported by the Digital Research Alliance of Canada (DRAC) and the Innovation, Development and Technologies (IDT) team at Mila. <br>  
 \
-Previously, I completed a bachelors in computer science with psychology at McGill Unviersity and, before that, a certificate in French as a Second Langauge at the [University of Regina](https://www.uregina.ca/)  <br>
+Previously, I completed a bachelors in computer science with psychology at McGill University and, before that, a certificate in French as a Second Language at the [University of Regina](https://www.uregina.ca/)  <br>
 
 
 
@@ -28,7 +28,7 @@ Previously, I completed a bachelors in computer science with psychology at McGil
 
 ---
 
-During my undergraduate, I was associated with with [Encode](https://encodeai.org/) [Canada](https://encodejustice.ca/) where I contributed to AI literacy and ethics initiatives with blogs posts in the [Montréal AI Ethics Institute](https://montrealethics.ai/) and hackathon judging. Additionaly, I was a co-lead of the machine learning division of [McGill Neurotech](https://www.facebook.com/McGillNeurotech/) where we created a brain-computer interface speller that learned EEG signals of flashing letter frequency to type by focusing on letters with vision. <br>
+During my undergraduate, I was associated with [Encode](https://encodeai.org/) [Canada](https://encodejustice.ca/) where I contributed to AI literacy and ethics initiatives with blogs posts in the [Montréal AI Ethics Institute](https://montrealethics.ai/) and hackathon judging. Additionally, I was a co-lead of the machine learning division of [McGill Neurotech](https://www.facebook.com/McGillNeurotech/) where we created a brain-computer interface speller that learned EEG signals of flashing letter frequency to type by focusing on letters with vision. <br>
 \
 Currently, I am an advisory board member of [Indigneous Pathdfinders in AI](https://mila.quebec/en/ai4humanity/learning/indigenous-pathfinders-in-ai).
 
