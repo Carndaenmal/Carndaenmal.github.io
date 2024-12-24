@@ -4,6 +4,12 @@ layout: page
 
 ## Dane Malenfant
 
+<style>
+img {
+  border: 5px solid #555;
+}
+</style>
+
 <img src="https://www.danemalenfant.com/rathlyn.png" >
 
 
