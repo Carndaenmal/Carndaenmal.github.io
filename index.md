@@ -18,7 +18,7 @@ Previously, I completed a bachelors in computer science with psychology at McGil
 
 ### Research Interests
 
-- **Cooperative behaviour** in multi-agent environments and the what constutes the defintion of an agent
+- **Cooperative behaviour** in multi-agent environments and the what constitutes the defintion of an agent
 - The **Credit Assignment Problem** in structural, temporal and long-term flavours
 - **Neuro-Inspired** algorithms to improve the sample efficiency of good agent behaviour
 
