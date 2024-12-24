@@ -7,6 +7,7 @@ title: Awards
 ## Awards
 
 2024：**Best Poster Award** ($300)<br>Montréal AI and Neuroscience Conference<br>/
+
 2024：**NSERC CGSM** ($32000)<br>Natural Sciences and Engineering Research Council of Canada<br>/
 2024：Indigenous Mathematics Panel Honorarium ($250)<br>Office of Indigenous Initiatives, McGill University<br>/
 2024：**Rathlyn Fellowship** ($1200)<br>Indigenous Studies Program, McGill University<br>/
