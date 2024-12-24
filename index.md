@@ -3,7 +3,7 @@ layout: page
 ---
 
 
-<img src="https://www.danemalenfant.com/rathlyn.png" class="floatpic" >
+<img src="https://www.danemalenfant.com/rathlyn.png" >
 
 ## Dane Malenfant
 
