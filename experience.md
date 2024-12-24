@@ -9,7 +9,7 @@ title: Experience
 
 ### [AI 4 Humanity](https://mila.quebec/en/ai-for-humanity/vision), Mila<br>
 Consultant for Indigenous Pathfinders in AI and FLAIR <br>2023 - 2024<br> 
-### Mila - Québec AI Institute and The Neurological Institute of Montréal<br>
+### Mila - Québec AI Institute and [The Neurological Institute of Montréal](https://www.mcgill.ca/neuro/)<br>
 Research Assistant <br>2022 - 2023<br> \
 Research Intern<br>
 2022<br> 
