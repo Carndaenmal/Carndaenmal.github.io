@@ -7,7 +7,7 @@ title: Publications
 ## Conference
 
 
-[Contrastive Retrospection: honing in on critical steps for rapid learning and generalization in RL](https://proceedings.neurips.cc/paper_files/paper/2023/file/6357d6d068622c962391081d296bed69-Paper-Conference.pdf)  <br>Chen Sun, Wannan Yang, Thomas Jiralerspong, **Dane Malenfant**, Benjamin Alsbury-Nealy, Yoshua Bengio, & Blake Aaron Richards<br><img src="https://www.danemalenfant.com/images/conspec.png" width="200" class="floatpic" style='border:2px solid #730000' >*Thirty-Seventh Conference on Neural Information Processing Systems*<br>New Orleans, United States of America <br>December, 2023<br>
+[Contrastive Retrospection: honing in on critical steps for rapid learning and generalization in RL](https://proceedings.neurips.cc/paper_files/paper/2023/file/6357d6d068622c962391081d296bed69-Paper-Conference.pdf)  <br>Chen Sun, Wannan Yang, Thomas Jiralerspong, **Dane Malenfant**, Benjamin Alsbury-Nealy, Yoshua Bengio, & Blake Aaron Richards<br>*Thirty-Seventh Conference on Neural Information Processing Systems*<br>New Orleans, United States of America <br>December, 2023<br> <img src="https://www.danemalenfant.com/images/conspec.png" width="200" class="floatpic" style='border:2px solid #730000' >
 
 <br>
 
