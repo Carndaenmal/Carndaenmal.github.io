@@ -18,7 +18,7 @@ Reciprocity in Spite of Immediate and Sparse Rewards <br> Lightning Talk <br> *M
 
 ## Posters
 
-Reciprocity in Spite of Immediate and Sparse Rewards <br>Malenfant, D., Richards, B. (2024). Reciprocity in Spite of Immediate and Sparse Rewards<br> *Seventh Montréal Artificial Intelligence and Neuroscience Conference* <br> Montréal, Canada <br> October,  2024<br> \
+Reciprocity in Spite of Immediate and Sparse Rewards <br>Dane Malenfant, Blake Richards <br> *Seventh Montréal Artificial Intelligence and Neuroscience Conference* <br> Montréal, Canada <br> October,  2024<br> \
 [Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States](https://www.harms-risks-ai-military.org/posters/HRAIM_Inconsistencies_AI_Strategy_Alignment_NATO.png) <br>Itai Epstein, **Dane Malenfant**, Sara Parker, Cella Wardrop<br> *2024 Harms and Risks of AI in the Military* <br> Montréal, Canada<br> December, 2024<br>
 
 <br>
