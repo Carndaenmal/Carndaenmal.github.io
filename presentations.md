@@ -10,7 +10,8 @@ title: Presentations
 [Reciprocity in Spite of Immediate and Sparse Incentives](https://smithengineering.queensu.ca/student-experience/2024-aises-canada-east-regional-conference) <br> *AISES East Conference* <br> Queen’s University <br> November 2024<br> \
 Reciprocity in Spite of Immediate and Sparse Rewards <br> Lightning Talk <br> *Montréal AI and Neuroscience Conference* <br> Université de Montréal <br> October 2024 <br> \
 [Ethics and EDI in Neuro-AI Panel](https://unique-students.github.io/2024/speakers) <br> *UNIQUE Student Symposium* <br> Centre de Recherche CERVO <br> May 2024 <br> \
-[International PI Day "Unlocking Perspectives" with Dr. Edward Doolittle Panel](https://www.mcgill.ca/indigenous/channels/event/international-pi-day-unlocking-perspectives-dr-edward-doolittle-winter-speaker-series-355706) <br> *Winter Speaker Series* <br> Office of Indigenous Intiatives <br> McGill University <br> March 2024 <br>
+[International PI Day "Unlocking Perspectives" with Dr. Edward Doolittle Panel](https://www.mcgill.ca/indigenous/channels/event/international-pi-day-unlocking-perspectives-dr-edward-doolittle-winter-speaker-series-355706) <br> *Winter Speaker Series* <br> Office of Indigenous Intiatives <br> McGill University <br> March 2024 <br> \
+[Challenging Reinforcement Learning Through Traditional Reciprocity](https://www.mcgill.ca/neuro/files/neuro/channels/attach/24th_annual_neuropsychology_day_program_booklet_final.pdf) <br> *24th Annual Neuropsychology Day and Brenda Milner Lecture: Functional Specializations in the Cortex in Humans: Which, When, and Why?* <br> Montreal Neurological Institute-Hospital <br> McGill University <br> May 2023 <br>
 
 <br>
 
