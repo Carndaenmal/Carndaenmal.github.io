@@ -12,7 +12,7 @@ Indigenous Mathematics Panel Honorarium ($250)<br>Office of Indigenous Initiativ
 **Rathlyn Fellowship** ($12000)<br>Indigenous Studies Program, McGill University<br> 2024 <br>\
 Strategic planning award ($100)<br>Enrolment Services, McGill University<br> 2023 <br>\
 Indigenous Graduate Excellence Recruitment Fellowship	($5000)<br> McGill University<br> 2023 <br>\
-Neuropsychology Day Runner-Up Prize ($100)<br> The Montréal Neurological Institute, McGill University<br>  2022 <br>\
+Neuropsychology Day Runner-Up Prize ($100)<br> The Montréal Neurological Institute, McGill University<br>  2023 <br>\
 HBHL-IMPRESS Fellowship ($5000)<br>Healthy Brains Healthy Lives, McGill University<br>2022 <br>
 
 <br>
