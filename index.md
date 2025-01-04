@@ -42,7 +42,7 @@ Currently, I am an advisory board member of [Indigneous Pathdfinders in AI](http
 
 - **October 2024** I won best masters student poster prize at [MAIN 2024](https://drive.google.com/file/d/1yxyfPw87ULkreqzvTBHjj7yfrAFOFu1r/view). <br>
 
-- **July 2024** I attended the [Huamn Aligned AI summer school](https://humanaligned.ai/) in Prague, Czechia! Then I went to Berlin to vists friends and for the museuums, art and culture.
+- **July 2024** I attended the [Human Aligned AI summer school](https://humanaligned.ai/) in Prague, Czechia! Then I went to Berlin to vists friends and for the museuums, art and culture.
 
 <br>
 
