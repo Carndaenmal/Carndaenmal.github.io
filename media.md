@@ -15,7 +15,7 @@ title: Media
 
 ## Articles
 
-[Celebrating International Pi Day with the Office of Indigenous Initiatives](https://www.mcgill.ca/science/channels/news/celebrating-international-pi-day-office-indigenous-initiatives-358312) <br>Christine Pilon<br> *Office of Science Communication, McGill University* <br>April 2024<br>\
+[Celebrating International Pi Day with the Office of Indigenous Initiatives](https://www.mcgill.ca/science/channels/news/celebrating-international-pi-day-office-indigenous-initiatives-358312) <br>Christine Pilon<br> *Office of Science Communication, McGill University* <br>August 2024<br>\
 [Recognizing the healing power of research](https://giving.mcgill.ca/all-stories/recognizing-healing-power-research)
 <br>Sarah Lebeau<br> *University Advancement, McGill University* <br>May 2024<br>\
 [Cultural Connections: Indigenous Mentorship Programs are Expanding Across Canada](https://read.nxtbook.com/aises/winds_of_change/spring_2024/mentors_in_canada.html)<br>Patrick Quinn<br>*Winds of Change Magazine, AISES*<br>April 2024<br>\
