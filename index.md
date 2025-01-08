@@ -16,7 +16,7 @@ Tānishi, wīpēsākāstēw. I am a second year MSc. research student in Compute
 My current research has been generously funded by the Natural Sciences and Engineering Research Council of Canada (NSERC) and the Indigenous Studies Program at McGill University, and supported computationally by the Digital Research Alliance of Canada (DRAC) and the Innovation, Development and Technologies (IDT) team at Mila.
 <br>  
 \
-Previously, I completed a bachelors in computer science with psychology at McGill University and, before that, a certificate in French as a Second Language at the [University of Regina](https://www.uregina.ca/). <br>
+Previously, I completed a bachelors in computer science with psychology at McGill University in 2022 and, before that, a certificate in French as a Second Language at the [University of Regina](https://www.uregina.ca/) in 2018. I also passed the B2 DELF shortly after.<br>
 
 ---
 
