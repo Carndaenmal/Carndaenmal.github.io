@@ -28,7 +28,7 @@ Previously, I completed a bachelors in computer science with psychology at McGil
 
 ---
 
-During my undergraduate, I was associated with [Encode](https://encodeai.org/) [Canada](https://encodejustice.ca/) where I contributed to AI literacy and ethics initiatives with blogs posts in the [Montréal AI Ethics Institute](https://montrealethics.ai/) and hackathon judging. Additionally, I was a co-lead of the machine learning division of [McGill Neurotech](https://www.facebook.com/McGillNeurotech/) where we created a brain-computer interface speller that learned EEG signals of flashing letter frequency to type by focusing on letters with vision. <br>
+During my undergraduate, I was associated with [Encode](https://encodeai.org/) [Canada](https://encodejustice.ca/) where I contributed to AI literacy and ethics initiatives with [blogs posts](https://montrealethics.ai/category/columns/recess/) in the [Montréal AI Ethics Institute](https://montrealethics.ai/) and hackathon judging. Additionally, I was a co-lead of the machine learning division of [McGill Neurotech](https://www.facebook.com/McGillNeurotech/) where we created a brain-computer interface speller that learned EEG signals of flashing letter frequency to type by focusing on letters with vision. <br>
 \
 Currently, I am an advisory board member of [Indigneous Pathdfinders in AI](https://mila.quebec/en/ai4humanity/learning/indigenous-pathfinders-in-ai) and evidently I am a citizen of [Métis Nation—Saskatchewan](https://metisnationsk.com/about-metis/). <br>
 
