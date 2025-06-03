@@ -16,7 +16,7 @@ title: Publications
 ## Preprint
 
 <img src="https://www.danemalenfant.com/images/var_pic.png" width="200" class="floatpic" style='border:2px solid #730000' > 
-[The challenge of hidden gifts in multi-agent reinforcement learning]([https://ceur-ws.org/Vol-3117/paper3.pdf](https://arxiv.org/abs/2505.20579)) <br> **Dane Malenfant**, Blake Richards<br> *arxiv* <br> May 2025<br>  
+[The challenge of hidden gifts in multi-agent reinforcement learning](https://arxiv.org/abs/2505.20579) <br> **Dane Malenfant**, Blake Richards<br> *arxiv* <br> May 2025<br>  
 
 <br>
 
