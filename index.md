@@ -36,9 +36,9 @@ Currently, I am an advisory board member of [Indigneous Pathfinders in AI](https
 
 ### Selected News and Updates
 
-- **December 2024** I presented results of my ongoing traditional reciprocity at the *[Indigenous in AI/ML event](https://neurips.cc/virtual/2024/109201)* at NeurIPS 2024. <br>
+- **May 2025** I won best poster prize for neuroinformatics and computational modelling at the [HBHL Symposium](https://hbhlsymposium.ca/). <br>
 
-- **November 2024** I very happily attended the [Abundant Intelligences](https://abundant-intelligences.net/) (who also funded my me there!) retreat in Aotearoa/New Zealand. <br>
+- **December 2024** I presented results of my ongoing traditional reciprocity at the *[Indigenous in AI/ML event](https://neurips.cc/virtual/2024/109201)* at NeurIPS 2024. <br>
 
 - **October 2024** I won best masters student poster prize at [MAIN 2024](https://drive.google.com/file/d/1yxyfPw87ULkreqzvTBHjj7yfrAFOFu1r/view). <br>
 
