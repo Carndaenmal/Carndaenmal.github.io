@@ -21,8 +21,6 @@ Assistant Program Coordinator	<br>
 Cybersecurity Analyst <br>
 2021<br>
 
-COGS 401/444
-
 ---
 
 ## Supervision
