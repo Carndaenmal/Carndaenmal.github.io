@@ -6,7 +6,6 @@ title: Experience
 
 ## Proffesional
 
-
 ### [AI 4 Humanity](https://mila.quebec/en/ai-for-humanity/vision), Mila<br>
 Consultant for Indigenous Pathfinders in AI and FLAIR <br>2023 - 2024<br> 
 ### Mila - Québec AI Institute and [The Neurological Institute of Montréal](https://www.mcgill.ca/neuro/)<br>
@@ -22,7 +21,14 @@ Assistant Program Coordinator	<br>
 Cybersecurity Analyst <br>
 2021<br>
 
+COGS 401/444
 
 ---
 
+## Supervision
+
+### Undergraduate 
+
+COGS 401/444 - Emergent Reciprocity Through Temporal Credit Assignment in Reinforcement Learning Agents<br>
+[Le Thuy Duong Nguyen](https://ca.linkedin.com/in/lethuyduongnguyen)
 
