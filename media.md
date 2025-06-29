@@ -15,7 +15,7 @@ title: Media
 
 ## Articles
 
-[Toward an Ecological AI: Introducing MUTEK’s AI Ecologies Lab (Part 1)](https://clotmag.com/oped/toward-an-ecological-ai-introducing-muteks-ai-ecologies-lab-part-1) <br>Patrick Tanguay<br> *CLOT Magazine* <br>June 2025>\
+[Toward an Ecological AI: Introducing MUTEK’s AI Ecologies Lab (Part 1)](https://clotmag.com/oped/toward-an-ecological-ai-introducing-muteks-ai-ecologies-lab-part-1) <br>Patrick Tanguay<br> *CLOT Magazine* <br>June 2025<br>\
 [Celebrating International Pi Day with the Office of Indigenous Initiatives](https://www.mcgill.ca/science/channels/news/celebrating-international-pi-day-office-indigenous-initiatives-358312) <br>Christine Pilon<br> *Office of Science Communication, McGill University* <br>August 2024<br>\
 [Recognizing the healing power of research](https://giving.mcgill.ca/all-stories/recognizing-healing-power-research)
 <br>Sarah Lebeau<br> *University Advancement, McGill University* <br>May 2024<br>\
