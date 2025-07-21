@@ -6,7 +6,7 @@ title: Presentations
 
 ## Invited Talks
 
-[The Challenge of Hidden Gifts](https://mila.quebec/sites/default/files/media-library/pdf/290017/indigenous-ai-gathering-2025.pdf) <br> Indigenous AI Gathering 2025<br> July 2025<br>\
+[The Challenge of Hidden Gifts](https://mila.quebec/sites/default/files/media-library/pdf/290017/indigenous-ai-gathering-2025.pdf) <br> *Indigenous AI Gathering 2025*<br> Mile - The Québec AI Institute <br> July 2025<br>\
 [Emergent Harvesting with Comparative Advantage](https://events.aises.org/website/79461/agenda/) 	<br> AISES in Canada National Gathering<br> March 2025 <br> \
 [Mācistan: Reciprocity in Multi-Agent Reinforcement Learning as a Credit Assignment Problem](https://neurips.cc/virtual/2024/109201) 	<br> Indigenous in AI/ML Event<br> *Thirty-Eigth Conference on Neural Information Processing Systems* <br> December 2024 <br> \
 [Reciprocity in Spite of Immediate and Sparse Incentives](https://smithengineering.queensu.ca/student-experience/2024-aises-canada-east-regional-conference) <br> *AISES East Conference* <br> Queen’s University <br> November 2024<br> \
