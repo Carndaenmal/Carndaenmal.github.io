@@ -23,10 +23,10 @@ Cybersecurity Analyst <br>
 
 ---
 
-## Supervision
+## Academic Service
 
-### Undergraduate 
+### Undergraduate Supervision
 
 COGS 401/444 - Emergent Reciprocity Through Temporal Credit Assignment in Reinforcement Learning Agents<br> 2024-2025<br>
-[Le Thuy Duong Nguyen](https://ca.linkedin.com/in/lethuyduongnguyen) Currently a [PhD student at UdeM](https://sinthlab.quebec/#Team)
+[Le Thuy Duong Nguyen](https://ca.linkedin.com/in/lethuyduongnguyen) now an incoming [PhD student at UdeM](https://sinthlab.quebec/#Team)
 
