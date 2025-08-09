@@ -13,15 +13,10 @@ title: Publications
 
 ---
 
-## Preprint
-
-<img src="https://www.danemalenfant.com/images/var_pic.png" width="200" class="floatpic" style='border:2px solid #730000'> [The challenge of hidden gifts in multi-agent reinforcement learning](https://arxiv.org/abs/2505.20579)  <br>**Dane Malenfant**, Blake Aaron Richards<br>*arxiv*<br>May 2025<br> 
-
-<br>
-
----
-
 ## Workshop
+
+<img src="https://www.danemalenfant.com/images/var_pic.png" width="200" class="floatpic" style='border:2px solid #730000'> [The challenge of hidden gifts in multi-agent reinforcement learning](https://arxiv.org/abs/2505.20579)  <br>**Dane Malenfant**, Blake Aaron Richards<br>*Second Coordination and Cooperation in Multi-Agent Reinforcement Learning Workshop*<br>The Reinforcement Learning Conference <br>August 2025<br> 
+\
 
 <img src="https://www.danemalenfant.com/images/fiction.png" width="200" class="floatpic" style='border:2px solid #730000' > [Causality Mining in Fiction](https://ceur-ws.org/Vol-3117/paper3.pdf) <br>Margaret Meehan, **Dane Malenfant**, Andrew Piper<br> In Proceedings of *Text2Story - Fifth Workshop on Narrative Extraction From Texts held in conjunction with the 44th European Conference on Information Retrieval* <br>Stavanger, Norway<br> April 2022<br>  
 
