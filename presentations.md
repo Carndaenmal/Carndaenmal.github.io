@@ -21,7 +21,7 @@ title: Presentations
 
 ## Posters
 
-The challenge of hidden gifts in multi-agent reinforcement learning<br>**Dane Malenfant**, Blake Richards *Second Coordination and Cooperation in Multi-Agent Reinforcement Learning Workshop*<br>The Reinforcement Learning Conference <br> Edmonton, Alberta<br>August 2025<br>  \
+The challenge of hidden gifts in multi-agent reinforcement learning<br>**Dane Malenfant**, Blake Richards <br> *Second Coordination and Cooperation in Multi-Agent Reinforcement Learning Workshop*<br>The Reinforcement Learning Conference <br> Edmonton, Alberta<br>August 2025<br>  \
 Reciprocity in Spite of Inconsistent Time Preferences <br>**Dane Malenfant**, Blake Richards <br> *HBHL Symposium 2025* <br> Montréal, Canada <br> May 2025<br> \
 Reciprocity in Spite of Immediate and Sparse Rewards <br>**Dane Malenfant**, Blake Richards <br> *Seventh Montréal Artificial Intelligence and Neuroscience Conference* <br> Montréal, Canada <br> October  2024<br> \
 [Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States](https://www.harms-risks-ai-military.org/posters/HRAIM_Inconsistencies_AI_Strategy_Alignment_NATO.png) <br>Itai Epstein, **Dane Malenfant**, Sara Parker, Cella Wardrop<br> *2024 Harms and Risks of AI in the Military* <br> Montréal, Canada<br> December 2024<br>
