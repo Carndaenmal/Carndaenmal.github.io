@@ -6,6 +6,8 @@ title: Presentations
 
 ## Invited Talks
 
+[Robust AI Training and Sustainability](https://ra.co/events/2206981) <br> *Expanding Realities: Immersive Media and Storytelling* <br> MuTEK Forum 2025 <br> August 2025 <br>\
+
 [The Challenge of Hidden Gifts](https://mila.quebec/en/indigenous-ai-gathering-2025-meet-the-speakers) <br> *Indigenous AI Gathering 2025*<br> Mila - The Québec AI Institute <br> July 2025<br>\
 [Emergent Harvesting with Comparative Advantage](https://events.aises.org/website/79461/agenda/) 	<br> AISES in Canada National Gathering<br> March 2025 <br> \
 [Mācistan: Reciprocity in Multi-Agent Reinforcement Learning as a Credit Assignment Problem](https://neurips.cc/virtual/2024/109201) 	<br> Indigenous in AI/ML Event<br> *Thirty-Eigth Conference on Neural Information Processing Systems* <br> December 2024 <br> \
