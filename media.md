@@ -14,6 +14,7 @@ title: Media
 ---
 
 ## Articles
+[Quand l’intelligence artificielle rencontre l’écologie : retour sur les présentations du AI Ecologies Lab au Forum MUTEK](https://raav.org/actuality/quand-lintelligence-artificielle-rencontre-lecologie-retour-sur-les-presentations-du-ai-ecologies-lab-au-forum-mutek/)  <br> *Regroupement des Artistes en Arts Visuels* <br>October 2025<br>\
 [Dane Malenfant poursuit son engagement dans le milieu de l’IA au MUTEK Forum](https://lienmultimedia.com/spip.php?article107684)<br>Félix Poncelet-Marsan <br> *Lien Multimedia* <br>July 2025<br>\
 [Toward an Ecological AI: Introducing MUTEK’s AI Ecologies Lab (Part 2)](https://clotmag.com/oped/toward-an-ecological-ai-inside-the-ai-ecologies-lab-part-2)<br>Patrick Tanguay<br> *CLOT Magazine* <br>July 2025<br>\
 [Toward an Ecological AI: Introducing MUTEK’s AI Ecologies Lab (Part 1)](https://clotmag.com/oped/toward-an-ecological-ai-introducing-muteks-ai-ecologies-lab-part-1) <br>Patrick Tanguay<br> *CLOT Magazine* <br>June 2025<br>\
