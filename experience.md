@@ -32,7 +32,6 @@ COGS 401/444 - Emergent Reciprocity Through Temporal Credit Assignment in Reinfo
 
 ### Reviewer
 
-ICLR - Main Track <br> 2026 <br> \
 Foundation Models for the Brain and Body Workshop <br> Neurips <br> San Diego, USA <br> 2025 <br> \
 Aligning Reinforcement Learning Experimentalists and Theorists Workshop <br> Neurips <br> San Diego, USA <br> 2025 <br> \
 The 18th Europeon Workshop on Reinforcement Learning <br> Tübingen, Germnay <br> 2025 <br> \
