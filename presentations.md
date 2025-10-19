@@ -22,6 +22,7 @@ title: Presentations
 
 ## Posters
 
+The challenge of hidden gifts in multi-agent reinforcement learning<br>**Dane Malenfant**, Blake Richards <br> The Eighteenth Europeon Workshop on Reinforcement Learning<br> Tübingen, Germany<br>September 2025<br>  \
 The challenge of hidden gifts in multi-agent reinforcement learning<br>**Dane Malenfant**, Blake Richards <br> *Second Coordination and Cooperation in Multi-Agent Reinforcement Learning Workshop*<br>The Reinforcement Learning Conference <br> Edmonton, Alberta<br>August 2025<br>  \
 Reciprocity in Spite of Inconsistent Time Preferences <br>**Dane Malenfant**, Blake Richards <br> *HBHL Symposium 2025* <br> Montréal, Canada <br> May 2025<br> \
 Reciprocity in Spite of Immediate and Sparse Rewards <br>**Dane Malenfant**, Blake Richards <br> *Seventh Montréal Artificial Intelligence and Neuroscience Conference* <br> Montréal, Canada <br> October  2024<br> \
