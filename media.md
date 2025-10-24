@@ -43,6 +43,6 @@ title: Media
 ## Magazine
 
 [Convergence nº 226](https://lienmultimedia.com/spip.php?article108832)<br> *Lien Multimedia* <br>October 2025<br>\
-[Convergence nº 224](https://lienmultimedia.com/spip.php?article107851)<br> *Lien Multimedia* <br>August 2025<br>\
+[Convergence nº 224](https://lienmultimedia.com/spip.php?article107851)<br> *Lien Multimedia* <br>August 2025<br>
 
 <br>
