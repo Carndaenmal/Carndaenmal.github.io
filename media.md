@@ -37,3 +37,12 @@ title: Media
 [Native America Calling: Safeguards on Artificial Intelligence](https://www.nativeamericacalling.com/tuesday-april-23-2024-safeguards-on-artificial-intelligence/)<br>Shawn Spruce<br>Native America Calling<br>April 2024<br>
 
 <br>
+
+---
+
+## Magazine
+
+[Convergence nº 226](https://lienmultimedia.com/spip.php?article108832)<br> *Lien Multimedia* <br>October 2025<br>\
+[Convergence nº 224](https://lienmultimedia.com/spip.php?article107851)<br> *Lien Multimedia* <br>August 2025<br>\
+
+<br>
