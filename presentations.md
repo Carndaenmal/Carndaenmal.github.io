@@ -5,7 +5,7 @@ title: Presentations
 ---
 
 ## Invited Talks
-
+[The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning](https://events.cifar.ca/website/89380/home/) <br>*CIFAR Taiwan Canada Frontiers of Science Symposium (TCFoS)* <br> The Frontiers of Science Symposium - in partnership with the Taiwan National Science and Technolgy Council (NSTC),  Research Institute for Democracy, Society and Emerging Technology (DSET) and the Canadian Institute for Advanced Research (CIFAR)<br> October 2025 <br>\
 [Robust AI Training and Sustainability](https://ra.co/events/2206981) <br> *Expanding Realities: Immersive Media and Storytelling* <br> MuTEK Forum 2025 <br> August 2025 <br>\
 [The Challenge of Hidden Gifts](https://mila.quebec/en/indigenous-ai-gathering-2025-meet-the-speakers) <br> *Indigenous AI Gathering 2025*<br> Mila - The Québec AI Institute <br> July 2025<br>\
 [Emergent Harvesting with Comparative Advantage](https://events.aises.org/website/79461/agenda/) 	<br> AISES in Canada National Gathering<br> March 2025 <br> \
