@@ -7,6 +7,7 @@ title: Awards
 ## Awards
 
 **Best Poster Award** ($200)<br>Healthy Brains, Healthy Lives Symposium<br> 2025 <br> \
+ISCEI Travel award ($1243)<br>The Indigenous Studies and Community Engagement Initiative<br> 2025<br>\
 **Best Poster Award** ($300)<br>Montréal AI and Neuroscience Conference<br> 2024 <br> \
 **NSERC CGSM** ($32000)<br>Natural Sciences and Engineering Research Council of Canada<br> 2024 <br>\
 Indigenous Mathematics Panel Honorarium ($250)<br>Office of Indigenous Initiatives, McGill University<br> 2024 <br>\
