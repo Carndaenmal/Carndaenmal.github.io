@@ -6,6 +6,7 @@ title: Awards
 
 ## Awards
 
+Third Place ($25) <br> Mila's First Inaugural Rock-Paper-Scissors Torunament <br> 2025 <br> \
 **Best Poster Award** ($200)<br>Healthy Brains, Healthy Lives Symposium<br> 2025 <br> \
 ISCEI Travel award ($1243)<br>The Indigenous Studies and Community Engagement Initiative<br> 2025<br>\
 **Best Poster Award** ($300)<br>Montréal AI and Neuroscience Conference<br> 2024 <br> \
