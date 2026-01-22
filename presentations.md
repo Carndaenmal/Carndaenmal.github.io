@@ -21,6 +21,7 @@ title: Presentations
 ---
 
 ## Posters
+Reinforcing the World's Edge: A Continual Learning Problem in the Multi-Agent-World Boundary <br> **Dane Malenfant** <br> World Modeling Workshop <br> Montréal, Canada <br> February 2026 <br> \
 The challenge of hidden gifts in multi-agent reinforcement learning<br>**Dane Malenfant**, Blake Richards <br> IVADO Digital Futures<br> Montréal, Canada<br>October 2025<br>  \
 The challenge of hidden gifts in multi-agent reinforcement learning<br>**Dane Malenfant**, Blake Richards <br> The Eighteenth Europeon Workshop on Reinforcement Learning<br> Tübingen, Germany<br>September 2025<br>  \
 The challenge of hidden gifts in multi-agent reinforcement learning<br>**Dane Malenfant**, Blake Richards <br> *Second Coordination and Cooperation in Multi-Agent Reinforcement Learning Workshop*<br>The Reinforcement Learning Conference <br> Edmonton, Alberta<br>August 2025<br>  \
