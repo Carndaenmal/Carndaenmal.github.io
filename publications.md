@@ -22,8 +22,8 @@ title: Publications
 
 \
 <img src="https://www.danemalenfant.com/images/policy.png" width="200" class="floatpic" style='border:2px solid #730000' > [Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States](https://openreview.net/pdf?id=apB72N0nxF) <br>Itai Epstein, **Dane Malenfant**, Sara Parker, Cella Wardrop<br> *2024 Harms and Risks of AI in the Military* <br> Montréal, Canada<br> December 2024<br> 
-\
 
-[Reinforcing the World's Edge: A Continual Learning Problem in the Multi-Agent-World Boundary](https://danemalenfant.com/file/wmw2026.pdf) <br> **Dane Malenfant** <br> World Modeling Workshop <br> Montréal, Canada <br> February 2026 <br> \
+\
+[Reinforcing the World's Edge: A Continual Learning Problem in the Multi-Agent-World Boundary](https://danemalenfant.com/file/wmw2026.pdf) <br> **Dane Malenfant** <br> World Modeling Workshop <br> Montréal, Canada <br> February 2026 <br> 
 
 <br>
