@@ -36,6 +36,8 @@ Currently, I am an advisory board member of [Indigneous Pathfinders in AI](https
 
 ### Selected News and Updates
 
+- **February 2026** My idea was presented at the World Modelling Workshop [einforcing the World's Edge: A Continual Learning Problem in the Multi-Agent-World Boundary](https://danemalenfant.com/file/wmw2026.pdf). <br>
+
 - **August 2025** The challenge of hidden gifts was accepted to the European Workshop on Reinforcement Learning [EWRL](https://euro-workshop-on-reinforcement-learning.github.io/ewrl18/program/). <br>
 
 - **May 2025** I won best poster prize for neuroinformatics and computational modelling at the [HBHL Symposium](https://hbhlsymposium.ca/). <br>
