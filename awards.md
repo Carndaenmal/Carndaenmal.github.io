@@ -6,7 +6,7 @@ title: Awards
 
 ## Awards
 
-Tiplady Sweeney Fellowship ($4000) <br> A generous donation from Garrick Tiplady, to support outstanding Master’s students in the Faculty of Science <br> 2026 <br> \
+Tiplady Sweeney Fellowship ($4000) <br> A generous donation from Garrick Tiplady, to support outstanding Master’s students in the Faculty of Science at McGill University <br> 2026 <br> \
 Third Place ($25) <br> Mila's First Inaugural Rock-Paper-Scissors Torunament <br> 2025 <br> \
 **Best Poster Award** ($200)<br>Healthy Brains, Healthy Lives Symposium<br> 2025 <br> \
 ISCEI Travel award ($1243)<br>The Indigenous Studies and Community Engagement Initiative<br> 2025<br>\
