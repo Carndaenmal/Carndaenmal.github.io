@@ -35,6 +35,7 @@ Currently, I am an advisory board member of [Indigneous Pathfinders in AI](https
 ---
 
 ### Selected News and Updates
+- **April 2026** I received the [Tiplady Sweeney Fellowship](https://www.mcgill.ca/internalawards/faculty/science)
 
 - **April 2026** I am speaking on a panel at [the 8th Arctic Observing Summit (AOS 2026)](https://arcticobservingsummit.org/summits/aos-2026/) in Aarhus, Denmark about my work in reciprocity in multi-agent reinforcement learning. <br>
 
