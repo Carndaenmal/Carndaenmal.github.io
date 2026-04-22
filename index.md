@@ -21,9 +21,10 @@ Previously, I completed a bachelors in computer science with psychology at McGil
 
 ### Research Interests
 
-- **<font color="#730000"> Cooperative behaviour</font>** in multi-agent environments and what constitutes the defintion of an **<font color="#730000">agent</font>** in an environment.
-- The **<font color="#730000"> Credit Assignment Problem</font>** in structural, temporal and long-term flavours.
-- **<font color="#730000">Neuro-Inspired</font>** algorithms to improve the sample efficiency of good agent behaviour.
+- **<font color="#730000">Cooperation and Coordination</font>**  in multi-agent environments, with a particular focus on formalizing what constitutes an agent in an interactive environment..
+- The **<font color="#730000">Credit Assignment Problem</font>**  in learning systems, especially in its structural, temporal, and long-horizon forms.
+- <font color="#730000">Self-Monitoring</font> in gradient-based systems, focusing on how learning systems represent and make use of information about their own adaptation dynamics or how those dynamics effect the learning process.
+- **<font color="#730000">AI Safety</font>** for adaptive agents, motivated by the inevitability of continual learning in real-world environments and focused on preserving behavioural control under ongoing adaptation.
 
 ---
 
