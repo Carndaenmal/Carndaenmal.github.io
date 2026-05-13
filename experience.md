@@ -30,7 +30,7 @@ Cybersecurity Analyst <br>
 COGS 401/444 - Emergent Reciprocity Through Temporal Credit Assignment in Reinforcement Learning Agents<br> 2024-2025<br>
 [Le Thuy Duong Nguyen](https://ca.linkedin.com/in/lethuyduongnguyen) is now an [MSc. student at UdeM](https://sinthlab.quebec/#Team)
 
-### Reviewer
+### Official Reviewer
 
 AI4GOOD Workshop <br> ICML <br> Seoul, South Korea <br> 2026 <br> \
 Second Workshop on Technical AI Governance Research <br> ICML <br> Seoul, South Korea <br> 2026 <br> \
