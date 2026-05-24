@@ -25,9 +25,13 @@ Cybersecurity Analyst <br>
 
 ## Academic Service
 
+### Workshop Organizer
+
+[Context Beyond the Window](https://context-beyond-window.github.io/): Compression, accumulation, and internalization of knowledge in language models.<br>Conference on Language Modeling (COLM)<br>San Francisco, United States of America<br>October, 2026<br> \
+
 ### Undergraduate Supervision
 
-COGS 401/444 - Emergent Reciprocity Through Temporal Credit Assignment in Reinforcement Learning Agents<br> 2024-2025<br>
+COGS 401/444 - Emergent Reciprocity Through Temporal Credit Assignment in Reinforcement Learning Agents <br>2024-2025<br>
 [Le Thuy Duong Nguyen](https://ca.linkedin.com/in/lethuyduongnguyen) is now an [MSc. student at UdeM](https://sinthlab.quebec/#Team)
 
 ### Official Reviewer
