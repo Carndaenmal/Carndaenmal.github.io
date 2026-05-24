@@ -31,12 +31,12 @@ Previously, I completed a bachelors in computer science with psychology at McGil
 During my undergraduate, I was associated with [Encode](https://encodeai.org/) [Canada](https://encodecanada.ca/#/team) where I contributed to AI literacy and ethics initiatives with [blogs posts](https://montrealethics.ai/category/columns/recess/) in the [Montréal AI Ethics Institute](https://montrealethics.ai/) and hackathon judging, co-lead the machine learning division of [McGill Neurotech](https://github.com/NTX-McGill/NeuroTechX-McGill-2021) where we created a brain-computer interface speller that learned EEG signals of flashing letter frequency to type by focusing on letters with vision and co-authored a [causal language reasoning paper](https://txtlab.org/2022/05/why-capturing-causal-reasoning-in-narrative/) in my last year.<br>
 
 \
-Currently, I am an advisory board member of [Indigneous Pathfinders in AI](https://mila.quebec/en/ai4humanity/learning/indigenous-pathfinders-in-ai) and evidently I am a citizen of [Métis Nation—Saskatchewan](https://metisnationsk.com/about-metis/). <br>
+Currently, I am an advisory board member of [Indigenous Pathfinders in AI](https://mila.quebec/en/ai4humanity/learning/indigenous-pathfinders-in-ai) and evidently I am a citizen of [Métis Nation—Saskatchewan](https://metisnationsk.com/about-metis/). <br>
 
 ---
 
 ### Selected News and Updates
-- **May 2026** A [workshop](https://context-beyond-window.github.io/) I am organizng was accepeted to the Conference on Language Modeling (COLM) 2026! We hope to bring together resesrchers on context management.
+- **May 2026** A [workshop](https://context-beyond-window.github.io/) I am organizing was accepted to the Conference on Language Modeling (COLM) 2026! We hope to bring together researchers on context management.
 - **April 2026** I received the [Tiplady Sweeney Fellowship](https://www.mcgill.ca/internalawards/faculty/science)
 
 - **April 2026** I am speaking on a panel at [the 8th Arctic Observing Summit (AOS 2026)](https://arcticobservingsummit.org/summits/aos-2026/) in Aarhus, Denmark about my work in reciprocity in multi-agent reinforcement learning. <br>
@@ -51,7 +51,7 @@ Currently, I am an advisory board member of [Indigneous Pathfinders in AI](https
 
 - **October 2024** I won best masters student poster prize at [MAIN 2024](https://drive.google.com/file/d/1yxyfPw87ULkreqzvTBHjj7yfrAFOFu1r/view). <br>
 
-- **July 2024** I attended the [Human Aligned AI summer school](https://humanaligned.ai/) in Prague, Czechia! Then I went to Berlin to vists friends and for the museums, art and culture.
+- **July 2024** I attended the [Human Aligned AI summer school](https://humanaligned.ai/) in Prague, Czechia! Then I went to Berlin to vist friends and for the museums, art and culture.
 
 <br>
 
