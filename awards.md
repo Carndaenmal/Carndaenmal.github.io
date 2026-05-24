@@ -17,7 +17,7 @@ HBHL-IMPRESS Fellowship ($5000)<br>Healthy Brains Healthy Lives, McGill Universi
 
 **Best Poster Award** ($200)<br>Healthy Brains, Healthy Lives Symposium<br> 2025 <br> \
 **Best Poster Award** ($300)<br>Montréal AI and Neuroscience Conference<br> 2024 <br> \
-Neuropsychology Day Runner-Up Prize ($100)<br> The Montréal Neurological Institute, McGill University<br>  2023 <br>\
+Neuropsychology Day Runner-Up Prize ($100)<br> The Montréal Neurological Institute, McGill University<br>  2023 <br>
 
 ### Community & Travel
 
@@ -25,6 +25,6 @@ Third Place ($25) <br> Mila's First Inaugural Rock-Paper-Scissors Tournament <br
 ISCEI Travel award ($1243)<br>The Indigenous Studies and Community Engagement Initiative<br> 2025<br>\
 Indigenous Mathematics Panel Honorarium ($250)<br>Office of Indigenous Initiatives, McGill University<br> 2024 <br>\
 Strategic planning award ($100)<br>Enrolment Services, McGill University<br> 2023 <br>\
-Indigenous Graduate Excellence Recruitment Fellowship	($5000)<br> McGill University<br> 2023 <br>\
+Indigenous Graduate Excellence Recruitment Fellowship	($5000)<br> McGill University<br> 2023 <br>
 
 <br>
