@@ -27,7 +27,7 @@ Cybersecurity Analyst <br>
 
 ### Workshop Organizer
 
-[Context Beyond the Window](https://context-beyond-window.github.io/): Compression, accumulation, and internalization of knowledge in language models.<br>Conference on Language Modeling (COLM)<br>San Francisco, United States of America<br>October, 2026<br> \
+[Context Beyond the Window](https://context-beyond-window.github.io/): Compression, accumulation, and internalization of knowledge in language models.<br>Conference on Language Modeling (COLM)<br>San Francisco, United States of America<br>October, 2026<br> 
 
 ### Undergraduate Supervision
 
