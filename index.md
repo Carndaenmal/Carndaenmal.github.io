@@ -36,6 +36,10 @@ Currently, I am an advisory board member of [Indigenous Pathfinders in AI](https
 ---
 
 ### Selected News and Updates
+- **May 2026** My master's thesis was passed
+
+- **May 2026** My research The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning was accapted to the third Reinforcement Learning Conference
+  
 - **May 2026** A [workshop](https://context-beyond-window.github.io/) I am organizing was accepted to the Conference on Language Modeling (COLM) 2026! We hope to bring together researchers on context management.
   
 - **April 2026** I received the [Tiplady Sweeney Fellowship](https://www.mcgill.ca/internalawards/faculty/science)
