@@ -36,6 +36,7 @@ COGS 401/444 - Emergent Reciprocity Through Temporal Credit Assignment in Reinfo
 
 ### Official Reviewer
 
+Finding the Frames Workshop <br> RLC <br> Montréal, Canada <br> 2026 <br> \
 The 19th European Workshop on Reinforcement Learning <br> Toulouse, France <br> 2026 <br> \
 Main Track <br> NeurIPS <br> Sydney, Australia <br> 2026 <br> \
 AI4GOOD Workshop <br> ICML <br> Seoul, South Korea <br> 2026 <br> \
