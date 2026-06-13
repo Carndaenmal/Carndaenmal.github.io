@@ -17,7 +17,7 @@ title: Publications
 
 ## Workshop
 
-<img src="https://www.danemalenfant.com/images/ff.png" width="200" class="floatpic" style='border:2px solid #730000' > [Compositional Flow Matching with Factored Velocity Fields](https://openreview.net/forum?id=77sT6Xaji7) (Spotlight)<br>Avery Hee-Woon Ryoo, **Dane Malenfant**, Matthew G Perich, Guillaume Lajoie <br>*Foundations of Deep Generative Models Workshop: Understanding Memorization, Generalization, and Reasoning* <br>Forty-Third International Conference on Machine Learning <br>Seoul, South Korea <br>July, 2026<br>
+<img src="https://www.danemalenfant.com/images/ff.png" width="200" class="floatpic" style='border:2px solid #730000' > [Compositional Flow Matching with Factored Velocity Fields](https://openreview.net/forum?id=77sT6Xaji7) (**Spotlight**)<br>Avery Hee-Woon Ryoo, **Dane Malenfant**, Matthew G Perich, Guillaume Lajoie <br>*Foundations of Deep Generative Models Workshop: Understanding Memorization, Generalization, and Reasoning* <br>Forty-Third International Conference on Machine Learning <br>Seoul, South Korea <br>July, 2026<br>
 
 \
 <img src="https://www.danemalenfant.com/images/fiction.png" width="200" class="floatpic" style='border:2px solid #730000' > [Causality Mining in Fiction](https://ceur-ws.org/Vol-3117/paper3.pdf) <br>Margaret Meehan, **Dane Malenfant**, Andrew Piper<br> In Proceedings of *Text2Story - Fifth Workshop on Narrative Extraction From Texts held in conjunction with the 44th European Conference on Information Retrieval* <br>Stavanger, Norway<br> April 2022<br>  
