@@ -13,7 +13,7 @@ layout: page
 \
 Tānishi, wīpēsākāstēw. I am a second year MSc. research student in Computer Science at [McGill University](https://www.mcgill.ca/) and [Mila - The Québec AI Institute](https://mila.quebec/en), and very fortunately supervised by [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/). <br> 
 \
-My research has been generously supported computationally by the Digital Research Alliance of Canada (DRAC), the Innovation, Development and Technologies (IDT) team at Mila, and the National Energy Research Scientific Computing Center (NERSC), a U.S. Department of Energy Office of Science User Facility operated by Lawrence Berkeley National Laboratory.
+My research has been generously supported computationally by the Digital Research Alliance of Canada (DRAC), the Innovation, Development and Technologies (IDT) team at Mila, and the National Energy Research Scientific Computing Center (NERSC), a U.S. Department of Energy Office of Science User Facility.
 \
 Previously, I completed a bachelors in computer science with psychology at McGill University in 2022 as a first generation student and, before that, a certificate in French as a Second Language at the [University of Regina](https://www.uregina.ca/) in 2018. I also passed the B2 DELF shortly after.<br>
 
