@@ -39,12 +39,12 @@ COGS 401/444 - Emergent Reciprocity Through Temporal Credit Assignment in Reinfo
 Finding the Frames Workshop <br> RLC <br> Montréal, Canada <br> 2026 <br> \
 The 19th European Workshop on Reinforcement Learning <br> Toulouse, France <br> 2026 <br> \
 Main Track <br> NeurIPS <br> Sydney, Australia <br> 2026 <br> \
-AI4GOOD Workshop <br> ICML <br> Seoul, South Korea <br> 2026 <br> \
+[AI4GOOD Workshop](https://trustworthy-ai-for-good.github.io/) <br> ICML <br> Seoul, South Korea <br> 2026 <br> \
 Second Workshop on Technical AI Governance Research <br> ICML <br> Seoul, South Korea <br> 2026 <br> \
-Main Track <br> ICLR <br> Rio de Janeiro, Brazil <br> 2026 <br> \
+[Main Track](https://iclr.cc/Conferences/2026/ProgramCommittee) <br> ICLR <br> Rio de Janeiro, Brazil <br> 2026 <br> \
 Foundation Models for the Brain and Body Workshop <br> Neurips <br> San Diego, USA <br> 2025 <br> \
 Aligning Reinforcement Learning Experimentalists and Theorists Workshop <br> Neurips <br> San Diego, USA <br> 2025 <br> \
-The 18th European Workshop on Reinforcement Learning <br> Tübingen, Germany <br> 2025 <br> \
+[The 18th European Workshop on Reinforcement Learning](https://euro-workshop-on-reinforcement-learning.github.io/ewrl18/reviewers/) <br> Tübingen, Germany <br> 2025 <br> \
 Second Coordination and Cooperation in Multi-Agent Reinforcement Learning Workshop <br> RLC <br> Edmonton, Canada <br> 2025 <br> \
-Harms and Risks of AI in the Military Workshop <br> Montréal, Canada <br> 2024 <br>
+[Harms and Risks of AI in the Military Workshop](https://www.harms-risks-ai-military.org/acknowledgment.html) <br> Montréal, Canada <br> 2024 <br>
 
