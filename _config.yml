@@ -1,4 +1,6 @@
 title: Dane Malenfant
+description: "Personal academic website of Dane Malenfant, an MSc researcher in computer science at McGill and Mila working on multi-agent reinforcement learning, reciprocity, and AI safety."
+tagline: "Multi-agent reinforcement learning, reciprocity, and AI safety"
 # tagline: Here is personal website of Hanlin Cai. Powered by Jekyll, based on the Minimal Mistakes theme.
 # description: Two roads diverged in woods, I took the one less traveled by.
 #Comment out url when working locally to resolve base urls correctly
@@ -18,12 +20,7 @@ owner:
   bluesky: dvnxmvlhdf5
   instagram: dvnxmvl.hdf5
 
-  # facebook: caihanlin2002
-  # instagram: lancecai2002
-  # lastfm:
-  # tumblr:
-  # For Google Authorship https://plus.google.com/authorship
-  # google_plus:
+
 
 # Analytics and webmaster tools stuff goes here
 # https://search.google.com/search-console/ownership
@@ -78,8 +75,7 @@ kramdown:
 
 
 # disqus settings:
-disqus:
-  shortname: lancecai
+
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "minimal-mistakes.sublime-project", "minimal-mistakes.sublime-workspace"]
