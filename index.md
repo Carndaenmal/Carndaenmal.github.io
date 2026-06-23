@@ -41,32 +41,61 @@ Currently, I am an advisory board member of [Indigenous Pathfinders in AI](https
 
 <style>
 .news-scroll {
-  max-height: 260px;
+  max-height: 280px;
   overflow-y: auto;
-  padding-right: 0.75rem;
+  padding-right: 0.85rem;
   margin-bottom: 1.5rem;
+  border-left: 3px solid #730000;
+  padding-left: 1rem;
 }
 
-.news-scroll ul {
+.news-list {
+  list-style: none;
+  padding-left: 0;
   margin-top: 0;
+}
+
+.news-list li {
+  margin-bottom: 0.8rem;
+  line-height: 1.45;
+}
+
+.news-date {
+  font-weight: 700;
+  color: #730000;
+  display: inline-block;
+  min-width: 7rem;
 }
 </style>
 
-<div class="news-scroll" markdown="1">
+<div class="news-scroll">
 
-- **May 2026** My master's thesis was passed
-- **May 2026** My research The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning was accepted to the third Reinforcement Learning Conference
-- **May 2026** A [workshop](https://context-beyond-window.github.io/) I am organizing was accepted to the Conference on Language Modeling (COLM) 2026! We hope to bring together researchers on context management.
-- **April 2026** I received the [Tiplady Sweeney Fellowship](https://www.mcgill.ca/internalawards/faculty/science)
-- **April 2026** I am speaking on a panel at [the 8th Arctic Observing Summit (AOS 2026)](https://arcticobservingsummit.org/summits/aos-2026/) in Aarhus, Denmark about my work in reciprocity in multi-agent reinforcement learning.
-- **February 2026** My idea was presented at the World Modelling Workshop [Reinforcing the World's Edge: A Continual Learning Problem in the Multi-Agent-World Boundary](https://arxiv.org/abs/2603.06813).
-- **August 2025** The challenge of hidden gifts was accepted to the European Workshop on Reinforcement Learning [EWRL](https://euro-workshop-on-reinforcement-learning.github.io/ewrl18/program/).
-- **May 2025** I won best poster prize for neuroinformatics and computational modelling at the [HBHL Symposium](https://hbhlsymposium.ca/).
-- **December 2024** I presented results of my ongoing traditional reciprocity at the *[Indigenous in AI/ML event](https://neurips.cc/virtual/2024/109201)* at NeurIPS 2024.
-- **October 2024** I won best masters student poster prize at [MAIN 2024](https://drive.google.com/file/d/1yxyfPw87ULkreqzvTBHjj7yfrAFOFu1r/view).
-- **July 2024** I attended the [Human Aligned AI summer school](https://humanaligned.ai/) in Prague, Czechia! Then I went to Berlin to visit friends and for the museums, art and culture.
+<ul class="news-list">
+  <li><span class="news-date">May 2026</span>My master’s thesis was approved.</li>
+
+  <li><span class="news-date">May 2026</span>My research, <em>The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning</em>, was accepted to the third Reinforcement Learning Conference.</li>
+
+  <li><span class="news-date">May 2026</span>A <a href="https://context-beyond-window.github.io/">workshop</a> I am organizing was accepted to the Conference on Language Modeling (COLM) 2026. We hope to bring together researchers working on context management.</li>
+
+  <li><span class="news-date">April 2026</span>I received the <a href="https://www.mcgill.ca/internalawards/faculty/science">Tiplady Sweeney Fellowship</a>.</li>
+
+  <li><span class="news-date">April 2026</span>I am speaking on a panel at the <a href="https://arcticobservingsummit.org/summits/aos-2026/">8th Arctic Observing Summit (AOS 2026)</a> in Aarhus, Denmark, about my work on reciprocity in multi-agent reinforcement learning.</li>
+
+  <li><span class="news-date">February 2026</span>My idea, <a href="https://arxiv.org/abs/2603.06813"><em>Reinforcing the World’s Edge: A Continual Learning Problem in the Multi-Agent-World Boundary</em></a>, was presented at the World Modelling Workshop.</li>
+
+  <li><span class="news-date">August 2025</span><em>The Challenge of Hidden Gifts</em> was accepted to the <a href="https://euro-workshop-on-reinforcement-learning.github.io/ewrl18/program/">European Workshop on Reinforcement Learning (EWRL)</a>.</li>
+
+  <li><span class="news-date">May 2025</span>I won the Best Poster Prize for neuroinformatics and computational modelling at the <a href="https://hbhlsymposium.ca/">HBHL Symposium</a>.</li>
+
+  <li><span class="news-date">December 2024</span>I presented ongoing work on traditional reciprocity at the <a href="https://neurips.cc/virtual/2024/109201"><em>Indigenous in AI/ML</em></a> event at NeurIPS 2024.</li>
+
+  <li><span class="news-date">October 2024</span>I won the Best Master’s Student Poster Prize at <a href="https://drive.google.com/file/d/1yxyfPw87ULkreqzvTBHjj7yfrAFOFu1r/view">MAIN 2024</a>.</li>
+
+  <li><span class="news-date">July 2024</span>I attended the <a href="https://humanaligned.ai/">Human-Aligned AI Summer School</a> in Prague, Czechia, followed by a visit to Berlin for museums, art, and culture.</li>
+</ul>
 
 </div>
+
 
 <br>
 
