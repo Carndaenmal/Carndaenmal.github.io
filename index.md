@@ -13,7 +13,7 @@ permalink: /
 
 
 \
-Tānishi, wīpēsākāstēw. I am a second year MSc. research student in Computer Science at [McGill University](https://www.mcgill.ca/) and [Mila - The Québec AI Institute](https://mila.quebec/en), and very fortunately supervised by [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/). <br> 
+Tānishi, wīpēsākāstēw. I am a MSc. research student in Computer Science at [McGill University](https://www.mcgill.ca/) and [Mila - The Québec AI Institute](https://mila.quebec/en) base in [Mile End](https://www.thetribune.ca/the-mile-end-music-history-montreal-artist/), Montréal, and supervised by [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/). <br> 
 \
 My research has been generously supported computationally by the Digital Research Alliance of Canada (DRAC), the Innovation, Development and Technologies (IDT) team at Mila, and the National Energy Research Scientific Computing Center (NERSC), a U.S. Department of Energy Office of Science User Facility.
 \
