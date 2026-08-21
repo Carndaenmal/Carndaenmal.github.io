@@ -1,53 +1,14 @@
+---
+layout: null
+sitemap: false
+---
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
-
-<url>
-  <loc>https://danemalenfant.com/</loc>
-  <lastmod>2026-02-07T18:29:16+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://danemalenfant.com/publications/</loc>
-  <lastmod>2026-02-07T18:29:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://danemalenfant.com/awards/</loc>
-  <lastmod>2026-02-07T18:29:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://danemalenfant.com/experience/</loc>
-  <lastmod>2026-02-07T18:29:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://danemalenfant.com/presentations/</loc>
-  <lastmod>2026-02-07T18:29:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://danemalenfant.com/media/</loc>
-  <lastmod>2026-02-07T18:29:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://danemalenfant.com/file/Academic_CV.pdf</loc>
-  <lastmod>2026-02-07T18:29:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://danemalenfant.com/file/wmw2026.pdf</loc>
-  <lastmod>2026-02-07T18:29:16+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for item in site.pages %}
+  {% if item.layout == "page" and item.sitemap != false %}
+  <url>
+    <loc>{{ site.url }}{{ item.url | replace: 'index.html', '' }}</loc>
+  </url>
+  {% endif %}
+{% endfor %}
 </urlset>
-

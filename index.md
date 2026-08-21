@@ -2,18 +2,18 @@
 layout: page
 title: About Me
 permalink: /
+description: "Dane Malenfant is a machine learning researcher studying reciprocity, credit assignment, continual learning, and AI safety."
 ---
 
 ## Dane Malenfant
 
 
 
-<img src="/rathlyn.png" alt="Dane Malenfant speaking at an event" width="2362" height="1354" decoding="async" style="border: 5px solid #730000;">
+<img class="home-hero" src="/images/rathlyn-hero.jpg" alt="Dane Malenfant speaking at an event" width="1200" height="688" decoding="async" fetchpriority="high">
 
 
 
-\
-Tānishi, wīpēsākāstēw. I am a MSc. research student in Computer Science at [McGill University](https://www.mcgill.ca/) and [Mila - The Québec AI Institute](https://mila.quebec/en) base in [Mile End](https://www.thetribune.ca/the-mile-end-music-history-montreal-artist/), Montréal, and supervised by [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/). <br> 
+Tānishi, wīpēsākāstēw. I recently completed my MSc thesis in Computer Science at [McGill University](https://www.mcgill.ca/), conducting my research at [Mila – The Québec AI Institute](https://mila.quebec/en) under the supervision of [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/). I am based in [Mile End](https://www.thetribune.ca/the-mile-end-music-history-montreal-artist/), Montréal.
 
 <div class="page-actions" aria-label="Primary links">
   <a class="site-button site-button--primary" href="/publications/">View publications</a>
@@ -21,26 +21,24 @@ Tānishi, wīpēsākāstēw. I am a MSc. research student in Computer Science at
   <a class="site-button site-button--secondary" href="mailto:dane.malenfant@mail.mcgill.ca">Email me</a>
 </div>
 
-\
 My research has been generously supported computationally by the Digital Research Alliance of Canada (DRAC), the Innovation, Development and Technologies (IDT) team at Mila, and the National Energy Research Scientific Computing Center (NERSC), a U.S. Department of Energy Office of Science User Facility.
-\
-Previously, I completed a bachelors in computer science with psychology at McGill University in 2022 as a first generation student and, before that, a certificate in French as a Second Language at the [University of Regina](https://www.uregina.ca/) in 2018. I also passed the B2 DELF shortly after.<br>
+
+Previously, I completed a bachelor's degree in Computer Science, with additional studies in psychology, at McGill University in 2022 as a first-generation student. Before that, I earned a certificate in French as a Second Language from the [University of Regina](https://www.uregina.ca/) in 2018 and later passed the B2 DELF.
 
 ---
 
 ### Research Interests
 
-- **<font color="#730000">Cooperation and Coordination</font>**  in multi-agent environments, with a particular focus on formalizing what constitutes an agent in an interactive environment.
-- The **<font color="#730000">Credit Assignment Problem</font>**  in learning systems, especially in its structural, temporal, and long-horizon forms.
-- **<font color="#730000">Self-Monitoring</font>** in gradient-based systems, focusing on how learning systems represent and make use of information about their own adaptation dynamics or how those dynamics effect the learning process.
-- **<font color="#730000">AI Safety</font>** for adaptive agents, motivated by the inevitability of continual learning in real-world environments and focused on preserving behavioural control under ongoing adaptation.
+- **Cooperation and Coordination** in multi-agent environments, with a particular focus on formalizing what constitutes an agent in an interactive environment.
+- The **Credit Assignment Problem** in learning systems, especially in its structural, temporal, and long-horizon forms.
+- **Self-Monitoring** in gradient-based systems, focusing on how learning systems represent and use information about their own adaptation dynamics and how those dynamics affect the learning process.
+- **AI Safety** for adaptive agents, motivated by the inevitability of continual learning in real-world environments and focused on preserving behavioural control under ongoing adaptation.
 
 ---
 
-During my undergraduate, I was associated with [Encode](https://encodeai.org/) [Canada](https://encodecanada.ca/#/team) where I contributed to AI literacy and ethics initiatives with [blogs posts](https://montrealethics.ai/category/columns/recess/) in the [Montréal AI Ethics Institute](https://montrealethics.ai/) and hackathon judging, co-lead the machine learning division of [McGill Neurotech](https://github.com/NTX-McGill/NeuroTechX-McGill-2021) where we created a brain-computer interface speller that learned EEG signals of flashing letter frequency to type by focusing on letters with vision and co-authored a [causal language reasoning paper](https://txtlab.org/2022/05/why-capturing-causal-reasoning-in-narrative/) in my last year.<br>
+During my undergraduate studies, I was involved with [Encode Canada](https://encodecanada.ca/#/team), where I contributed to AI literacy and ethics initiatives by writing [blog posts](https://montrealethics.ai/category/columns/recess/) for the [Montréal AI Ethics Institute](https://montrealethics.ai/) and judging hackathons. I also co-led the machine learning division of [McGill Neurotech](https://github.com/NTX-McGill/NeuroTechX-McGill-2021), where we developed a brain–computer interface speller that used EEG responses to visually presented letters. In my final year, I co-authored a [paper on causal reasoning in narrative](https://txtlab.org/2022/05/why-capturing-causal-reasoning-in-narrative/).
 
-\
-Currently, I am an advisory board member of [Indigenous Pathfinders in AI](https://mila.quebec/en/ai4humanity/learning/indigenous-pathfinders-in-ai) and evidently I am a citizen of [Métis Nation—Saskatchewan](https://metisnationsk.com/about-metis/). <br>
+Currently, I serve on the advisory board of [Indigenous Pathfinders in AI](https://mila.quebec/en/ai4humanity/learning/indigenous-pathfinders-in-ai) and am a citizen of [Métis Nation—Saskatchewan](https://metisnationsk.com/about-metis/).
 
 ---
 
@@ -92,8 +90,3 @@ Currently, I am an advisory board member of [Indigenous Pathfinders in AI](https
     <div>I attended the <a href="https://humanaligned.ai/">Human-Aligned AI Summer School</a> in Prague, followed by a cultural visit to Berlin.</div>
   </li>
 </ol>
-
-
-
-
-<br>

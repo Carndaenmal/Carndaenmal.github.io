@@ -2,6 +2,7 @@
 layout: page
 permalink: /experience/index.html
 title: Experience
+description: "Professional experience, academic service, supervision, workshop organizing, and peer review by Dane Malenfant."
 ---
 
 <nav class="section-nav" aria-label="Experience sections">

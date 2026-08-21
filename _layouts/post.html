@@ -1,6 +1,3 @@
-<!-- Lastly modified by Hanlin CAI in 2023/04/26 -->
-<!-- It is not recommended to modify this code, unless you are a Pro-->
-
 <!doctype html>
 <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
@@ -9,26 +6,12 @@
 
 <head>
 {% include head.html %}
-
-<script src="https://cdn.counter.dev/script.js" data-id="4c8f7caa-2b55-46cd-a995-2c4633303773" data-utcoffset="8"></script>
-
-<!-- Google tag (gtag.js) -->
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2FPEEZ7XH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-H2FPEEZ7XH');
-</script>
-
 </head>
 
 
 <body class="article" itemscope itemtype="http://schema.org/WebPage">
 
-{% include chrome-frame.html %}
+<a class="skip-link" href="#main">Skip to main content</a>
 
 {% include navigation.html %}
 
@@ -79,6 +62,10 @@
   </div><!-- /.related-articles -->{% endif %}
 
 </div><!-- /.footer-wrap -->
+
+<footer class="site-footer" role="contentinfo">
+  {% include footer.html %}
+</footer>
 
 {% include scripts.html %}	        
 
