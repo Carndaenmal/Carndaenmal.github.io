@@ -74,7 +74,7 @@ description: "Professional experience, academic service, supervision, workshop o
     <article class="content-card content-card--wide" data-reveal>
       <p class="eyebrow">2024–2026</p>
       <h3 id="reviewing">Official Reviewer</h3>
-      <ol class="timeline-list timeline-list--progress" aria-label="Official reviewing activity">
+      <ol class="timeline-list timeline-list--progress timeline-list--split" aria-label="Official reviewing activity">
         <li class="timeline-row">
           <time datetime="2026">2026</time>
           <div><strong class="timeline-row__title">Foundation Models for the Brain and Body</strong><span class="timeline-row__detail">NeurIPS · Sydney, Australia</span></div>
