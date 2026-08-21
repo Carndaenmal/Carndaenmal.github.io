@@ -2,6 +2,7 @@
 layout: page
 permalink: /awards/index.html
 title: Awards
+description: "Fellowships, research communication awards, and community honours received by Dane Malenfant."
 ---
 
 <nav class="section-nav" aria-label="Award sections">

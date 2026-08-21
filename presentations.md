@@ -2,6 +2,7 @@
 layout: page
 permalink: /presentations/index.html
 title: Presentations
+description: "Invited talks, panels, and research poster presentations by Dane Malenfant."
 ---
 
 <nav class="section-nav" aria-label="Presentation sections">

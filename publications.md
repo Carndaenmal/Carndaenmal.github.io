@@ -2,6 +2,7 @@
 layout: page
 permalink: /publications/index.html
 title: Publications
+description: "Research publications by Dane Malenfant on multi-agent reinforcement learning, reciprocity, continual learning, generative modelling, and AI governance."
 ---
 
 <nav class="section-nav" aria-label="Publication sections">
