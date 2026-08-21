@@ -1,0 +1,120 @@
+{% capture structured_page_url %}{{ site.url }}{{ page.url | replace: 'index.html', '' }}{% endcapture %}
+{% capture structured_webpage_id %}{{ structured_page_url | strip }}#webpage{% endcapture %}
+{% capture structured_page_title %}{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}{% endcapture %}
+{% capture structured_person_id %}{{ site.url }}/#person{% endcapture %}
+{% capture structured_website_id %}{{ site.url }}/#website{% endcapture %}
+{% capture structured_profile_image %}{{ site.url }}/images/{{ site.owner.avatar }}{% endcapture %}
+{% capture structured_email %}mailto:{{ site.owner.email }}{% endcapture %}
+{% capture structured_linkedin %}https://www.linkedin.com/in/{{ site.owner.linkedin }}{% endcapture %}
+{% capture structured_twitter %}https://twitter.com/{{ site.owner.twitter }}{% endcapture %}
+{% capture structured_bluesky %}https://bsky.app/profile/{{ site.owner.bluesky }}.bsky.social{% endcapture %}
+{% capture structured_instagram %}https://www.instagram.com/{{ site.owner.instagram }}/{% endcapture %}
+{% capture structured_github %}https://github.com/Carndaenmal{% endcapture %}
+{% assign structured_description = page.description | default: site.description %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ structured_website_id | strip | jsonify }},
+      "url": {{ site.url | append: '/' | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "inLanguage": "en",
+      "publisher": {
+        "@id": {{ structured_person_id | strip | jsonify }}
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": {{ structured_person_id | strip | jsonify }},
+      "name": {{ site.owner.name | jsonify }},
+      "url": {{ site.url | append: '/' | jsonify }},
+      "image": {
+        "@type": "ImageObject",
+        "url": {{ structured_profile_image | strip | jsonify }}
+      },
+      "description": {{ site.description | jsonify }},
+      "jobTitle": "Machine Learning Researcher",
+      "email": {{ structured_email | strip | jsonify }},
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Montréal, Québec, Canada"
+      },
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "Mila – The Québec AI Institute",
+          "url": "https://mila.quebec/en"
+        },
+        {
+          "@type": "Organization",
+          "name": "Learning in Neural Circuits Lab",
+          "url": "https://linclab.mila.quebec/"
+        }
+      ],
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "McGill University",
+          "url": "https://www.mcgill.ca/"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "University of Regina",
+          "url": "https://www.uregina.ca/"
+        }
+      ],
+      "knowsAbout": [
+        "Multi-agent reinforcement learning",
+        "Reciprocity",
+        "Temporal credit assignment",
+        "Continual learning",
+        "AI safety"
+      ],
+      "sameAs": [
+        {{ site.owner.scholar | jsonify }},
+        {{ structured_linkedin | strip | jsonify }},
+        {{ structured_twitter | strip | jsonify }},
+        {{ structured_bluesky | strip | jsonify }},
+        {{ structured_instagram | strip | jsonify }},
+        {{ structured_github | strip | jsonify }}
+      ]
+    },
+    {% if page.url == '/' %}
+    {
+      "@type": "ProfilePage",
+      "@id": {{ site.url | append: '/#profile' | jsonify }},
+      "url": {{ site.url | append: '/' | jsonify }},
+      "name": {{ structured_page_title | strip | jsonify }},
+      "description": {{ structured_description | strip_html | strip_newlines | jsonify }},
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": {{ structured_website_id | strip | jsonify }}
+      },
+      "mainEntity": {
+        "@id": {{ structured_person_id | strip | jsonify }}
+      }{% if page.last_modified_at %},
+      "dateModified": "{{ page.last_modified_at | date: '%Y-%m-%d' }}"{% endif %}
+    }
+    {% else %}
+    {
+      "@type": "WebPage",
+      "@id": {{ structured_webpage_id | strip | jsonify }},
+      "url": {{ structured_page_url | strip | jsonify }},
+      "name": {{ structured_page_title | strip | jsonify }},
+      "description": {{ structured_description | strip_html | strip_newlines | jsonify }},
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": {{ structured_website_id | strip | jsonify }}
+      },
+      "about": {
+        "@id": {{ structured_person_id | strip | jsonify }}
+      }{% if page.last_modified_at %},
+      "dateModified": "{{ page.last_modified_at | date: '%Y-%m-%d' }}"{% endif %}
+    }
+    {% endif %}
+  ]
+}
+</script>

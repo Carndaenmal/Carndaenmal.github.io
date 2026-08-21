@@ -3,6 +3,7 @@ layout: page
 permalink: /presentations/index.html
 title: Presentations
 description: "Invited talks, panels, and research poster presentations by Dane Malenfant."
+last_modified_at: 2026-08-21
 ---
 
 <nav class="section-nav" aria-label="Presentation sections">

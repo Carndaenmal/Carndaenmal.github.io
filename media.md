@@ -3,6 +3,7 @@ layout: page
 permalink: /media/index.html
 title: Media
 description: "Podcasts, articles, radio appearances, and magazine features with Dane Malenfant."
+last_modified_at: 2026-08-21
 ---
 
 <p>Selected interviews, profiles, and coverage spanning research, Indigenous mentorship, reciprocal AI, and ecological approaches to technology.</p>
