@@ -17,7 +17,8 @@ title: Publications
   <img
     src="/images/var_pic.png"
     class="publication-feature__image"
-    alt="Learning curves from the hidden-gifts multi-agent reinforcement learning environment"
+    alt="Variance in collective success across training for four policy-gradient variants"
+    data-figure-caption="Figure 5b. Variance in collective success across training for vanilla policy-gradient, maximum-entropy, correction, and self-correction agents. Self-correction produces the lowest variance, making cooperative learning more reliable."
     width="200"
     height="183"
   >
@@ -45,7 +46,8 @@ title: Publications
   <img
     src="/images/conspec.png"
     class="publication-feature__image"
-    alt="Learning curves comparing ConSpec plus PPO with reinforcement-learning baselines"
+    alt="Reward curves for ConSpec with PPO and three reinforcement-learning baselines"
+    data-figure-caption="Figure 2b. Reward on the 3D OrangeTree task. ConSpec with PPO approaches the maximum reward, while PPO, SynthRs with PPO, and CURL with PPO remain substantially lower."
     width="802"
     height="546"
     loading="lazy"
@@ -77,7 +79,8 @@ title: Publications
   <img
     src="/images/gepa.png"
     class="publication-feature__image"
-    alt="Results comparing cooperation strategies in the Dialogue Moral Hazard Game"
+    alt="GPT-5.6 Sol query, team-success, and local-reward rates across query costs"
+    data-figure-caption="Figure 2A. GPT-5.6 Sol's query-cost sweep. As querying becomes more expensive, querying and team success decline while preservation of local reward increases."
     width="1058"
     height="730"
     loading="lazy"
@@ -106,7 +109,8 @@ title: Publications
   <img
     src="/images/ff.png"
     class="publication-feature__image"
-    alt="Factored velocity-field architecture for compositional flow matching"
+    alt="Shared encoder-decoder architecture with factor-specific velocity heads"
+    data-figure-caption="Figure 1. Factored velocity field for zero-shot compositional generalization. A shared encoder-decoder base velocity is augmented by factor-specific conditioned heads whose outputs are combined at the bottleneck."
     width="1157"
     height="1240"
     loading="lazy"
@@ -134,7 +138,8 @@ title: Publications
   <img
     src="/images/core_trigger_recovers_reward.png"
     class="publication-feature__image"
-    alt="Reward recovery associated with a stable core trigger in a changing multi-agent environment"
+    alt="Mean rewards for oracle, core-trigger, and return-based trigger conditions"
+    data-figure-caption="Illustrative result not included in the linked paper: comparison of mean reward for an oracle, a core trigger, and three return-based trigger variants."
     width="1754"
     height="1170"
     loading="lazy"
@@ -163,7 +168,8 @@ title: Publications
   <img
     src="/images/policy.png"
     class="publication-feature__image"
-    alt="Comparison of public artificial-intelligence strategies across NATO member states"
+    alt="Stacked policy-strategy coverage bars for eleven NATO member states"
+    data-figure-caption="Derived visualization of public national AI, digital, national security, military-AI, and cybersecurity strategies among the NATO members shown. The complete analysis covers all 32 members, finding national AI strategies for 28 members but military-AI-specific policies for only 11."
     width="742"
     height="514"
     loading="lazy"
@@ -191,7 +197,8 @@ title: Publications
   <img
     src="/images/fiction.png"
     class="publication-feature__image"
-    alt="Comparison of causal-language features in fiction and a standard NLP benchmark"
+    alt="Random Forest feature weights for literary and SemEval causal-relation data"
+    data-figure-caption="Figure 2. Feature weights from Random Forest models trained on annotated literary and SemEval data. Semantic similarity is the strongest indicator of causal relations in both datasets, with verb-related features also contributing."
     width="1640"
     height="1448"
     loading="lazy"

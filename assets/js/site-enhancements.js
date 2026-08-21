@@ -155,6 +155,8 @@
     var lightboxFigure = document.createElement("figure");
     var lightboxImage = document.createElement("img");
     var lightboxCaption = document.createElement("figcaption");
+    var lightboxTitle = document.createElement("strong");
+    var lightboxDescription = document.createElement("span");
     var lightboxClose = document.createElement("button");
     var lastLightboxTrigger = null;
 
@@ -162,11 +164,15 @@
     lightbox.setAttribute("aria-label", "Expanded publication figure");
     lightboxImage.className = "publication-lightbox__image";
     lightboxCaption.className = "publication-lightbox__caption";
+    lightboxTitle.className = "publication-lightbox__title";
+    lightboxDescription.className = "publication-lightbox__description";
     lightboxClose.className = "publication-lightbox__close";
     lightboxClose.type = "button";
     lightboxClose.setAttribute("aria-label", "Close enlarged figure");
     lightboxClose.textContent = "×";
 
+    lightboxCaption.appendChild(lightboxTitle);
+    lightboxCaption.appendChild(lightboxDescription);
     lightboxFigure.appendChild(lightboxImage);
     lightboxFigure.appendChild(lightboxCaption);
     lightbox.appendChild(lightboxClose);
@@ -175,19 +181,25 @@
 
     publicationImages.forEach(function (sourceImage) {
       var trigger = document.createElement("button");
-      var description = sourceImage.getAttribute("alt") || "publication figure";
+      var imageDescription = sourceImage.getAttribute("alt") || "Publication figure";
+      var figureCaption = sourceImage.getAttribute("data-figure-caption") || imageDescription;
+      var publication = sourceImage.closest(".publication-feature");
+      var titleElement = publication ? publication.querySelector("h3") : null;
+      var paperTitle = titleElement ? titleElement.textContent.trim() : "Publication figure";
 
       trigger.className = "publication-lightbox__trigger";
       trigger.type = "button";
-      trigger.setAttribute("aria-label", "Enlarge figure: " + description);
+      trigger.setAttribute("aria-label", "Enlarge figure from " + paperTitle);
       sourceImage.parentNode.insertBefore(trigger, sourceImage);
       trigger.appendChild(sourceImage);
 
       trigger.addEventListener("click", function () {
         lastLightboxTrigger = trigger;
         lightboxImage.src = sourceImage.currentSrc || sourceImage.src;
-        lightboxImage.alt = description;
-        lightboxCaption.textContent = description;
+        lightboxImage.alt = imageDescription;
+        lightboxTitle.textContent = paperTitle;
+        lightboxDescription.textContent = figureCaption;
+        lightbox.setAttribute("aria-label", "Expanded figure from " + paperTitle);
         lightbox.showModal();
         document.body.classList.add("publication-lightbox-open");
       });

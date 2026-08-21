@@ -625,6 +625,7 @@ body {
 
 .publication-lightbox figure {
   display: grid;
+  height: calc(92vh - 2rem);
   max-height: calc(92vh - 2rem);
   grid-template-rows: minmax(0, 1fr) auto;
   gap: 0.8rem;
@@ -633,8 +634,10 @@ body {
 
 .publication-lightbox__image {
   display: block;
+  width: 100%;
+  height: 100%;
   max-width: 100%;
-  max-height: calc(92vh - 6rem);
+  max-height: none;
   justify-self: center;
   object-fit: contain;
 }
@@ -646,6 +649,20 @@ body {
   font-size: 0.92rem;
   line-height: 1.45;
   text-align: center;
+}
+
+.publication-lightbox__caption::before {
+  content: none;
+}
+
+.publication-lightbox__title {
+  display: block;
+  color: var(--site-ink);
+}
+
+.publication-lightbox__description {
+  display: block;
+  margin-top: 0.25rem;
 }
 
 .publication-lightbox__close {
