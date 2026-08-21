@@ -31,9 +31,6 @@ title: Publications
 
     <dt>Contribution</dt>
     <dd>We introduce a shared-key grid-world that makes helpful actions unobservable, show that several state-of-the-art multi-agent reinforcement learning algorithms fail to obtain the collective reward, and derive a learning-aware policy-gradient correction that reduces variance and improves reliable convergence to collective success.</dd>
-
-    <dt>My role</dt>
-    <dd>Designed the experiments, implemented the environments, and led the analysis.</dd>
   </dl>
 
   <nav class="publication-feature__links" aria-label="Resources for The Challenge of Hidden Gifts">
@@ -95,9 +92,6 @@ title: Publications
 
     <dt>Contribution</dt>
     <dd>I introduce the Dialogue Moral Hazard Game and use it to evaluate 17 language models. The results show that similar team-level success can emerge from different cooperation mechanisms, motivating evaluations that measure information gathering and disclosure rather than aggregate success alone.</dd>
-
-    <dt>Authorship</dt>
-    <dd>Sole-authored work.</dd>
   </dl>
 
   <nav class="publication-feature__links" aria-label="Resources for Moral Hazard in Multi-Agent Language Models">
@@ -155,9 +149,6 @@ title: Publications
 
     <dt>Contribution</dt>
     <dd>I define an invariant core of state–action subsequences shared by successful trajectories and show how another agent's policy updates can shrink or eliminate that core. A variation-budget view connects this boundary drift to a continual-learning problem driven by other learners rather than explicit task switches.</dd>
-
-    <dt>Authorship</dt>
-    <dd>Sole-authored work.</dd>
   </dl>
 
   <nav class="publication-feature__links" aria-label="Resources for Reinforcing the World's Edge">

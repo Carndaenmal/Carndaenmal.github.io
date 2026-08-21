@@ -547,11 +547,17 @@ body {
 .bio-actions {
   display: grid;
   gap: 0.55rem;
-  margin-top: 1.25rem;
+  margin: 1.25rem 0 0.75rem;
 }
 
 .bio-actions .site-button {
   width: 100%;
+  border-bottom: 1px solid var(--site-accent);
+}
+
+.bio-actions .site-button:hover,
+.bio-actions .site-button:focus-visible {
+  border-bottom-color: var(--site-accent-dark);
 }
 
 .publication-feature {
