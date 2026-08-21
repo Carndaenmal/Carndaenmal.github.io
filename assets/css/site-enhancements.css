@@ -949,6 +949,137 @@ html[data-theme="dark"] .theme-toggle__sun {
   margin: 0 0 0.65rem;
 }
 
+.publication-title-row {
+  display: flex;
+  gap: 0.4rem;
+  align-items: flex-start;
+}
+
+.publication-title-row h3 {
+  flex: 1 1 auto;
+}
+
+.publication-share-button {
+  display: inline-flex;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 2.75rem;
+  align-items: center;
+  justify-content: center;
+  margin: -0.45rem -0.25rem 0 0;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--family-accent, var(--site-accent));
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.publication-share-button svg {
+  width: 1.15rem;
+  height: 1.15rem;
+  fill: currentColor;
+}
+
+.publication-share-button:hover,
+.publication-share-button:focus-visible {
+  border-color: color-mix(in srgb, var(--family-accent, var(--site-accent)) 34%, transparent);
+  background: color-mix(in srgb, var(--family-accent, var(--site-accent)) 10%, transparent);
+  color: var(--family-accent-dark, var(--site-accent-dark));
+  transform: translateY(-1px);
+}
+
+.publication-share-button:focus-visible,
+.publication-copy-button:focus-visible {
+  outline: 3px solid var(--site-ink);
+  outline-offset: 2px;
+}
+
+.publication-share-button.is-copied {
+  border-color: var(--family-fill, var(--site-accent-fill));
+  background: var(--family-fill, var(--site-accent-fill));
+  color: #fff;
+}
+
+.publication-copy-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  clear: both;
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid color-mix(in srgb, var(--family-accent, var(--site-accent)) 24%, transparent);
+}
+
+.publication-copy-button {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid color-mix(in srgb, var(--family-accent, var(--site-accent)) 55%, transparent);
+  border-radius: var(--site-radius);
+  background: color-mix(in srgb, var(--family-accent, var(--site-accent)) 5%, transparent);
+  color: var(--family-accent, var(--site-accent));
+  font: inherit;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+  cursor: pointer;
+  transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
+}
+
+.publication-copy-button:hover,
+.publication-copy-button:focus-visible,
+.publication-copy-button.is-copied {
+  border-color: var(--family-fill-dark, var(--site-accent-fill-hover));
+  background: var(--family-fill-dark, var(--site-accent-fill-hover));
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.copy-fallback-input {
+  position: fixed;
+  top: 0;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.copy-toast {
+  position: fixed;
+  right: max(1rem, env(safe-area-inset-right));
+  bottom: max(1rem, env(safe-area-inset-bottom));
+  z-index: 2200;
+  max-width: min(24rem, calc(100vw - 2rem));
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: var(--site-radius);
+  background: #30292b;
+  box-shadow: 0 12px 34px rgba(29, 20, 20, 0.25);
+  color: #fff;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 0.96rem;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  line-height: 1.3;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.65rem) scale(0.98);
+  transition: opacity 170ms ease, transform 170ms ease;
+}
+
+.copy-toast.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.copy-toast--error {
+  background: #730000;
+}
+
 .status-badge {
   display: inline-flex;
   min-height: 1.7rem;
@@ -1532,6 +1663,10 @@ html[data-theme="dark"] .publication-lightbox::backdrop {
     flex-basis: 100%;
   }
 
+  .publication-copy-button {
+    flex: 1 1 calc(50% - 0.25rem);
+  }
+
   .publication-family {
     padding: 0.85rem;
   }
@@ -1641,7 +1776,10 @@ html[data-theme="dark"] .publication-lightbox::backdrop {
     animation: none !important;
   }
 
-  .publication-lightbox {
+  .publication-lightbox,
+  .publication-copy-tools,
+  .publication-share-button,
+  .copy-toast {
     display: none;
   }
 
