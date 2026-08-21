@@ -6,7 +6,36 @@ title: Publications
 
 ## Conference
 
-<img src="https://www.danemalenfant.com/images/var_pic.png" width="200" class="floatpic" style='border:2px solid #730000'> [The challenge of hidden gifts in multi-agent reinforcement learning](https://rlj.cs.umass.edu/2026/papers/Paper142.html)  <br>**Dane Malenfant**, Blake Aaron Richards<br>*The third Reinforcement Learning Conference* <br>Montréal, Canada <br>August 2026<br> 
+<section class="publication-feature" aria-labelledby="hidden-gifts-title">
+  <img
+    src="https://www.danemalenfant.com/images/var_pic.png"
+    class="publication-feature__image"
+    alt="Learning curves from the hidden-gifts multi-agent reinforcement learning environment"
+    width="200"
+    height="183"
+  >
+  <p class="publication-feature__eyebrow">RLC 2026 · Montréal, Canada · August 2026</p>
+  <h3 id="hidden-gifts-title">The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning</h3>
+  <p class="publication-feature__authors"><strong>Dane Malenfant</strong> and Blake Aaron Richards</p>
+
+  <dl class="publication-feature__details">
+    <dt>Question</dt>
+    <dd>How can agents learn reciprocal behaviour when helpful actions produce delayed or difficult-to-observe benefits?</dd>
+
+    <dt>Contribution</dt>
+    <dd>We introduce a shared-key grid-world that makes helpful actions unobservable, show that several state-of-the-art multi-agent reinforcement learning algorithms fail to obtain the collective reward, and derive a learning-aware policy-gradient correction that reduces variance and improves reliable convergence to collective success.</dd>
+
+    <dt>My role</dt>
+    <dd>Designed the experiments, implemented the environments, and led the analysis.</dd>
+  </dl>
+
+  <nav class="publication-feature__links" aria-label="Resources for The Challenge of Hidden Gifts">
+    <a href="https://rlj.cs.umass.edu/2026/papers/Paper142.pdf">Paper</a>
+    <a href="https://github.com/sfw3r43gegya/Manitokan">Code</a>
+    <a href="https://arxiv.org/abs/2505.20579">arXiv</a>
+    <a href="https://rlj.cs.umass.edu/2026/papers/Paper142.html">BibTeX</a>
+  </nav>
+</section>
 
 \
 <img src="https://www.danemalenfant.com/images/conspec.png" width="200" class="floatpic" style='border:2px solid #730000' > [Contrastive Retrospection: honing in on critical steps for rapid learning and generalization in RL](https://proceedings.neurips.cc/paper_files/paper/2023/file/6357d6d068622c962391081d296bed69-Paper-Conference.pdf)  <br>Chen Sun, Wannan Yang, Thomas Jiralerspong, **Dane Malenfant**, Benjamin Alsbury-Nealy, Yoshua Bengio, & Blake Aaron Richards<br>*Thirty-Seventh Conference on Neural Information Processing Systems*<br>New Orleans, United States of America <br>December 2023<br> 
