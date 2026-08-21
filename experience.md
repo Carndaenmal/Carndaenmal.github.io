@@ -4,51 +4,125 @@ permalink: /experience/index.html
 title: Experience
 ---
 
-## Professional
+<nav class="section-nav" aria-label="Experience sections">
+  <div class="section-nav__scroll">
+    <a href="#professional">Professional</a>
+    <a href="#organizing">Organizing</a>
+    <a href="#supervision">Supervision</a>
+    <a href="#reviewing">Reviewing</a>
+  </div>
+</nav>
 
-### Veris AI <br>
-AI Engineering and Software Intern <br>
-2026 <br>
-### [AI 4 Humanity](https://mila.quebec/en/ai-for-humanity/vision), Mila<br>
-Consultant for Indigenous Pathfinders in AI and FLAIR <br>2023 - 2024<br> 
-### Mila - Québec AI Institute and [The Neurological Institute of Montréal](https://www.mcgill.ca/neuro/)<br>
-Research Assistant <br>2022 - 2023<br> \
-Research Intern<br>
-2022<br> 
-### [Branches Program](https://www.mcgill.ca/branches/), Enrollment Services, McGill University<br>
-Interim Program Manager<br>
-2023<br> \
-Assistant Program Coordinator	<br>
-2023-2024<br> 
-### RBC
-Cybersecurity Analyst <br>
-2021<br>
+<section class="page-section" aria-labelledby="professional">
+  <h2 id="professional">Professional</h2>
+  <div class="card-grid">
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">2026</p>
+      <h3>Veris AI</h3>
+      <p class="content-card__meta">AI Engineering and Software Intern</p>
+    </article>
 
----
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">2023–2024</p>
+      <h3><a href="https://mila.quebec/en/ai-for-humanity/vision">AI for Humanity · Mila</a></h3>
+      <p class="content-card__meta">Consultant for Indigenous Pathfinders in AI and FLAIR</p>
+    </article>
 
-## Academic Service
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">2022–2023</p>
+      <h3>Mila and <a href="https://www.mcgill.ca/neuro/">The Neuro</a></h3>
+      <p class="content-card__meta">Research Assistant · 2022–2023</p>
+      <p class="content-card__meta">Research Intern · 2022</p>
+    </article>
 
-### Workshop Organizer
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">2023–2024</p>
+      <h3><a href="https://www.mcgill.ca/branches/">Branches Program · McGill</a></h3>
+      <p class="content-card__meta">Interim Program Manager · 2023</p>
+      <p class="content-card__meta">Assistant Program Coordinator · 2023–2024</p>
+    </article>
 
-[Context Beyond the Window](https://context-beyond-window.github.io/): Compression, accumulation, and internalization of knowledge in language models.<br>Conference on Language Modeling (COLM)<br>San Francisco, United States of America<br>October, 2026<br> 
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">2021</p>
+      <h3>RBC</h3>
+      <p class="content-card__meta">Cybersecurity Analyst</p>
+    </article>
+  </div>
+</section>
 
-### Undergraduate Supervision
+<section class="page-section" aria-labelledby="academic-service">
+  <h2 id="academic-service">Academic Service</h2>
+  <div class="card-grid">
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">COLM 2026 · October 2026</p>
+      <h3 id="organizing">Workshop Organizer</h3>
+      <p class="content-card__description"><strong>Context Beyond the Window</strong> brings together work on compression, accumulation, and internalization of knowledge in language models.</p>
+      <p class="content-card__meta">San Francisco, USA</p>
+      <div class="content-card__actions">
+        <a href="https://context-beyond-window.github.io/">Workshop website</a>
+      </div>
+    </article>
 
-COGS 401/444 - Emergent Reciprocity Through Temporal Credit Assignment in Reinforcement Learning Agents <br>2024-2025<br>
-[Le Thuy Duong Nguyen](https://ca.linkedin.com/in/lethuyduongnguyen) is now an [MSc. student at UdeM](https://sinthlab.quebec/#Team)
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">2024–2025</p>
+      <h3 id="supervision">Undergraduate Supervision</h3>
+      <p class="content-card__description"><strong>COGS 401/444:</strong> Emergent Reciprocity Through Temporal Credit Assignment in Reinforcement Learning Agents</p>
+      <p class="content-card__meta"><a href="https://ca.linkedin.com/in/lethuyduongnguyen">Le Thuy Duong Nguyen</a>, now an <a href="https://sinthlab.quebec/#Team">MSc student at UdeM</a></p>
+    </article>
 
-### Official Reviewer
-
-Foundation Models for the Brain and Body <br> NeurIPS <br> Sydney, Australia <br> 2026 <br> \
-Finding the Frames Workshop <br> RLC <br> Montréal, Canada <br> 2026 <br> \
-The 19th European Workshop on Reinforcement Learning <br> Toulouse, France <br> 2026 <br> \
-Main Track <br> NeurIPS <br> Sydney, Australia <br> 2026 <br> \
-[AI4GOOD Workshop](https://trustworthy-ai-for-good.github.io/) <br> ICML <br> Seoul, South Korea <br> 2026 <br> \
-Second Workshop on Technical AI Governance Research <br> ICML <br> Seoul, South Korea <br> 2026 <br> \
-[Main Track](https://iclr.cc/Conferences/2026/ProgramCommittee) <br> ICLR <br> Rio de Janeiro, Brazil <br> 2026 <br> \
-Foundation Models for the Brain and Body Workshop <br> Neurips <br> San Diego, USA <br> 2025 <br> \
-Aligning Reinforcement Learning Experimentalists and Theorists Workshop <br> Neurips <br> San Diego, USA <br> 2025 <br> \
-[The 18th European Workshop on Reinforcement Learning](https://euro-workshop-on-reinforcement-learning.github.io/ewrl18/reviewers/) <br> Tübingen, Germany <br> 2025 <br> \
-Second Coordination and Cooperation in Multi-Agent Reinforcement Learning Workshop <br> RLC <br> Edmonton, Canada <br> 2025 <br> \
-[Harms and Risks of AI in the Military Workshop](https://www.harms-risks-ai-military.org/acknowledgment.html) <br> Montréal, Canada <br> 2024 <br>
-
+    <article class="content-card content-card--wide" data-reveal>
+      <p class="eyebrow">2024–2026</p>
+      <h3 id="reviewing">Official Reviewer</h3>
+      <ol class="timeline-list timeline-list--progress" aria-label="Official reviewing activity">
+        <li class="timeline-row">
+          <time datetime="2026">2026</time>
+          <div><strong class="timeline-row__title">Foundation Models for the Brain and Body</strong><span class="timeline-row__detail">NeurIPS · Sydney, Australia</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2026">2026</time>
+          <div><strong class="timeline-row__title">Finding the Frames Workshop</strong><span class="timeline-row__detail">RLC · Montréal, Canada</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2026">2026</time>
+          <div><strong class="timeline-row__title">19th European Workshop on Reinforcement Learning</strong><span class="timeline-row__detail">Toulouse, France</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2026">2026</time>
+          <div><strong class="timeline-row__title">Main Track</strong><span class="timeline-row__detail">NeurIPS · Sydney, Australia</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2026">2026</time>
+          <div><a class="timeline-row__title" href="https://trustworthy-ai-for-good.github.io/">AI4GOOD Workshop</a><span class="timeline-row__detail">ICML · Seoul, South Korea</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2026">2026</time>
+          <div><strong class="timeline-row__title">Second Workshop on Technical AI Governance Research</strong><span class="timeline-row__detail">ICML · Seoul, South Korea</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2026">2026</time>
+          <div><a class="timeline-row__title" href="https://iclr.cc/Conferences/2026/ProgramCommittee">Main Track</a><span class="timeline-row__detail">ICLR · Rio de Janeiro, Brazil</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2025">2025</time>
+          <div><strong class="timeline-row__title">Foundation Models for the Brain and Body Workshop</strong><span class="timeline-row__detail">NeurIPS · San Diego, USA</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2025">2025</time>
+          <div><strong class="timeline-row__title">Aligning Reinforcement Learning Experimentalists and Theorists Workshop</strong><span class="timeline-row__detail">NeurIPS · San Diego, USA</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2025">2025</time>
+          <div><a class="timeline-row__title" href="https://euro-workshop-on-reinforcement-learning.github.io/ewrl18/reviewers/">18th European Workshop on Reinforcement Learning</a><span class="timeline-row__detail">Tübingen, Germany</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2025">2025</time>
+          <div><strong class="timeline-row__title">Second Coordination and Cooperation in Multi-Agent Reinforcement Learning Workshop</strong><span class="timeline-row__detail">RLC · Edmonton, Canada</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2024">2024</time>
+          <div><a class="timeline-row__title" href="https://www.harms-risks-ai-military.org/acknowledgment.html">Harms and Risks of AI in the Military Workshop</a><span class="timeline-row__detail">Montréal, Canada</span></div>
+        </li>
+      </ol>
+    </article>
+  </div>
+</section>

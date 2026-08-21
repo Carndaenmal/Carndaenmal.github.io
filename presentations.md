@@ -4,31 +4,167 @@ permalink: /presentations/index.html
 title: Presentations
 ---
 
-## Invited Talks
-[The Challenge of Reciprocity in Hidden Gifts](https://library.arcticportal.org/2966/) <br> *Data Systems: Data as protection Session* <br> Artic Observatory Summit <br> March 2026 <br>\
-[The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning](https://events.cifar.ca/website/89380/home/) <br>*CIFAR Taiwan Canada Frontiers of Science Symposium (TCFoS)* <br> The Frontiers of Science Symposium - in partnership with the Taiwan National Science and Technology Council (NSTC),  Research Institute for Democracy, Society and Emerging Technology (DSET) and the Canadian Institute for Advanced Research (CIFAR) <br> October 2025 <br>\
-[Robust AI Training and Sustainability](https://ra.co/events/2206981) <br> *Expanding Realities: Immersive Media and Storytelling* <br> MuTEK Forum 2025 <br> August 2025 <br>\
-[The Challenge of Hidden Gifts](https://mila.quebec/en/indigenous-ai-gathering-2025-meet-the-speakers) <br> *Indigenous AI Gathering 2025*<br> Mila - The Québec AI Institute <br> July 2025<br>\
-[Emergent Harvesting with Comparative Advantage](https://events.aises.org/website/79461/agenda/) 	<br> AISES in Canada National Gathering<br> March 2025 <br> \
-[Mācistan: Reciprocity in Multi-Agent Reinforcement Learning as a Credit Assignment Problem](https://neurips.cc/virtual/2024/109201) 	<br> Indigenous in AI/ML Event<br> *Thirty-Eighth Conference on Neural Information Processing Systems* <br> December 2024 <br> \
-[Reciprocity in Spite of Immediate and Sparse Incentives](https://smithengineering.queensu.ca/student-experience/2024-aises-canada-east-regional-conference) <br> *AISES East Conference* <br> Queen’s University <br> November 2024<br> \
-[Reciprocity in Spite of Immediate and Sparse Rewards](https://youtu.be/W85yQai7yrk?si=fDAA9TPW_ekP8qhM&t=643) <br> Lightning Talk <br> *Montréal AI and Neuroscience Conference* <br> Université de Montréal <br> October 2024 <br> \
-[Ethics and EDI in Neuro-AI Panel](https://unique-students.github.io/2024/speakers) <br> *UNIQUE Student Symposium* <br> Centre de Recherche CERVO <br> May 2024 <br> \
-[International PI Day "Unlocking Perspectives" with Dr. Edward Doolittle Panel](https://www.mcgill.ca/indigenous/channels/event/international-pi-day-unlocking-perspectives-dr-edward-doolittle-winter-speaker-series-355706) <br> *Winter Speaker Series* <br> Office of Indigenous Initiatives <br> McGill University <br> March 2024 <br> \
-[Challenging Reinforcement Learning Through Traditional Reciprocity](https://www.mcgill.ca/neuro/files/neuro/channels/attach/24th_annual_neuropsychology_day_program_booklet_final.pdf) <br> *24th Annual Neuropsychology Day and Brenda Milner Lecture: Functional Specializations in the Cortex in Humans: Which, When, and Why?* <br> Montreal Neurological Institute-Hospital <br> McGill University <br> May 2023 <br>
+<nav class="section-nav" aria-label="Presentation sections">
+  <div class="section-nav__scroll">
+    <a href="#invited-talks">Invited talks</a>
+    <a href="#posters">Posters</a>
+  </div>
+</nav>
 
-<br>
+<section class="page-section" aria-labelledby="invited-talks">
+  <h2 id="invited-talks">Invited Talks</h2>
+  <div class="card-grid">
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">March 2026 · Panel</p>
+      <h3>The Challenge of Reciprocity in Hidden Gifts</h3>
+      <p class="content-card__description">Data Systems: Data as Protection</p>
+      <p class="content-card__meta">Arctic Observing Summit</p>
+      <div class="content-card__actions"><a href="https://library.arcticportal.org/2966/">Talk materials</a></div>
+    </article>
 
----
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">October 2025 · Invited talk</p>
+      <h3>The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning</h3>
+      <p class="content-card__description">Taiwan–Canada Frontiers of Science Symposium</p>
+      <p class="content-card__meta">CIFAR · NSTC · DSET</p>
+      <div class="content-card__actions"><a href="https://events.cifar.ca/website/89380/home/">Event details</a></div>
+    </article>
 
-## Posters
-Reinforcing the World's Edge: A Continual Learning Problem in the Multi-Agent-World Boundary <br> **Dane Malenfant** <br> World Modeling Workshop <br> Montréal, Canada <br> February 2026 <br> \
-The challenge of hidden gifts in multi-agent reinforcement learning<br>**Dane Malenfant**, Blake Richards <br> IVADO Digital Futures<br> Montréal, Canada<br>October 2025<br>  \
-The challenge of hidden gifts in multi-agent reinforcement learning<br>**Dane Malenfant**, Blake Richards <br> Session d'accueil Mila<br> Montréal, Canada<br>September 2025<br> \
-The challenge of hidden gifts in multi-agent reinforcement learning<br>**Dane Malenfant**, Blake Richards <br> The Eighteenth european Workshop on Reinforcement Learning<br> Tübingen, Germany<br>September 2025<br>  \
-The challenge of hidden gifts in multi-agent reinforcement learning<br>**Dane Malenfant**, Blake Richards <br> *Second Coordination and Cooperation in Multi-Agent Reinforcement Learning Workshop*<br>The Reinforcement Learning Conference <br> Edmonton, Alberta<br>August 2025<br>  \
-Reciprocity in Spite of Inconsistent Time Preferences <br>**Dane Malenfant**, Blake Richards <br> *HBHL Symposium 2025* <br> Montréal, Canada <br> May 2025<br> \
-Reciprocity in Spite of Immediate and Sparse Rewards <br>**Dane Malenfant**, Blake Richards <br> *Seventh Montréal Artificial Intelligence and Neuroscience Conference* <br> Montréal, Canada <br> October  2024<br> \
-[Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States](https://www.harms-risks-ai-military.org/posters/HRAIM_Inconsistencies_AI_Strategy_Alignment_NATO.png) <br>Itai Epstein, **Dane Malenfant**, Sara Parker, Cella Wardrop<br> *2024 Harms and Risks of AI in the Military* <br> Montréal, Canada<br> December 2024<br>
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">August 2025 · Invited talk</p>
+      <h3>Robust AI Training and Sustainability</h3>
+      <p class="content-card__description">Expanding Realities: Immersive Media and Storytelling</p>
+      <p class="content-card__meta">MUTEK Forum 2025</p>
+      <div class="content-card__actions"><a href="https://ra.co/events/2206981">Event details</a></div>
+    </article>
 
-<br>
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">July 2025 · Invited talk</p>
+      <h3>The Challenge of Hidden Gifts</h3>
+      <p class="content-card__description">Indigenous AI Gathering 2025</p>
+      <p class="content-card__meta">Mila – Québec AI Institute</p>
+      <div class="content-card__actions"><a href="https://mila.quebec/en/indigenous-ai-gathering-2025-meet-the-speakers">Speaker page</a></div>
+    </article>
+
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">March 2025 · Invited talk</p>
+      <h3>Emergent Harvesting with Comparative Advantage</h3>
+      <p class="content-card__meta">AISES in Canada National Gathering</p>
+      <div class="content-card__actions"><a href="https://events.aises.org/website/79461/agenda/">Agenda</a></div>
+    </article>
+
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">December 2024 · Invited talk</p>
+      <h3>Mācistan: Reciprocity in Multi-Agent Reinforcement Learning as a Credit Assignment Problem</h3>
+      <p class="content-card__description">Indigenous in AI/ML Event</p>
+      <p class="content-card__meta">NeurIPS 2024</p>
+      <div class="content-card__actions"><a href="https://neurips.cc/virtual/2024/109201">Event page</a></div>
+    </article>
+
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">November 2024 · Invited talk</p>
+      <h3>Reciprocity in Spite of Immediate and Sparse Incentives</h3>
+      <p class="content-card__meta">AISES East Conference · Queen’s University</p>
+      <div class="content-card__actions"><a href="https://smithengineering.queensu.ca/student-experience/2024-aises-canada-east-regional-conference">Event details</a></div>
+    </article>
+
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">October 2024 · Lightning talk</p>
+      <h3>Reciprocity in Spite of Immediate and Sparse Rewards</h3>
+      <p class="content-card__meta">Montréal AI and Neuroscience Conference · Université de Montréal</p>
+      <div class="content-card__actions"><a href="https://youtu.be/W85yQai7yrk?si=fDAA9TPW_ekP8qhM&amp;t=643">Watch video</a></div>
+    </article>
+
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">May 2024 · Panel</p>
+      <h3>Ethics and EDI in Neuro-AI</h3>
+      <p class="content-card__meta">UNIQUE Student Symposium · Centre de Recherche CERVO</p>
+      <div class="content-card__actions"><a href="https://unique-students.github.io/2024/speakers">Speaker page</a></div>
+    </article>
+
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">March 2024 · Panel</p>
+      <h3>International Pi Day: Unlocking Perspectives with Dr. Edward Doolittle</h3>
+      <p class="content-card__meta">Winter Speaker Series · McGill University</p>
+      <div class="content-card__actions"><a href="https://www.mcgill.ca/indigenous/channels/event/international-pi-day-unlocking-perspectives-dr-edward-doolittle-winter-speaker-series-355706">Event details</a></div>
+    </article>
+
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">May 2023 · Invited talk</p>
+      <h3>Challenging Reinforcement Learning Through Traditional Reciprocity</h3>
+      <p class="content-card__description">24th Annual Neuropsychology Day and Brenda Milner Lecture</p>
+      <p class="content-card__meta">The Neuro · McGill University</p>
+      <div class="content-card__actions"><a href="https://www.mcgill.ca/neuro/files/neuro/channels/attach/24th_annual_neuropsychology_day_program_booklet_final.pdf">Program</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="page-section" aria-labelledby="posters">
+  <h2 id="posters">Posters</h2>
+  <div class="card-grid">
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">February 2026 · Montréal</p>
+      <h3>Reinforcing the World’s Edge: A Continual Learning Problem in the Multi-Agent-World Boundary</h3>
+      <p class="content-card__description"><strong>Dane Malenfant</strong></p>
+      <p class="content-card__meta">World Modeling Workshop</p>
+      <div class="content-card__actions">
+        <a href="/file/wmw2026.pdf">Poster</a>
+        <a href="https://arxiv.org/abs/2603.06813">Paper</a>
+      </div>
+    </article>
+
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">October 2025 · Montréal</p>
+      <h3>The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning</h3>
+      <p class="content-card__description"><strong>Dane Malenfant</strong> and Blake Richards</p>
+      <p class="content-card__meta">IVADO Digital Futures</p>
+      <div class="content-card__actions"><a href="https://arxiv.org/abs/2505.20579">Paper</a></div>
+    </article>
+
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">September 2025 · Montréal</p>
+      <h3>The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning</h3>
+      <p class="content-card__description"><strong>Dane Malenfant</strong> and Blake Richards</p>
+      <p class="content-card__meta">Mila Welcome Session</p>
+      <div class="content-card__actions"><a href="https://arxiv.org/abs/2505.20579">Paper</a></div>
+    </article>
+
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">September 2025 · Tübingen</p>
+      <h3>The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning</h3>
+      <p class="content-card__description"><strong>Dane Malenfant</strong> and Blake Richards</p>
+      <p class="content-card__meta">18th European Workshop on Reinforcement Learning</p>
+      <div class="content-card__actions"><a href="https://arxiv.org/abs/2505.20579">Paper</a></div>
+    </article>
+
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">August 2025 · Edmonton</p>
+      <h3>The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning</h3>
+      <p class="content-card__description"><strong>Dane Malenfant</strong> and Blake Richards</p>
+      <p class="content-card__meta">Coordination and Cooperation in MARL Workshop · RLC</p>
+      <div class="content-card__actions"><a href="https://arxiv.org/abs/2505.20579">Paper</a></div>
+    </article>
+
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">May 2025 · Montréal</p>
+      <h3>Reciprocity in Spite of Inconsistent Time Preferences</h3>
+      <p class="content-card__description"><strong>Dane Malenfant</strong> and Blake Richards</p>
+      <p class="content-card__meta">HBHL Symposium 2025</p>
+    </article>
+
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">December 2024 · Montréal</p>
+      <h3>Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States</h3>
+      <p class="content-card__description">Itai Epstein, <strong>Dane Malenfant</strong>, Sara Parker, and Cella Wardrop</p>
+      <p class="content-card__meta">Harms and Risks of AI in the Military 2024</p>
+      <div class="content-card__actions"><a href="https://www.harms-risks-ai-military.org/posters/HRAIM_Inconsistencies_AI_Strategy_Alignment_NATO.png">Poster</a></div>
+    </article>
+
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">October 2024 · Montréal</p>
+      <h3>Reciprocity in Spite of Immediate and Sparse Rewards</h3>
+      <p class="content-card__description"><strong>Dane Malenfant</strong> and Blake Richards</p>
+      <p class="content-card__meta">Seventh Montréal Artificial Intelligence and Neuroscience Conference</p>
+    </article>
+  </div>
+</section>
