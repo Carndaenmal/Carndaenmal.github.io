@@ -70,7 +70,7 @@
           });
           if (activeLink) setCurrent(activeLink);
         });
-      }, { rootMargin: "-20% 0px -60%", threshold: 0 });
+      }, { rootMargin: "-20% 0px -50%", threshold: 0 });
 
       sections.forEach(function (section) {
         sectionObserver.observe(section);
