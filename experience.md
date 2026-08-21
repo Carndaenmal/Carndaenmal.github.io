@@ -5,10 +5,12 @@ title: Experience
 ---
 
 <nav class="section-nav" aria-label="Experience sections">
-  <a href="#professional">Professional</a>
-  <a href="#organizing">Organizing</a>
-  <a href="#supervision">Supervision</a>
-  <a href="#reviewing">Reviewing</a>
+  <div class="section-nav__scroll">
+    <a href="#professional">Professional</a>
+    <a href="#organizing">Organizing</a>
+    <a href="#supervision">Supervision</a>
+    <a href="#reviewing">Reviewing</a>
+  </div>
 </nav>
 
 <section class="page-section" aria-labelledby="professional">
@@ -71,7 +73,7 @@ title: Experience
     <article class="content-card content-card--wide" data-reveal>
       <p class="eyebrow">2024–2026</p>
       <h3 id="reviewing">Official Reviewer</h3>
-      <ol class="timeline-list" aria-label="Official reviewing activity">
+      <ol class="timeline-list timeline-list--progress" aria-label="Official reviewing activity">
         <li class="timeline-row">
           <time datetime="2026">2026</time>
           <div><strong class="timeline-row__title">Foundation Models for the Brain and Body</strong><span class="timeline-row__detail">NeurIPS · Sydney, Australia</span></div>

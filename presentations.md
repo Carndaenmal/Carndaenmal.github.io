@@ -5,8 +5,10 @@ title: Presentations
 ---
 
 <nav class="section-nav" aria-label="Presentation sections">
-  <a href="#invited-talks">Invited talks</a>
-  <a href="#posters">Posters</a>
+  <div class="section-nav__scroll">
+    <a href="#invited-talks">Invited talks</a>
+    <a href="#posters">Posters</a>
+  </div>
 </nav>
 
 <section class="page-section" aria-labelledby="invited-talks">

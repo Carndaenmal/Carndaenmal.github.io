@@ -5,8 +5,10 @@ title: Publications
 ---
 
 <nav class="section-nav" aria-label="Publication sections">
-  <a href="#conference">Conference</a>
-  <a href="#workshop">Workshop</a>
+  <div class="section-nav__scroll">
+    <a href="#conference">Conference</a>
+    <a href="#workshop">Workshop</a>
+  </div>
 </nav>
 
 <h2 id="conference">Conference</h2>
