@@ -1,6 +1,70 @@
 (function () {
   "use strict";
 
+  var root = document.documentElement;
+  var themeToggle = document.querySelector(".theme-toggle");
+  var themeToggleLabel = themeToggle ? themeToggle.querySelector(".theme-toggle__label") : null;
+  var themeColor = document.getElementById("theme-color");
+  var themePreference = window.matchMedia("(prefers-color-scheme: dark)");
+  var themeStorageKey = "danemalenfant-theme";
+
+  var getSavedTheme = function () {
+    try {
+      var savedTheme = localStorage.getItem(themeStorageKey);
+      return savedTheme === "light" || savedTheme === "dark" ? savedTheme : null;
+    } catch (error) {
+      return null;
+    }
+  };
+
+  var applyTheme = function (theme, persist) {
+    var isDark = theme === "dark";
+    root.setAttribute("data-theme", isDark ? "dark" : "light");
+    root.style.colorScheme = isDark ? "dark" : "light";
+
+    if (themeColor) themeColor.setAttribute("content", isDark ? "#171516" : "#fffdfb");
+
+    if (themeToggle) {
+      var actionLabel = isDark ? "Switch to light mode" : "Switch to dark mode";
+      themeToggle.setAttribute("aria-pressed", isDark ? "true" : "false");
+      themeToggle.setAttribute("aria-label", actionLabel);
+      themeToggle.setAttribute("title", actionLabel);
+    }
+
+    if (themeToggleLabel) themeToggleLabel.textContent = isDark ? "Day" : "Night";
+
+    if (persist) {
+      try {
+        localStorage.setItem(themeStorageKey, isDark ? "dark" : "light");
+      } catch (error) {
+        // The selected theme still applies for this page when storage is unavailable.
+      }
+    }
+  };
+
+  applyTheme(root.getAttribute("data-theme") || (themePreference.matches ? "dark" : "light"), false);
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", function () {
+      applyTheme(root.getAttribute("data-theme") === "dark" ? "light" : "dark", true);
+    });
+  }
+
+  var syncThemeToSystem = function (event) {
+    if (!getSavedTheme()) applyTheme(event.matches ? "dark" : "light", false);
+  };
+
+  if (typeof themePreference.addEventListener === "function") {
+    themePreference.addEventListener("change", syncThemeToSystem);
+  } else if (typeof themePreference.addListener === "function") {
+    themePreference.addListener(syncThemeToSystem);
+  }
+
+  window.addEventListener("storage", function (event) {
+    if (event.key !== themeStorageKey) return;
+    applyTheme(event.newValue === "dark" || event.newValue === "light" ? event.newValue : (themePreference.matches ? "dark" : "light"), false);
+  });
+
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   var revealTargets = Array.prototype.slice.call(document.querySelectorAll("[data-reveal]"));
 
