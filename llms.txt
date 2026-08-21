@@ -1,0 +1,42 @@
+---
+layout: null
+sitemap: false
+---
+# Dane Malenfant
+
+> Dane Malenfant is a machine learning researcher studying multi-agent reinforcement learning, reciprocity, temporal credit assignment, continual learning, and AI safety.
+
+Dane completed an MSc in Computer Science at McGill University and conducted the research at Mila – The Québec AI Institute in the Learning in Neural Circuits Lab. The canonical website is [danemalenfant.com]({{ site.url }}/).
+
+## Primary pages
+
+- [About]({{ site.url }}/): Biography, research interests, education, affiliations, and selected updates.
+- [Publications]({{ site.url }}/publications/): Conference and workshop publications with research questions, contributions, figures, papers, code, and citation links.
+- [Experience]({{ site.url }}/experience/): Professional work, workshop organizing, supervision, and peer reviewing.
+- [Awards]({{ site.url }}/awards/): Fellowships, presentation awards, and community honours.
+- [Presentations]({{ site.url }}/presentations/): Invited talks, panels, and research posters.
+- [Media]({{ site.url }}/media/): Interviews, profiles, podcasts, and other coverage.
+- [Academic CV]({{ site.url }}/file/Academic_CV.pdf): Curriculum vitae in PDF format.
+
+## Selected research
+
+- [The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning]({{ site.url }}/publications/#hidden-gifts-title): Reciprocal behaviour when helpful actions have delayed or difficult-to-observe benefits; RLC 2026.
+- [Contrastive Retrospection: honing in on critical steps for rapid learning and generalization in RL]({{ site.url }}/publications/#conspec-title): Contrastive identification of critical states for reinforcement learning; NeurIPS 2023.
+- [Moral Hazard in Multi-Agent Language Models]({{ site.url }}/publications/#moral-hazard-title): Cooperation when information gathering is costly, hidden, and benefits another language agent; COLM 2026 workshop.
+- [Compositional Flow Matching with Factored Velocity Fields]({{ site.url }}/publications/#factored-flow-title): Zero-shot generalization to unseen combinations of generative factors; ICML 2026 workshop spotlight.
+- [Reinforcing the World's Edge]({{ site.url }}/publications/#worlds-edge-title): Continual learning at the boundary between multiple adaptive agents; World Modeling Workshop 2026.
+- [Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States]({{ site.url }}/publications/#nato-policy-title): Comparative analysis of public national and military AI strategies; 2024.
+- [Causality Mining in Fiction]({{ site.url }}/publications/#causality-fiction-title): Causal-relation extraction and domain differences in literary fiction; Text2Story 2022.
+
+## External identity
+
+- [Google Scholar]({{ site.owner.scholar }})
+- [GitHub](https://github.com/Carndaenmal)
+- [LinkedIn](https://www.linkedin.com/in/{{ site.owner.linkedin }})
+- [Bluesky](https://bsky.app/profile/{{ site.owner.bluesky }}.bsky.social)
+
+## Contact
+
+- Email: [{{ site.owner.email }}](mailto:{{ site.owner.email }})
+
+Use the linked website pages as the authoritative source for current dates, publication status, and resource links.

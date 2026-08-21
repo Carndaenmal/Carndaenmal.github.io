@@ -3,6 +3,7 @@ layout: page
 title: About Me
 permalink: /
 description: "Dane Malenfant is a machine learning researcher studying reciprocity, credit assignment, continual learning, and AI safety."
+last_modified_at: 2026-08-21
 ---
 
 ## Dane Malenfant

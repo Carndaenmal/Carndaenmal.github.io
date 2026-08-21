@@ -4,10 +4,12 @@ sitemap: false
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-{% for item in site.pages %}
+{% assign sitemap_pages = site.pages | sort: "url" %}
+{% for item in sitemap_pages %}
   {% if item.layout == "page" and item.sitemap != false %}
   <url>
     <loc>{{ site.url }}{{ item.url | replace: 'index.html', '' }}</loc>
+    {% if item.last_modified_at %}<lastmod>{{ item.last_modified_at | date: "%Y-%m-%d" }}</lastmod>{% endif %}
   </url>
   {% endif %}
 {% endfor %}
