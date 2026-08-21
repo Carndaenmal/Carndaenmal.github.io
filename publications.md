@@ -65,6 +65,16 @@ last_modified_at: 2026-08-21
         <a href="https://arxiv.org/abs/2505.20579">arXiv</a>
         <a href="https://rlj.cs.umass.edu/2026/papers/Paper142.html">BibTeX</a>
       </nav>
+      <div class="publication-copy-sources" hidden>
+        <span data-copy-source="citation">Malenfant, D., &amp; Richards, B. A. (2026). The challenge of hidden gifts in multi-agent reinforcement learning. Reinforcement Learning Journal, 7.</span>
+        <pre data-copy-source="bibtex">@article{malenfant2026the,
+  title={The challenge of hidden gifts in multi-agent reinforcement learning},
+  author={Dane Malenfant and Blake Aaron Richards},
+  journal={Reinforcement Learning Journal},
+  volume={7},
+  year={2026}
+}</pre>
+      </div>
     </article>
 
     <article class="publication-feature" aria-labelledby="moral-hazard-title" data-project-family="reciprocity" data-reveal>
@@ -99,6 +109,16 @@ last_modified_at: 2026-08-21
         <a href="https://arxiv.org/html/2607.23982">HTML</a>
         <a href="https://arxiv.org/abs/2607.23982">BibTeX</a>
       </nav>
+      <div class="publication-copy-sources" hidden>
+        <span data-copy-source="citation">Malenfant, D. (2026). Moral hazard in multi-agent language models. arXiv preprint arXiv:2607.23982.</span>
+        <pre data-copy-source="bibtex">@article{malenfant2026moral,
+  title={Moral Hazard in Multi-Agent Language Models},
+  author={Malenfant, Dane},
+  journal={arXiv preprint arXiv:2607.23982},
+  year={2026},
+  url={https://arxiv.org/abs/2607.23982}
+}</pre>
+      </div>
     </article>
 
     <article class="publication-feature" aria-labelledby="worlds-edge-title" data-project-family="reciprocity" data-reveal>
@@ -133,6 +153,16 @@ last_modified_at: 2026-08-21
         <a href="https://arxiv.org/html/2603.06813">HTML</a>
         <a href="https://arxiv.org/abs/2603.06813">BibTeX</a>
       </nav>
+      <div class="publication-copy-sources" hidden>
+        <span data-copy-source="citation">Malenfant, D. (2026). Reinforcing the world's edge: A continual learning problem in the multi-agent-world boundary. arXiv preprint arXiv:2603.06813.</span>
+        <pre data-copy-source="bibtex">@article{malenfant2026reinforcing,
+  title={Reinforcing the World's Edge: A Continual Learning Problem in the Multi-Agent-World Boundary},
+  author={Malenfant, Dane},
+  journal={arXiv preprint arXiv:2603.06813},
+  year={2026},
+  url={https://arxiv.org/abs/2603.06813}
+}</pre>
+      </div>
     </article>
   </div>
 </section>
@@ -182,6 +212,19 @@ last_modified_at: 2026-08-21
         <a href="https://github.com/sunchipsster1/ConSpec">Code</a>
         <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/6357d6d068622c962391081d296bed69-Abstract-Conference.html">BibTeX</a>
       </nav>
+      <div class="publication-copy-sources" hidden>
+        <span data-copy-source="citation">Sun, C., Yang, W., Jiralerspong, T., Malenfant, D., Alsbury-Nealy, B., Bengio, Y., &amp; Richards, B. A. (2023). Contrastive retrospection: Honing in on critical steps for rapid learning and generalization in RL. Advances in Neural Information Processing Systems, 36. https://doi.org/10.52202/075280-1356</span>
+        <pre data-copy-source="bibtex">@inproceedings{sun2023contrastive,
+  title={Contrastive Retrospection: Honing in on Critical Steps for Rapid Learning and Generalization in RL},
+  author={Sun, Chen and Yang, Wannan and Jiralerspong, Thomas and Malenfant, Dane and Alsbury-Nealy, Benjamin and Bengio, Yoshua and Richards, Blake Aaron},
+  booktitle={Advances in Neural Information Processing Systems},
+  volume={36},
+  year={2023},
+  doi={10.52202/075280-1356},
+  url={https://proceedings.neurips.cc/paper_files/paper/2023/hash/6357d6d068622c962391081d296bed69-Abstract-Conference.html}
+}</pre>
+        <span data-copy-source="doi">10.52202/075280-1356</span>
+      </div>
     </article>
 
     <article class="publication-feature" aria-labelledby="factored-flow-title" data-project-family="learning" data-reveal>
@@ -215,6 +258,16 @@ last_modified_at: 2026-08-21
         <a href="https://openreview.net/forum?id=77sT6Xaji7">OpenReview</a>
         <a href="https://openreview.net/forum?id=77sT6Xaji7">BibTeX</a>
       </nav>
+      <div class="publication-copy-sources" hidden>
+        <span data-copy-source="citation">Ryoo, A. H.-W., Malenfant, D., Perich, M. G., &amp; Lajoie, G. (2026). Compositional flow matching with factored velocity fields. 1st Workshop on Foundation Models (FoGen), ICML 2026.</span>
+        <pre data-copy-source="bibtex">@inproceedings{ryoo2026compositional,
+  title={Compositional Flow Matching with Factored Velocity Fields},
+  author={Ryoo, Avery Hee-Woon and Malenfant, Dane and Perich, Matthew G. and Lajoie, Guillaume},
+  booktitle={1st Workshop on Foundation Models (FoGen), ICML},
+  year={2026},
+  url={https://openreview.net/forum?id=77sT6Xaji7}
+}</pre>
+      </div>
     </article>
   </div>
 </section>
@@ -264,6 +317,16 @@ last_modified_at: 2026-08-21
         <a href="https://www.harms-risks-ai-military.org/posters/HRAIM_Inconsistencies_AI_Strategy_Alignment_NATO.pdf">Poster</a>
         <a href="https://openreview.net/forum?id=apB72N0nxF">BibTeX</a>
       </nav>
+      <div class="publication-copy-sources" hidden>
+        <span data-copy-source="citation">Epstein, I., Malenfant, D., Parker, S., &amp; Wardrop, C. (2024). Inconsistencies in artificial intelligence strategy alignment of NATO member states. Harms and Risks of AI in the Military.</span>
+        <pre data-copy-source="bibtex">@inproceedings{epstein2024inconsistencies,
+  title={Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States},
+  author={Epstein, Itai and Malenfant, Dane and Parker, Sara and Wardrop, Cella},
+  booktitle={Harms and Risks of AI in the Military},
+  year={2024},
+  url={https://openreview.net/forum?id=apB72N0nxF}
+}</pre>
+      </div>
     </article>
 
     <article class="publication-feature" aria-labelledby="causality-fiction-title" data-project-family="society" data-reveal>
@@ -296,6 +359,17 @@ last_modified_at: 2026-08-21
         <a href="https://txtlab.org/2022/05/why-capturing-causal-reasoning-in-narrative/">Project</a>
         <a href="https://dblp.org/rec/conf/ecir/MalenfantP22">BibTeX</a>
       </nav>
+      <div class="publication-copy-sources" hidden>
+        <span data-copy-source="citation">Meehan, M., Malenfant, D., &amp; Piper, A. (2022). Causality mining in fiction. In Proceedings of the 5th Workshop on Narrative Extraction from Texts (Text2Story 2022) (pp. 25–34).</span>
+        <pre data-copy-source="bibtex">@inproceedings{MalenfantP22,
+  author={Meehan, Margaret and Malenfant, Dane and Piper, Andrew},
+  title={Causality Mining in Fiction},
+  booktitle={Proceedings of the 5th Workshop on Narrative Extraction from Texts (Text2Story 2022)},
+  pages={25--34},
+  year={2022},
+  url={https://ceur-ws.org/Vol-3117/paper3.pdf}
+}</pre>
+      </div>
     </article>
   </div>
 </section>

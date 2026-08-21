@@ -316,4 +316,124 @@
       if (lastLightboxTrigger) lastLightboxTrigger.focus({ preventScroll: true });
     });
   }
+
+  var publicationCards = Array.prototype.slice.call(document.querySelectorAll(".publication-feature"));
+
+  if (publicationCards.length) {
+    var copyToast = document.createElement("div");
+    var copyToastTimer = null;
+
+    copyToast.className = "copy-toast";
+    copyToast.setAttribute("role", "status");
+    copyToast.setAttribute("aria-live", "polite");
+    copyToast.setAttribute("aria-atomic", "true");
+    document.body.appendChild(copyToast);
+
+    var showCopyToast = function (message, isError) {
+      window.clearTimeout(copyToastTimer);
+      copyToast.textContent = message;
+      copyToast.classList.toggle("copy-toast--error", Boolean(isError));
+      copyToast.classList.add("is-visible");
+      copyToastTimer = window.setTimeout(function () {
+        copyToast.classList.remove("is-visible");
+      }, 2400);
+    };
+
+    var fallbackCopy = function (value) {
+      var temporaryInput = document.createElement("textarea");
+      temporaryInput.value = value;
+      temporaryInput.setAttribute("readonly", "");
+      temporaryInput.className = "copy-fallback-input";
+      document.body.appendChild(temporaryInput);
+      temporaryInput.select();
+      temporaryInput.setSelectionRange(0, temporaryInput.value.length);
+
+      var copied = false;
+      try {
+        copied = document.execCommand("copy");
+      } catch (error) {
+        copied = false;
+      }
+
+      temporaryInput.remove();
+      return copied;
+    };
+
+    var copyText = function (value) {
+      if (navigator.clipboard && window.isSecureContext) {
+        return navigator.clipboard.writeText(value).catch(function () {
+          if (!fallbackCopy(value)) throw new Error("Clipboard access failed");
+        });
+      }
+
+      return fallbackCopy(value)
+        ? Promise.resolve()
+        : Promise.reject(new Error("Clipboard access failed"));
+    };
+
+    var runCopyAction = function (button, value, successMessage) {
+      copyText(value).then(function () {
+        button.classList.add("is-copied");
+        showCopyToast(successMessage, false);
+        window.setTimeout(function () {
+          button.classList.remove("is-copied");
+        }, 1200);
+      }).catch(function () {
+        showCopyToast("Could not copy automatically", true);
+      });
+    };
+
+    var copyButtonLabels = {
+      citation: { label: "Copy citation", confirmation: "Formatted citation copied" },
+      bibtex: { label: "Copy BibTeX", confirmation: "BibTeX copied" },
+      doi: { label: "Copy DOI", confirmation: "DOI copied" }
+    };
+
+    publicationCards.forEach(function (publication) {
+      var titleElement = publication.querySelector("h3[id]");
+      if (!titleElement) return;
+
+      var paperTitle = titleElement.textContent.trim();
+      var titleRow = document.createElement("div");
+      var shareButton = document.createElement("button");
+      titleRow.className = "publication-title-row";
+      shareButton.className = "publication-share-button";
+      shareButton.type = "button";
+      shareButton.setAttribute("aria-label", "Copy direct link to " + paperTitle);
+      shareButton.setAttribute("title", "Copy direct link to this paper");
+      shareButton.innerHTML = '<svg aria-hidden="true" focusable="false" viewBox="0 0 24 24"><path d="M10.6 13.4a1 1 0 0 1 0-1.4l3.4-3.4a4 4 0 0 1 5.7 5.7l-3.4 3.4a4 4 0 0 1-5.7 0 1 1 0 0 1 1.4-1.4 2 2 0 0 0 2.9 0l3.4-3.4a2 2 0 0 0-2.9-2.9L12 13.4a1 1 0 0 1-1.4 0Zm2.8-2.8a1 1 0 0 1 0 1.4L10 15.4a4 4 0 0 1-5.7-5.7l3.4-3.4a4 4 0 0 1 5.7 0 1 1 0 0 1-1.4 1.4 2 2 0 0 0-2.9 0l-3.4 3.4A2 2 0 0 0 8.6 14l3.4-3.4a1 1 0 0 1 1.4 0Z"/></svg>';
+      titleElement.parentNode.insertBefore(titleRow, titleElement);
+      titleRow.appendChild(titleElement);
+      titleRow.appendChild(shareButton);
+
+      shareButton.addEventListener("click", function () {
+        var directUrl = new URL(window.location.href);
+        directUrl.search = "";
+        directUrl.hash = titleElement.id;
+        runCopyAction(shareButton, directUrl.href, "Direct paper link copied");
+      });
+
+      var tools = document.createElement("div");
+      tools.className = "publication-copy-tools";
+      tools.setAttribute("role", "group");
+      tools.setAttribute("aria-label", "Citation tools for " + paperTitle);
+
+      ["citation", "bibtex", "doi"].forEach(function (sourceName) {
+        var source = publication.querySelector('[data-copy-source="' + sourceName + '"]');
+        if (!source) return;
+
+        var button = document.createElement("button");
+        var labels = copyButtonLabels[sourceName];
+        button.className = "publication-copy-button publication-copy-button--" + sourceName;
+        button.type = "button";
+        button.textContent = labels.label;
+        button.addEventListener("click", function () {
+          runCopyAction(button, source.textContent.trim(), labels.confirmation);
+        });
+        tools.appendChild(button);
+      });
+
+      if (tools.children.length) publication.appendChild(tools);
+    });
+  }
 }());

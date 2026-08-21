@@ -19,33 +19,33 @@ last_modified_at: 2026-08-21
   <h2 id="professional">Professional</h2>
   <div class="card-grid">
     <article class="content-card" data-reveal>
-      <p class="eyebrow">2026</p>
+      <p class="eyebrow">2026 · In person · New York, USA</p>
       <h3>Veris AI</h3>
       <p class="content-card__meta">AI Engineering and Software Intern</p>
     </article>
 
     <article class="content-card" data-reveal>
-      <p class="eyebrow">2023–2024</p>
+      <p class="eyebrow">2023–2024 · In person · Montréal, Canada</p>
       <h3><a href="https://mila.quebec/en/ai-for-humanity/vision">AI for Humanity · Mila</a></h3>
       <p class="content-card__meta">Consultant for Indigenous Pathfinders in AI and FLAIR</p>
     </article>
 
     <article class="content-card" data-reveal>
-      <p class="eyebrow">2022–2023</p>
+      <p class="eyebrow">2022–2023 · In person · Montréal, Canada</p>
       <h3>Mila and <a href="https://www.mcgill.ca/neuro/">The Neuro</a></h3>
       <p class="content-card__meta">Research Assistant · 2022–2023</p>
       <p class="content-card__meta">Research Intern · 2022</p>
     </article>
 
     <article class="content-card" data-reveal>
-      <p class="eyebrow">2023–2024</p>
+      <p class="eyebrow">2023–2024 · In person · Montréal, Canada</p>
       <h3><a href="https://www.mcgill.ca/branches/">Branches Program · McGill</a></h3>
       <p class="content-card__meta">Interim Program Manager · 2023</p>
       <p class="content-card__meta">Assistant Program Coordinator · 2023–2024</p>
     </article>
 
     <article class="content-card" data-reveal>
-      <p class="eyebrow">2021</p>
+      <p class="eyebrow">2021 · Remote · Toronto, Canada</p>
       <h3>RBC</h3>
       <p class="content-card__meta">Cybersecurity Analyst</p>
     </article>
