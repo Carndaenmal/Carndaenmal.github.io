@@ -4,11 +4,11 @@ title: About Me
 permalink: /
 description: "Dane Malenfant is a machine learning researcher studying reciprocity, credit assignment, continual learning, and AI safety."
 last_modified_at: 2026-08-21
+identity_masthead: true
+masthead_eyebrow: Machine learning researcher
+masthead_title: Dane Malenfant
+masthead_focus: I study cooperation, credit assignment, and behavioural control in adaptive learning systems.
 ---
-
-## Dane Malenfant
-
-
 
 <img class="home-hero" src="/images/rathlyn-hero.jpg" alt="Dane Malenfant speaking at an event" width="1200" height="688" decoding="async" fetchpriority="high">
 
