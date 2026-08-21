@@ -4,27 +4,82 @@ permalink: /awards/index.html
 title: Awards
 ---
 
-## Awards
+<nav class="section-nav" aria-label="Award sections">
+  <a href="#fellowships">Fellowships</a>
+  <a href="#presentation-awards">Presentation awards</a>
+  <a href="#community-travel">Community &amp; travel</a>
+</nav>
 
-### Fellowships & Scholarships
+<section class="page-section" aria-labelledby="awards-heading">
+  <h2 id="awards-heading">Awards</h2>
+  <div class="card-grid">
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">Academic support</p>
+      <h3 id="fellowships">Fellowships &amp; Scholarships</h3>
+      <ol class="timeline-list">
+        <li class="timeline-row">
+          <time datetime="2026">2026</time>
+          <div><strong class="timeline-row__title">Tiplady Sweeney Fellowship · $6,000</strong><span class="timeline-row__detail">Faculty of Science, McGill University</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2024">2024</time>
+          <div><strong class="timeline-row__title">NSERC CGS-M · $32,000</strong><span class="timeline-row__detail">Natural Sciences and Engineering Research Council of Canada</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2024">2024</time>
+          <div><strong class="timeline-row__title">Rathlyn Fellowship · $12,000</strong><span class="timeline-row__detail">Indigenous Studies Program, McGill University</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2022">2022</time>
+          <div><strong class="timeline-row__title">HBHL–IMPRESS Fellowship · $5,000</strong><span class="timeline-row__detail">Healthy Brains, Healthy Lives</span></div>
+        </li>
+      </ol>
+    </article>
 
-Tiplady Sweeney Fellowship ($6000) <br> A generous donation from Garrick Tiplady, to support outstanding Master’s students in the Faculty of Science at McGill University <br> 2026 <br> \
-NSERC CGSM ($32000)<br>Natural Sciences and Engineering Research Council of Canada<br> 2024 <br>\
-Rathlyn Fellowship ($12000)<br>Indigenous Studies Program, McGill University<br> 2024 <br>\
-HBHL-IMPRESS Fellowship ($5000)<br>Healthy Brains Healthy Lives, McGill University<br>2022 <br>
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">Research communication</p>
+      <h3 id="presentation-awards">Poster &amp; Presentation Awards</h3>
+      <ol class="timeline-list">
+        <li class="timeline-row">
+          <time datetime="2025">2025</time>
+          <div><strong class="timeline-row__title">Best Poster Award · $200</strong><span class="timeline-row__detail">Healthy Brains, Healthy Lives Symposium</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2024">2024</time>
+          <div><strong class="timeline-row__title">Best Poster Award · $300</strong><span class="timeline-row__detail">Montréal AI and Neuroscience Conference</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2023">2023</time>
+          <div><strong class="timeline-row__title">Neuropsychology Day Runner-Up Prize · $100</strong><span class="timeline-row__detail">The Montréal Neurological Institute, McGill University</span></div>
+        </li>
+      </ol>
+    </article>
 
-### Poster & Presentations
-
-**Best Poster Award** ($200)<br>Healthy Brains, Healthy Lives Symposium<br> 2025 <br> \
-**Best Poster Award** ($300)<br>Montréal AI and Neuroscience Conference<br> 2024 <br> \
-Neuropsychology Day Runner-Up Prize ($100)<br> The Montréal Neurological Institute, McGill University<br>  2023 <br>
-
-### Community & Travel
-
-Third Place ($25) <br> Mila's First Inaugural Rock-Paper-Scissors Tournament <br> 2025 <br> \
-ISCEI Travel award ($1243)<br>The Indigenous Studies and Community Engagement Initiative<br> 2025<br>\
-Indigenous Mathematics Panel Honorarium ($250)<br>Office of Indigenous Initiatives, McGill University<br> 2024 <br>\
-Strategic planning award ($100)<br>Enrolment Services, McGill University<br> 2023 <br>\
-Indigenous Graduate Excellence Recruitment Fellowship	($5000)<br> McGill University<br> 2023 <br>
-
-<br>
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">Community engagement</p>
+      <h3 id="community-travel">Community &amp; Travel</h3>
+      <ol class="timeline-list">
+        <li class="timeline-row">
+          <time datetime="2025">2025</time>
+          <div><strong class="timeline-row__title">Third Place · $25</strong><span class="timeline-row__detail">Mila’s inaugural rock-paper-scissors tournament</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2025">2025</time>
+          <div><strong class="timeline-row__title">ISCEI Travel Award · $1,243</strong><span class="timeline-row__detail">Indigenous Studies and Community Engagement Initiative</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2024">2024</time>
+          <div><strong class="timeline-row__title">Indigenous Mathematics Panel Honorarium · $250</strong><span class="timeline-row__detail">Office of Indigenous Initiatives, McGill University</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2023">2023</time>
+          <div><strong class="timeline-row__title">Strategic Planning Award · $100</strong><span class="timeline-row__detail">Enrolment Services, McGill University</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2023">2023</time>
+          <div><strong class="timeline-row__title">Indigenous Graduate Excellence Recruitment Fellowship · $5,000</strong><span class="timeline-row__detail">McGill University</span></div>
+        </li>
+      </ol>
+    </article>
+  </div>
+</section>

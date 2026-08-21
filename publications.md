@@ -4,9 +4,14 @@ permalink: /publications/index.html
 title: Publications
 ---
 
-## Conference
+<nav class="section-nav" aria-label="Publication sections">
+  <a href="#conference">Conference</a>
+  <a href="#workshop">Workshop</a>
+</nav>
 
-<section class="publication-feature" aria-labelledby="hidden-gifts-title">
+<h2 id="conference">Conference</h2>
+
+<section class="publication-feature" aria-labelledby="hidden-gifts-title" data-reveal>
   <img
     src="/images/var_pic.png"
     class="publication-feature__image"
@@ -37,7 +42,7 @@ title: Publications
   </nav>
 </section>
 
-<section class="publication-feature" aria-labelledby="conspec-title">
+<section class="publication-feature" aria-labelledby="conspec-title" data-reveal>
   <img
     src="/images/conspec.png"
     class="publication-feature__image"
@@ -67,9 +72,9 @@ title: Publications
 
 ---
 
-## Workshop
+<h2 id="workshop">Workshop</h2>
 
-<section class="publication-feature" aria-labelledby="moral-hazard-title">
+<section class="publication-feature" aria-labelledby="moral-hazard-title" data-reveal>
   <img
     src="/images/gepa.png"
     class="publication-feature__image"
@@ -101,7 +106,7 @@ title: Publications
   </nav>
 </section>
 
-<section class="publication-feature" aria-labelledby="factored-flow-title">
+<section class="publication-feature" aria-labelledby="factored-flow-title" data-reveal>
   <img
     src="/images/ff.png"
     class="publication-feature__image"
@@ -129,7 +134,7 @@ title: Publications
   </nav>
 </section>
 
-<section class="publication-feature" aria-labelledby="worlds-edge-title">
+<section class="publication-feature" aria-labelledby="worlds-edge-title" data-reveal>
   <img
     src="/images/core_trigger_recovers_reward.png"
     class="publication-feature__image"
@@ -161,7 +166,7 @@ title: Publications
   </nav>
 </section>
 
-<section class="publication-feature" aria-labelledby="nato-policy-title">
+<section class="publication-feature" aria-labelledby="nato-policy-title" data-reveal>
   <img
     src="/images/policy.png"
     class="publication-feature__image"
@@ -189,7 +194,7 @@ title: Publications
   </nav>
 </section>
 
-<section class="publication-feature" aria-labelledby="causality-fiction-title">
+<section class="publication-feature" aria-labelledby="causality-fiction-title" data-reveal>
   <img
     src="/images/fiction.png"
     class="publication-feature__image"
