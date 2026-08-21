@@ -46,6 +46,25 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" id="theme-color" content="#fffdfb">
+<script>
+  (function () {
+    var theme = "light";
+    try {
+      var savedTheme = localStorage.getItem("danemalenfant-theme");
+      if (savedTheme === "light" || savedTheme === "dark") {
+        theme = savedTheme;
+      } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        theme = "dark";
+      }
+    } catch (error) {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) theme = "dark";
+    }
+    document.documentElement.setAttribute("data-theme", theme);
+    document.getElementById("theme-color").setAttribute("content", theme === "dark" ? "#171516" : "#fffdfb");
+  }());
+</script>
 
 
 <!-- Google Webfonts -->
