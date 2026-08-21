@@ -16,10 +16,10 @@ description: "Fellowships, research communication awards, and community honours 
 <section class="page-section" aria-labelledby="awards-heading">
   <h2 id="awards-heading">Awards</h2>
   <div class="card-grid">
-    <article class="content-card" data-reveal>
+    <article class="content-card content-card--timeline" data-reveal>
       <p class="eyebrow">Academic support</p>
       <h3 id="fellowships">Fellowships &amp; Scholarships</h3>
-      <ol class="timeline-list timeline-list--progress">
+      <ol class="timeline-list timeline-list--progress timeline-list--split">
         <li class="timeline-row">
           <time datetime="2026">2026</time>
           <div><strong class="timeline-row__title">Tiplady Sweeney Fellowship · $6,000</strong><span class="timeline-row__detail">Faculty of Science, McGill University</span></div>
@@ -39,10 +39,10 @@ description: "Fellowships, research communication awards, and community honours 
       </ol>
     </article>
 
-    <article class="content-card" data-reveal>
+    <article class="content-card content-card--timeline" data-reveal>
       <p class="eyebrow">Research communication</p>
       <h3 id="presentation-awards">Poster &amp; Presentation Awards</h3>
-      <ol class="timeline-list timeline-list--progress">
+      <ol class="timeline-list timeline-list--progress timeline-list--split">
         <li class="timeline-row">
           <time datetime="2025">2025</time>
           <div><strong class="timeline-row__title">Best Poster Award · $200</strong><span class="timeline-row__detail">Healthy Brains, Healthy Lives Symposium</span></div>
@@ -58,10 +58,10 @@ description: "Fellowships, research communication awards, and community honours 
       </ol>
     </article>
 
-    <article class="content-card" data-reveal>
+    <article class="content-card content-card--timeline" data-reveal>
       <p class="eyebrow">Community engagement</p>
       <h3 id="community-travel">Community &amp; Travel</h3>
-      <ol class="timeline-list timeline-list--progress">
+      <ol class="timeline-list timeline-list--progress timeline-list--split">
         <li class="timeline-row">
           <time datetime="2025">2025</time>
           <div><strong class="timeline-row__title">Third Place · $25</strong><span class="timeline-row__detail">Mila’s inaugural rock-paper-scissors tournament</span></div>
