@@ -15,6 +15,14 @@
 
 {% include navigation.html %}
 
+{% if page.identity_masthead %}
+<header class="identity-hero" aria-labelledby="identity-name">
+  <p class="identity-hero__eyebrow">{{ page.masthead_eyebrow }}</p>
+  <h1 id="identity-name" itemprop="headline">{{ page.masthead_title }}</h1>
+  <p class="identity-hero__focus">{{ page.masthead_focus }}</p>
+</header>
+{% endif %}
+
 {% if page.image.feature %}<div class="image-wrap">
   <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
 </div><!-- /.image-wrap -->{% endif %}
@@ -24,7 +32,7 @@
     {% include author-bio.html %}
   </div>
   <article itemscope itemtype="http://schema.org/CreativeWork">
-    <h1 class="sr-only" itemprop="headline">{{ page.title }}</h1>
+    {% unless page.identity_masthead %}<h1 class="sr-only" itemprop="headline">{{ page.title }}</h1>{% endunless %}
     <div class="article-wrap" itemprop="text">
       {{ content }}
     </div><!-- /.article-wrap -->

@@ -6,220 +6,296 @@ description: "Research publications by Dane Malenfant on multi-agent reinforceme
 last_modified_at: 2026-08-21
 ---
 
-<nav class="section-nav" aria-label="Publication sections">
+<nav class="section-nav" aria-label="Research programmes">
   <div class="section-nav__scroll">
-    <a href="#conference">Conference</a>
-    <a href="#workshop">Workshop</a>
+    <a href="#reciprocity">Reciprocity</a>
+    <a href="#learning">Learning and generalization</a>
+    <a href="#society">AI in society and culture</a>
   </div>
 </nav>
 
-<h2 id="conference">Conference</h2>
+<header class="publication-page-intro">
+  <p class="eyebrow">Research programmes</p>
+  <h2>Questions that connect the papers</h2>
+  <p>My work spans several publication venues, but it is organized here by the research problems that connect it: cooperation among learning agents, credit and generalization across time and structure, and the wider social and cultural contexts of AI.</p>
+</header>
 
-<section class="publication-feature" aria-labelledby="hidden-gifts-title" data-reveal>
-  <img
-    src="/images/var_pic.png"
-    class="publication-feature__image"
-    alt="Variance in collective success across training for four policy-gradient variants"
-    data-figure-caption="Figure 5b. Variance in collective success across training for vanilla policy-gradient, maximum-entropy, correction, and self-correction agents. Self-correction produces the lowest variance, making cooperative learning more reliable."
-    width="200"
-    height="183"
-  >
-  <p class="publication-feature__eyebrow">RLC 2026 · Montréal, Canada · August 2026</p>
-  <h3 id="hidden-gifts-title">The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning</h3>
-  <p class="publication-feature__authors"><strong>Dane Malenfant</strong> and Blake Aaron Richards</p>
+<section class="publication-family publication-family--reciprocity" id="reciprocity" aria-labelledby="reciprocity-title">
+  <header class="publication-family__header" data-reveal>
+    <div class="publication-family__summary">
+      <p class="publication-family__eyebrow">Research programme · Ongoing</p>
+      <h2 id="reciprocity-title">Reciprocity &amp; Multi-Agent Learning</h2>
+      <p>How can adaptive agents learn to cooperate when benefits are delayed, hidden, costly to produce, or mediated by another learner?</p>
+    </div>
+    <figure class="publication-family__figure">
+      <img src="/images/var_pic.png" alt="" width="200" height="183" loading="lazy">
+      <figcaption>Representative result: variance across policy-gradient variants in <em>Hidden Gifts</em>.</figcaption>
+    </figure>
+  </header>
 
-  <dl class="publication-feature__details">
-    <dt>Question</dt>
-    <dd>How can agents learn reciprocal behaviour when helpful actions produce delayed or difficult-to-observe benefits?</dd>
+  <div class="publication-family__papers">
+    <article class="publication-feature" aria-labelledby="hidden-gifts-title" data-project-family="reciprocity" data-reveal>
+      <img
+        src="/images/var_pic.png"
+        class="publication-feature__image"
+        alt="Variance in collective success across training for four policy-gradient variants"
+        data-figure-caption="Figure 5b. Variance in collective success across training for vanilla policy-gradient, maximum-entropy, correction, and self-correction agents. Self-correction produces the lowest variance, making cooperative learning more reliable."
+        width="200"
+        height="183"
+      >
+      <div class="publication-feature__status" aria-label="Publication status">
+        <span class="status-badge">Accepted</span>
+        <span class="status-badge status-badge--secondary">Code available</span>
+      </div>
+      <p class="publication-feature__eyebrow">RLC 2026 · Montréal, Canada · August 2026</p>
+      <h3 id="hidden-gifts-title">The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning</h3>
+      <p class="publication-feature__authors"><strong>Dane Malenfant</strong> and Blake Aaron Richards</p>
 
-    <dt>Contribution</dt>
-    <dd>We introduce a shared-key grid-world that makes helpful actions unobservable, show that several state-of-the-art multi-agent reinforcement learning algorithms fail to obtain the collective reward, and derive a learning-aware policy-gradient correction that reduces variance and improves reliable convergence to collective success.</dd>
-  </dl>
+      <dl class="publication-feature__details">
+        <dt>Question</dt>
+        <dd>How can agents learn reciprocal behaviour when helpful actions produce delayed or difficult-to-observe benefits?</dd>
 
-  <nav class="publication-feature__links" aria-label="Resources for The Challenge of Hidden Gifts">
-    <a href="https://rlj.cs.umass.edu/2026/papers/Paper142.pdf">Paper</a>
-    <a href="https://github.com/sfw3r43gegya/Manitokan">Code</a>
-    <a href="https://arxiv.org/abs/2505.20579">arXiv</a>
-    <a href="https://rlj.cs.umass.edu/2026/papers/Paper142.html">BibTeX</a>
-  </nav>
+        <dt>Contribution</dt>
+        <dd>We introduce a shared-key grid-world that makes helpful actions unobservable, show that several state-of-the-art multi-agent reinforcement learning algorithms fail to obtain the collective reward, and derive a learning-aware policy-gradient correction that reduces variance and improves reliable convergence to collective success.</dd>
+      </dl>
+
+      <nav class="publication-feature__links" aria-label="Resources for The Challenge of Hidden Gifts">
+        <a href="https://rlj.cs.umass.edu/2026/papers/Paper142.pdf">Paper</a>
+        <a href="https://github.com/sfw3r43gegya/Manitokan">Code</a>
+        <a href="https://arxiv.org/abs/2505.20579">arXiv</a>
+        <a href="https://rlj.cs.umass.edu/2026/papers/Paper142.html">BibTeX</a>
+      </nav>
+    </article>
+
+    <article class="publication-feature" aria-labelledby="moral-hazard-title" data-project-family="reciprocity" data-reveal>
+      <img
+        src="/images/gepa.png"
+        class="publication-feature__image"
+        alt="GPT-5.6 Sol query, team-success, and local-reward rates across query costs"
+        data-figure-caption="Figure 2A. GPT-5.6 Sol's query-cost sweep. As querying becomes more expensive, querying and team success decline while preservation of local reward increases."
+        width="1058"
+        height="730"
+        loading="lazy"
+      >
+      <div class="publication-feature__status" aria-label="Publication status">
+        <span class="status-badge">Preprint</span>
+        <span class="status-badge status-badge--secondary">Workshop paper</span>
+      </div>
+      <p class="publication-feature__eyebrow">Social Simulation with LLMs @ COLM 2026 · San Francisco, USA · October 2026</p>
+      <h3 id="moral-hazard-title">Moral Hazard in Multi-Agent Language Models</h3>
+      <p class="publication-feature__authors"><strong>Dane Malenfant</strong></p>
+
+      <dl class="publication-feature__details">
+        <dt>Question</dt>
+        <dd>How do language agents cooperate when gathering useful information is costly, hidden, and primarily benefits another agent?</dd>
+
+        <dt>Contribution</dt>
+        <dd>I introduce the Dialogue Moral Hazard Game and use it to evaluate 17 language models. The results show that similar team-level success can emerge from different cooperation mechanisms, motivating evaluations that measure information gathering and disclosure rather than aggregate success alone.</dd>
+      </dl>
+
+      <nav class="publication-feature__links" aria-label="Resources for Moral Hazard in Multi-Agent Language Models">
+        <a href="https://arxiv.org/pdf/2607.23982">Paper</a>
+        <a href="https://arxiv.org/abs/2607.23982">arXiv</a>
+        <a href="https://arxiv.org/html/2607.23982">HTML</a>
+        <a href="https://arxiv.org/abs/2607.23982">BibTeX</a>
+      </nav>
+    </article>
+
+    <article class="publication-feature" aria-labelledby="worlds-edge-title" data-project-family="reciprocity" data-reveal>
+      <img
+        src="/images/core_trigger_recovers_reward.png"
+        class="publication-feature__image"
+        alt="Mean rewards for oracle, core-trigger, and return-based trigger conditions"
+        data-figure-caption="Illustrative result not included in the linked paper: comparison of mean reward for an oracle, a core trigger, and three return-based trigger variants."
+        width="1754"
+        height="1170"
+        loading="lazy"
+      >
+      <div class="publication-feature__status" aria-label="Publication status">
+        <span class="status-badge">Preprint</span>
+        <span class="status-badge status-badge--secondary">Workshop paper</span>
+      </div>
+      <p class="publication-feature__eyebrow">World Modeling Workshop 2026 · Montréal, Canada · February 2026</p>
+      <h3 id="worlds-edge-title">Reinforcing the World's Edge: A Continual Learning Problem in the Multi-Agent-World Boundary</h3>
+      <p class="publication-feature__authors"><strong>Dane Malenfant</strong></p>
+
+      <dl class="publication-feature__details">
+        <dt>Question</dt>
+        <dd>What reusable decision structure survives across episodes when another learning agent changes the effective world?</dd>
+
+        <dt>Contribution</dt>
+        <dd>I define an invariant core of state–action subsequences shared by successful trajectories and show how another agent's policy updates can shrink or eliminate that core. A variation-budget view connects this boundary drift to a continual-learning problem driven by other learners rather than explicit task switches.</dd>
+      </dl>
+
+      <nav class="publication-feature__links" aria-label="Resources for Reinforcing the World's Edge">
+        <a href="https://arxiv.org/pdf/2603.06813">Paper</a>
+        <a href="https://arxiv.org/abs/2603.06813">arXiv</a>
+        <a href="https://arxiv.org/html/2603.06813">HTML</a>
+        <a href="https://arxiv.org/abs/2603.06813">BibTeX</a>
+      </nav>
+    </article>
+  </div>
 </section>
 
-<section class="publication-feature" aria-labelledby="conspec-title" data-reveal>
-  <img
-    src="/images/conspec.png"
-    class="publication-feature__image"
-    alt="Reward curves for ConSpec with PPO and three reinforcement-learning baselines"
-    data-figure-caption="Figure 2b. Reward on the 3D OrangeTree task. ConSpec with PPO approaches the maximum reward, while PPO, SynthRs with PPO, and CURL with PPO remain substantially lower."
-    width="802"
-    height="546"
-    loading="lazy"
-  >
-  <p class="publication-feature__eyebrow">NeurIPS 2023 · New Orleans, USA · December 2023</p>
-  <h3 id="conspec-title">Contrastive Retrospection: honing in on critical steps for rapid learning and generalization in RL</h3>
-  <p class="publication-feature__authors">Chen Sun, Wannan Yang, Thomas Jiralerspong, <strong>Dane Malenfant</strong>, Benjamin Alsbury-Nealy, Yoshua Bengio, and Blake Aaron Richards</p>
+<section class="publication-family publication-family--learning" id="learning" aria-labelledby="learning-title">
+  <header class="publication-family__header" data-reveal>
+    <div class="publication-family__summary">
+      <p class="publication-family__eyebrow">Research programme · Ongoing</p>
+      <h2 id="learning-title">Credit Assignment &amp; Compositional Learning</h2>
+      <p>How can learning systems isolate the decisions and representations that matter, then reuse them across long horizons or unseen combinations?</p>
+    </div>
+    <figure class="publication-family__figure">
+      <img src="/images/conspec.png" alt="" width="802" height="546" loading="lazy">
+      <figcaption>Representative result: ConSpec reward on the 3D OrangeTree task.</figcaption>
+    </figure>
+  </header>
 
-  <dl class="publication-feature__details">
-    <dt>Question</dt>
-    <dd>How can reinforcement-learning agents identify the few temporally distant decisions that determine eventual success?</dd>
+  <div class="publication-family__papers">
+    <article class="publication-feature" aria-labelledby="conspec-title" data-project-family="learning" data-reveal>
+      <img
+        src="/images/conspec.png"
+        class="publication-feature__image"
+        alt="Reward curves for ConSpec with PPO and three reinforcement-learning baselines"
+        data-figure-caption="Figure 2b. Reward on the 3D OrangeTree task. ConSpec with PPO approaches the maximum reward, while PPO, SynthRs with PPO, and CURL with PPO remain substantially lower."
+        width="802"
+        height="546"
+        loading="lazy"
+      >
+      <div class="publication-feature__status" aria-label="Publication status">
+        <span class="status-badge">Published</span>
+        <span class="status-badge status-badge--secondary">Code available</span>
+      </div>
+      <p class="publication-feature__eyebrow">NeurIPS 2023 · New Orleans, USA · December 2023</p>
+      <h3 id="conspec-title">Contrastive Retrospection: honing in on critical steps for rapid learning and generalization in RL</h3>
+      <p class="publication-feature__authors">Chen Sun, Wannan Yang, Thomas Jiralerspong, <strong>Dane Malenfant</strong>, Benjamin Alsbury-Nealy, Yoshua Bengio, and Blake Aaron Richards</p>
 
-    <dt>Contribution</dt>
-    <dd>We introduce Contrastive Retrospection (ConSpec), a plug-in method that uses offline contrastive learning to discover interpretable prototypes of critical states and turn them into intrinsic rewards. ConSpec improves learning across diverse tasks and supports out-of-distribution generalization when sensory features change.</dd>
-  </dl>
+      <dl class="publication-feature__details">
+        <dt>Question</dt>
+        <dd>How can reinforcement-learning agents identify the few temporally distant decisions that determine eventual success?</dd>
 
-  <nav class="publication-feature__links" aria-label="Resources for Contrastive Retrospection">
-    <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/6357d6d068622c962391081d296bed69-Paper-Conference.pdf">Paper</a>
-    <a href="https://github.com/sunchipsster1/ConSpec">Code</a>
-    <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/6357d6d068622c962391081d296bed69-Abstract-Conference.html">BibTeX</a>
-  </nav>
+        <dt>Contribution</dt>
+        <dd>We introduce Contrastive Retrospection (ConSpec), a plug-in method that uses offline contrastive learning to discover interpretable prototypes of critical states and turn them into intrinsic rewards. ConSpec improves learning across diverse tasks and supports out-of-distribution generalization when sensory features change.</dd>
+      </dl>
+
+      <nav class="publication-feature__links" aria-label="Resources for Contrastive Retrospection">
+        <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/6357d6d068622c962391081d296bed69-Paper-Conference.pdf">Paper</a>
+        <a href="https://github.com/sunchipsster1/ConSpec">Code</a>
+        <a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/6357d6d068622c962391081d296bed69-Abstract-Conference.html">BibTeX</a>
+      </nav>
+    </article>
+
+    <article class="publication-feature" aria-labelledby="factored-flow-title" data-project-family="learning" data-reveal>
+      <img
+        src="/images/ff.png"
+        class="publication-feature__image"
+        alt="Shared encoder-decoder architecture with factor-specific velocity heads"
+        data-figure-caption="Figure 1. Factored velocity field for zero-shot compositional generalization. A shared encoder-decoder base velocity is augmented by factor-specific conditioned heads whose outputs are combined at the bottleneck."
+        width="1157"
+        height="1240"
+        loading="lazy"
+      >
+      <div class="publication-feature__status" aria-label="Publication status">
+        <span class="status-badge">Spotlight</span>
+        <span class="status-badge status-badge--secondary">Workshop paper</span>
+      </div>
+      <p class="publication-feature__eyebrow">FoGen @ ICML 2026 · Seoul, South Korea · July 2026</p>
+      <h3 id="factored-flow-title">Compositional Flow Matching with Factored Velocity Fields</h3>
+      <p class="publication-feature__authors">Avery Hee-Woon Ryoo, <strong>Dane Malenfant</strong>, Matthew G. Perich, and Guillaume Lajoie</p>
+
+      <dl class="publication-feature__details">
+        <dt>Question</dt>
+        <dd>How can conditional generative models generalize to novel combinations of factors that were absent from training?</dd>
+
+        <dt>Contribution</dt>
+        <dd>We propose a factored conditional flow-matching architecture with a shared base velocity and factor-specific heads. It matches or outperforms a monolithic baseline on zero-shot combinations, substantially lowers held-out FID on the hardest Shapes3D splits, and supports adding a new factor without retraining existing components.</dd>
+      </dl>
+
+      <nav class="publication-feature__links" aria-label="Resources for Compositional Flow Matching with Factored Velocity Fields">
+        <a href="https://openreview.net/pdf?id=77sT6Xaji7">Paper</a>
+        <a href="https://openreview.net/forum?id=77sT6Xaji7">OpenReview</a>
+        <a href="https://openreview.net/forum?id=77sT6Xaji7">BibTeX</a>
+      </nav>
+    </article>
+  </div>
 </section>
 
----
+<section class="publication-family publication-family--society" id="society" aria-labelledby="society-title">
+  <header class="publication-family__header" data-reveal>
+    <div class="publication-family__summary">
+      <p class="publication-family__eyebrow">Interdisciplinary programme</p>
+      <h2 id="society-title">AI in Society &amp; Culture</h2>
+      <p>How do technical systems interact with institutions, public policy, language, and the narratives through which people interpret causality?</p>
+    </div>
+    <figure class="publication-family__figure">
+      <img src="/images/policy.png" alt="" width="742" height="514" loading="lazy">
+      <figcaption>Representative result: national policy coverage across NATO member states.</figcaption>
+    </figure>
+  </header>
 
-<h2 id="workshop">Workshop</h2>
+  <div class="publication-family__papers">
+    <article class="publication-feature" aria-labelledby="nato-policy-title" data-project-family="society" data-reveal>
+      <img
+        src="/images/policy.png"
+        class="publication-feature__image"
+        alt="Stacked policy-strategy coverage bars for eleven NATO member states"
+        data-figure-caption="Derived visualization of public national AI, digital, national security, military-AI, and cybersecurity strategies among the NATO members shown. The complete analysis covers all 32 members, finding national AI strategies for 28 members but military-AI-specific policies for only 11."
+        width="742"
+        height="514"
+        loading="lazy"
+      >
+      <div class="publication-feature__status" aria-label="Publication status">
+        <span class="status-badge">Workshop paper</span>
+        <span class="status-badge status-badge--secondary">Poster available</span>
+      </div>
+      <p class="publication-feature__eyebrow">Harms and Risks of AI in the Military 2024 · Montréal, Canada · December 2024</p>
+      <h3 id="nato-policy-title">Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States</h3>
+      <p class="publication-feature__authors">Itai Epstein, <strong>Dane Malenfant</strong>, Sara Parker, and Cella Wardrop</p>
 
-<section class="publication-feature" aria-labelledby="moral-hazard-title" data-reveal>
-  <img
-    src="/images/gepa.png"
-    class="publication-feature__image"
-    alt="GPT-5.6 Sol query, team-success, and local-reward rates across query costs"
-    data-figure-caption="Figure 2A. GPT-5.6 Sol's query-cost sweep. As querying becomes more expensive, querying and team success decline while preservation of local reward increases."
-    width="1058"
-    height="730"
-    loading="lazy"
-  >
-  <p class="publication-feature__eyebrow">Social Simulation with LLMs @ COLM 2026 · San Francisco, USA · October 2026</p>
-  <h3 id="moral-hazard-title">Moral Hazard in Multi-Agent Language Models</h3>
-  <p class="publication-feature__authors"><strong>Dane Malenfant</strong></p>
+      <dl class="publication-feature__details">
+        <dt>Question</dt>
+        <dd>How consistently have NATO member states publicly articulated policies for military uses of artificial intelligence?</dd>
 
-  <dl class="publication-feature__details">
-    <dt>Question</dt>
-    <dd>How do language agents cooperate when gathering useful information is costly, hidden, and primarily benefits another agent?</dd>
+        <dt>Contribution</dt>
+        <dd>We build a comparative dataset from official national strategies and public statements. Although 88% of NATO members had a national AI strategy, only 34% had published military-specific AI policy, revealing a substantial transparency and alignment gap.</dd>
+      </dl>
 
-    <dt>Contribution</dt>
-    <dd>I introduce the Dialogue Moral Hazard Game and use it to evaluate 17 language models. The results show that similar team-level success can emerge from different cooperation mechanisms, motivating evaluations that measure information gathering and disclosure rather than aggregate success alone.</dd>
-  </dl>
+      <nav class="publication-feature__links" aria-label="Resources for Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States">
+        <a href="https://openreview.net/pdf?id=apB72N0nxF">Paper</a>
+        <a href="https://www.harms-risks-ai-military.org/posters/HRAIM_Inconsistencies_AI_Strategy_Alignment_NATO.pdf">Poster</a>
+        <a href="https://openreview.net/forum?id=apB72N0nxF">BibTeX</a>
+      </nav>
+    </article>
 
-  <nav class="publication-feature__links" aria-label="Resources for Moral Hazard in Multi-Agent Language Models">
-    <a href="https://arxiv.org/pdf/2607.23982">Paper</a>
-    <a href="https://arxiv.org/abs/2607.23982">arXiv</a>
-    <a href="https://arxiv.org/html/2607.23982">HTML</a>
-    <a href="https://arxiv.org/abs/2607.23982">BibTeX</a>
-  </nav>
-</section>
+    <article class="publication-feature" aria-labelledby="causality-fiction-title" data-project-family="society" data-reveal>
+      <img
+        src="/images/fiction.png"
+        class="publication-feature__image"
+        alt="Random Forest feature weights for literary and SemEval causal-relation data"
+        data-figure-caption="Figure 2. Feature weights from Random Forest models trained on annotated literary and SemEval data. Semantic similarity is the strongest indicator of causal relations in both datasets, with verb-related features also contributing."
+        width="1640"
+        height="1448"
+        loading="lazy"
+      >
+      <div class="publication-feature__status" aria-label="Publication status">
+        <span class="status-badge">Published</span>
+      </div>
+      <p class="publication-feature__eyebrow">Text2Story @ ECIR 2022 · Stavanger, Norway · April 2022</p>
+      <h3 id="causality-fiction-title">Causality Mining in Fiction</h3>
+      <p class="publication-feature__authors">Margaret Meehan, <strong>Dane Malenfant</strong>, and Andrew Piper</p>
 
-<section class="publication-feature" aria-labelledby="factored-flow-title" data-reveal>
-  <img
-    src="/images/ff.png"
-    class="publication-feature__image"
-    alt="Shared encoder-decoder architecture with factor-specific velocity heads"
-    data-figure-caption="Figure 1. Factored velocity field for zero-shot compositional generalization. A shared encoder-decoder base velocity is augmented by factor-specific conditioned heads whose outputs are combined at the bottleneck."
-    width="1157"
-    height="1240"
-    loading="lazy"
-  >
-  <p class="publication-feature__eyebrow">FoGen @ ICML 2026 · Spotlight · Seoul, South Korea · July 2026</p>
-  <h3 id="factored-flow-title">Compositional Flow Matching with Factored Velocity Fields</h3>
-  <p class="publication-feature__authors">Avery Hee-Woon Ryoo, <strong>Dane Malenfant</strong>, Matthew G. Perich, and Guillaume Lajoie</p>
+      <dl class="publication-feature__details">
+        <dt>Question</dt>
+        <dd>Do causal-relation models developed on standard NLP benchmarks transfer reliably to literary fiction?</dd>
 
-  <dl class="publication-feature__details">
-    <dt>Question</dt>
-    <dd>How can conditional generative models generalize to novel combinations of factors that were absent from training?</dd>
+        <dt>Contribution</dt>
+        <dd>We introduce a labeled dataset containing 548 positive causal event pairs from 141 contemporary literary passages, together with matched negative examples. Comparing feature-based and BERT models against SemEval data reveals linguistic and domain differences that complicate causal-relation extraction from fiction.</dd>
+      </dl>
 
-    <dt>Contribution</dt>
-    <dd>We propose a factored conditional flow-matching architecture with a shared base velocity and factor-specific heads. It matches or outperforms a monolithic baseline on zero-shot combinations, substantially lowers held-out FID on the hardest Shapes3D splits, and supports adding a new factor without retraining existing components.</dd>
-  </dl>
-
-  <nav class="publication-feature__links" aria-label="Resources for Compositional Flow Matching with Factored Velocity Fields">
-    <a href="https://openreview.net/pdf?id=77sT6Xaji7">Paper</a>
-    <a href="https://openreview.net/forum?id=77sT6Xaji7">OpenReview</a>
-    <a href="https://openreview.net/forum?id=77sT6Xaji7">BibTeX</a>
-  </nav>
-</section>
-
-<section class="publication-feature" aria-labelledby="worlds-edge-title" data-reveal>
-  <img
-    src="/images/core_trigger_recovers_reward.png"
-    class="publication-feature__image"
-    alt="Mean rewards for oracle, core-trigger, and return-based trigger conditions"
-    data-figure-caption="Illustrative result not included in the linked paper: comparison of mean reward for an oracle, a core trigger, and three return-based trigger variants."
-    width="1754"
-    height="1170"
-    loading="lazy"
-  >
-  <p class="publication-feature__eyebrow">World Modeling Workshop 2026 · Montréal, Canada · February 2026</p>
-  <h3 id="worlds-edge-title">Reinforcing the World's Edge: A Continual Learning Problem in the Multi-Agent-World Boundary</h3>
-  <p class="publication-feature__authors"><strong>Dane Malenfant</strong></p>
-
-  <dl class="publication-feature__details">
-    <dt>Question</dt>
-    <dd>What reusable decision structure survives across episodes when another learning agent changes the effective world?</dd>
-
-    <dt>Contribution</dt>
-    <dd>I define an invariant core of state–action subsequences shared by successful trajectories and show how another agent's policy updates can shrink or eliminate that core. A variation-budget view connects this boundary drift to a continual-learning problem driven by other learners rather than explicit task switches.</dd>
-  </dl>
-
-  <nav class="publication-feature__links" aria-label="Resources for Reinforcing the World's Edge">
-    <a href="https://arxiv.org/pdf/2603.06813">Paper</a>
-    <a href="https://arxiv.org/abs/2603.06813">arXiv</a>
-    <a href="https://arxiv.org/html/2603.06813">HTML</a>
-    <a href="https://arxiv.org/abs/2603.06813">BibTeX</a>
-  </nav>
-</section>
-
-<section class="publication-feature" aria-labelledby="nato-policy-title" data-reveal>
-  <img
-    src="/images/policy.png"
-    class="publication-feature__image"
-    alt="Stacked policy-strategy coverage bars for eleven NATO member states"
-    data-figure-caption="Derived visualization of public national AI, digital, national security, military-AI, and cybersecurity strategies among the NATO members shown. The complete analysis covers all 32 members, finding national AI strategies for 28 members but military-AI-specific policies for only 11."
-    width="742"
-    height="514"
-    loading="lazy"
-  >
-  <p class="publication-feature__eyebrow">Harms and Risks of AI in the Military 2024 · Montréal, Canada · December 2024</p>
-  <h3 id="nato-policy-title">Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States</h3>
-  <p class="publication-feature__authors">Itai Epstein, <strong>Dane Malenfant</strong>, Sara Parker, and Cella Wardrop</p>
-
-  <dl class="publication-feature__details">
-    <dt>Question</dt>
-    <dd>How consistently have NATO member states publicly articulated policies for military uses of artificial intelligence?</dd>
-
-    <dt>Contribution</dt>
-    <dd>We build a comparative dataset from official national strategies and public statements. Although 88% of NATO members had a national AI strategy, only 34% had published military-specific AI policy, revealing a substantial transparency and alignment gap.</dd>
-  </dl>
-
-  <nav class="publication-feature__links" aria-label="Resources for Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States">
-    <a href="https://openreview.net/pdf?id=apB72N0nxF">Paper</a>
-    <a href="https://www.harms-risks-ai-military.org/posters/HRAIM_Inconsistencies_AI_Strategy_Alignment_NATO.pdf">Poster</a>
-    <a href="https://openreview.net/forum?id=apB72N0nxF">BibTeX</a>
-  </nav>
-</section>
-
-<section class="publication-feature" aria-labelledby="causality-fiction-title" data-reveal>
-  <img
-    src="/images/fiction.png"
-    class="publication-feature__image"
-    alt="Random Forest feature weights for literary and SemEval causal-relation data"
-    data-figure-caption="Figure 2. Feature weights from Random Forest models trained on annotated literary and SemEval data. Semantic similarity is the strongest indicator of causal relations in both datasets, with verb-related features also contributing."
-    width="1640"
-    height="1448"
-    loading="lazy"
-  >
-  <p class="publication-feature__eyebrow">Text2Story @ ECIR 2022 · Stavanger, Norway · April 2022</p>
-  <h3 id="causality-fiction-title">Causality Mining in Fiction</h3>
-  <p class="publication-feature__authors">Margaret Meehan, <strong>Dane Malenfant</strong>, and Andrew Piper</p>
-
-  <dl class="publication-feature__details">
-    <dt>Question</dt>
-    <dd>Do causal-relation models developed on standard NLP benchmarks transfer reliably to literary fiction?</dd>
-
-    <dt>Contribution</dt>
-    <dd>We introduce a labeled dataset containing 548 positive causal event pairs from 141 contemporary literary passages, together with matched negative examples. Comparing feature-based and BERT models against SemEval data reveals linguistic and domain differences that complicate causal-relation extraction from fiction.</dd>
-  </dl>
-
-  <nav class="publication-feature__links" aria-label="Resources for Causality Mining in Fiction">
-    <a href="https://ceur-ws.org/Vol-3117/paper3.pdf">Paper</a>
-    <a href="https://txtlab.org/2022/05/why-capturing-causal-reasoning-in-narrative/">Project</a>
-    <a href="https://dblp.org/rec/conf/ecir/MalenfantP22">BibTeX</a>
-  </nav>
+      <nav class="publication-feature__links" aria-label="Resources for Causality Mining in Fiction">
+        <a href="https://ceur-ws.org/Vol-3117/paper3.pdf">Paper</a>
+        <a href="https://txtlab.org/2022/05/why-capturing-causal-reasoning-in-narrative/">Project</a>
+        <a href="https://dblp.org/rec/conf/ecir/MalenfantP22">BibTeX</a>
+      </nav>
+    </article>
+  </div>
 </section>
