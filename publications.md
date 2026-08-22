@@ -27,10 +27,6 @@ last_modified_at: 2026-08-21
       <h2 id="reciprocity-title">Reciprocity &amp; Multi-Agent Learning</h2>
       <p>How can adaptive agents learn to cooperate when benefits are delayed, hidden, costly to produce, or mediated by another learner?</p>
     </div>
-    <figure class="publication-family__figure">
-      <img src="/images/var_pic.png" alt="" width="200" height="183" loading="lazy">
-      <figcaption>Representative result: variance across policy-gradient variants in <em>Hidden Gifts</em>.</figcaption>
-    </figure>
   </header>
 
   <div class="publication-family__papers">
@@ -174,10 +170,6 @@ last_modified_at: 2026-08-21
       <h2 id="learning-title">Credit Assignment &amp; Compositional Learning</h2>
       <p>How can learning systems isolate the decisions and representations that matter, then reuse them across long horizons or unseen combinations?</p>
     </div>
-    <figure class="publication-family__figure">
-      <img src="/images/conspec.png" alt="" width="802" height="546" loading="lazy">
-      <figcaption>Representative result: ConSpec reward on the 3D OrangeTree task.</figcaption>
-    </figure>
   </header>
 
   <div class="publication-family__papers">
@@ -279,10 +271,6 @@ last_modified_at: 2026-08-21
       <h2 id="society-title">AI in Society &amp; Culture</h2>
       <p>How do technical systems interact with institutions, public policy, language, and the narratives through which people interpret causality?</p>
     </div>
-    <figure class="publication-family__figure">
-      <img src="/images/policy.png" alt="" width="742" height="514" loading="lazy">
-      <figcaption>Representative result: national policy coverage across NATO member states.</figcaption>
-    </figure>
   </header>
 
   <div class="publication-family__papers">
