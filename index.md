@@ -47,6 +47,10 @@ Currently, I serve on the advisory board of [Indigenous Pathfinders in AI](https
 
 <ol class="timeline-list news-list" aria-label="Selected news and updates">
   <li class="timeline-row" data-reveal>
+    <time datetime="2026-08">August 2026</time>
+    <div>I started an AI Engineering and Software internship at <a href="https://veris.ai/">Veris AI</a> in New York.</div>
+  </li>
+  <li class="timeline-row" data-reveal>
     <time datetime="2026-05">May 2026</time>
     <div>My master’s thesis was approved.</div>
   </li>
