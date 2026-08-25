@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/index.html
 title: Publications
 description: "Research publications by Dane Malenfant on multi-agent reinforcement learning, reciprocity, continual learning, generative modelling, and AI governance."
-last_modified_at: 2026-08-21
+last_modified_at: 2026-08-25
 ---
 
 <nav class="section-nav" aria-label="Research programmes">
@@ -121,26 +121,26 @@ last_modified_at: 2026-08-21
       <img
         src="/images/core_trigger_recovers_reward.png"
         class="publication-feature__image"
-        alt="Mean rewards for oracle, core-trigger, and return-based trigger conditions"
-        data-figure-caption="Illustrative result not included in the linked paper: comparison of mean reward for an oracle, a core trigger, and three return-based trigger variants."
+        alt="Mean reward comparison for core-triggered, oracle, random-matched, never-switch, and return-trigger control"
+        data-figure-caption="Figure 2c. In the registered 64-stream continual-control confirmation, core-triggered control achieves mean reward 0.994, matching the oracle and outperforming random-matched (0.536), never-switch (0.460), and return-trigger (0.458) controls."
         width="1754"
         height="1170"
         loading="lazy"
       >
       <div class="publication-feature__status" aria-label="Publication status">
         <span class="status-badge">Preprint</span>
-        <span class="status-badge status-badge--secondary">Workshop paper</span>
+        <span class="status-badge status-badge--secondary">Revised v2</span>
       </div>
-      <p class="publication-feature__eyebrow">World Modeling Workshop 2026 · Montréal, Canada · February 2026</p>
-      <h3 id="worlds-edge-title">Reinforcing the World's Edge: A Continual Learning Problem in the Multi-Agent-World Boundary</h3>
+      <p class="publication-feature__eyebrow">arXiv v2 · Revised August 2026 · Presented at World Modeling Workshop 2026</p>
+      <h3 id="worlds-edge-title">Reinforcing the World's Edge: Continual Learning at the Multi-Agent–World Boundary</h3>
       <p class="publication-feature__authors"><strong>Dane Malenfant</strong></p>
 
       <dl class="publication-feature__details">
         <dt>Question</dt>
-        <dd>What reusable decision structure survives across episodes when another learning agent changes the effective world?</dd>
+        <dd>How long can success-conditioned reusable structure remain valid when peer learning changes the focal agent's induced rewards and dynamics?</dd>
 
         <dt>Contribution</dt>
-        <dd>I define an invariant core of state–action subsequences shared by successful trajectories and show how another agent's policy updates can shrink or eliminate that core. A variation-budget view connects this boundary drift to a continual-learning problem driven by other learners rather than explicit task switches.</dd>
+        <dd>I recast decentralized peer learning as an agent-centric continual-RL problem and define an invariant core of high-coverage abstract patterns in successful trajectories. A worst-case-tight stability theorem yields Ω(1/η) survival and conditional Θ(1/η) first-exit laws; registered 64-stream continual-control and cue-MNIST studies show that core erosion predicts failure and enables near-oracle intervention.</dd>
       </dl>
 
       <nav class="publication-feature__links" aria-label="Resources for Reinforcing the World's Edge">
@@ -150,14 +150,16 @@ last_modified_at: 2026-08-21
         <a href="https://arxiv.org/abs/2603.06813">BibTeX</a>
       </nav>
       <div class="publication-copy-sources" hidden>
-        <span data-copy-source="citation">Malenfant, D. (2026). Reinforcing the world's edge: A continual learning problem in the multi-agent-world boundary. arXiv preprint arXiv:2603.06813.</span>
+        <span data-copy-source="citation">Malenfant, D. (2026). Reinforcing the world's edge: Continual learning at the multi-agent–world boundary. arXiv preprint arXiv:2603.06813. https://doi.org/10.48550/arXiv.2603.06813</span>
         <pre data-copy-source="bibtex">@article{malenfant2026reinforcing,
-  title={Reinforcing the World's Edge: A Continual Learning Problem in the Multi-Agent-World Boundary},
+  title={Reinforcing the World's Edge: Continual Learning at the Multi-Agent--World Boundary},
   author={Malenfant, Dane},
   journal={arXiv preprint arXiv:2603.06813},
   year={2026},
+  doi={10.48550/arXiv.2603.06813},
   url={https://arxiv.org/abs/2603.06813}
 }</pre>
+        <span data-copy-source="doi">10.48550/arXiv.2603.06813</span>
       </div>
     </article>
   </div>
