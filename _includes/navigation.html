@@ -7,7 +7,10 @@
 		<nav class="top-navigation__scroll" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 		    <ul>
 		        {% for link in site.links %}
-	            <li><a href="{{ site.url }}{{ link.url }}" {% if url == link.url %}class="top-navigation-current" aria-current="page"{% endif %}>{{ link.title }}</a></li>
+	            {% assign current_link = false %}
+	            {% if url == link.url %}{% assign current_link = true %}{% endif %}
+	            {% if page.blog_page and link.url == '/blogs/' %}{% assign current_link = true %}{% endif %}
+	            <li><a href="{{ site.url }}{{ link.url }}" {% if current_link %}class="top-navigation-current" aria-current="page"{% endif %}>{{ link.title }}</a></li>
 		        {% endfor %}
 		    </ul>
 		</nav>

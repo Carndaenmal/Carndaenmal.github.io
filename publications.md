@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/index.html
 title: Publications
 description: "Research publications by Dane Malenfant on multi-agent reinforcement learning, reciprocity, continual learning, generative modelling, and AI governance."
-last_modified_at: 2026-08-25
+last_modified_at: 2026-09-11
 ---
 
 <nav class="section-nav" aria-label="Research programmes">
@@ -85,9 +85,10 @@ last_modified_at: 2026-08-25
       >
       <div class="publication-feature__status" aria-label="Publication status">
         <span class="status-badge">Preprint</span>
-        <span class="status-badge status-badge--secondary">Workshop paper</span>
+        <span class="status-badge status-badge--secondary">Revised v7</span>
+        <span class="status-badge status-badge--secondary">Code available</span>
       </div>
-      <p class="publication-feature__eyebrow">Social Simulation with LLMs @ COLM 2026 · San Francisco, USA · October 2026</p>
+      <p class="publication-feature__eyebrow">arXiv v7 · Revised September 2026 · Social Simulation with LLMs @ COLM 2026</p>
       <h3 id="moral-hazard-title">Moral Hazard in Multi-Agent Language Models</h3>
       <p class="publication-feature__authors"><strong>Dane Malenfant</strong></p>
 
@@ -96,24 +97,28 @@ last_modified_at: 2026-08-25
         <dd>How do language agents cooperate when gathering useful information is costly, hidden, and primarily benefits another agent?</dd>
 
         <dt>Contribution</dt>
-        <dd>I introduce the Dialogue Moral Hazard Game and use it to evaluate 17 language models. The results show that similar team-level success can emerge from different cooperation mechanisms, motivating evaluations that measure information gathering and disclosure rather than aggregate success alone.</dd>
+        <dd>I introduce the Dialogue Moral Hazard Game and evaluate fourteen open-weight and four frontier models across acquisition, communication, downstream use, and team success. I also introduce CREDIT, a counterfactual mechanism-aligned prompt optimizer that rewards robust causal contribution and preserves query-mediated behaviour across changing information structures.</dd>
       </dl>
 
       <nav class="publication-feature__links" aria-label="Resources for Moral Hazard in Multi-Agent Language Models">
+        <a href="/blogs/dialogue-moral-hazard/">Interactive blog</a>
         <a href="https://arxiv.org/pdf/2607.23982">Paper</a>
+        <a href="https://github.com/Carndaenmal/dialogue-moral-hazard-game">Code</a>
         <a href="https://arxiv.org/abs/2607.23982">arXiv</a>
         <a href="https://arxiv.org/html/2607.23982">HTML</a>
         <a href="https://arxiv.org/abs/2607.23982">BibTeX</a>
       </nav>
       <div class="publication-copy-sources" hidden>
-        <span data-copy-source="citation">Malenfant, D. (2026). Moral hazard in multi-agent language models. arXiv preprint arXiv:2607.23982.</span>
+        <span data-copy-source="citation">Malenfant, D. (2026). Moral hazard in multi-agent language models. arXiv preprint arXiv:2607.23982. https://doi.org/10.48550/arXiv.2607.23982</span>
         <pre data-copy-source="bibtex">@article{malenfant2026moral,
   title={Moral Hazard in Multi-Agent Language Models},
   author={Malenfant, Dane},
   journal={arXiv preprint arXiv:2607.23982},
   year={2026},
+  doi={10.48550/arXiv.2607.23982},
   url={https://arxiv.org/abs/2607.23982}
 }</pre>
+        <span data-copy-source="doi">10.48550/arXiv.2607.23982</span>
       </div>
     </article>
 
@@ -130,6 +135,7 @@ last_modified_at: 2026-08-25
       <div class="publication-feature__status" aria-label="Publication status">
         <span class="status-badge">Preprint</span>
         <span class="status-badge status-badge--secondary">Revised v2</span>
+        <span class="status-badge status-badge--secondary">Code available</span>
       </div>
       <p class="publication-feature__eyebrow">arXiv v2 · Revised August 2026 · Presented at World Modeling Workshop 2026</p>
       <h3 id="worlds-edge-title">Reinforcing the World's Edge: Continual Learning at the Multi-Agent–World Boundary</h3>
@@ -145,6 +151,7 @@ last_modified_at: 2026-08-25
 
       <nav class="publication-feature__links" aria-label="Resources for Reinforcing the World's Edge">
         <a href="https://arxiv.org/pdf/2603.06813">Paper</a>
+        <a href="https://github.com/Carndaenmal/reinforcing-worlds-edge">Code</a>
         <a href="https://arxiv.org/abs/2603.06813">arXiv</a>
         <a href="https://arxiv.org/html/2603.06813">HTML</a>
         <a href="https://arxiv.org/abs/2603.06813">BibTeX</a>

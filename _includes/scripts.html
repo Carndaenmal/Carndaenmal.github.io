@@ -1,1 +1,2 @@
 <script src="/assets/js/site-enhancements.js" defer></script>
+{% if page.dmhg_lab %}<script src="/assets/js/dmhg.js?v={{ page.dmhg_asset_version | default: 1 }}" defer></script>{% endif %}

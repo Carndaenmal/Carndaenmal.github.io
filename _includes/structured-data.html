@@ -100,7 +100,7 @@
     }
     {% else %}
     {
-      "@type": "WebPage",
+      "@type": "{% if page.blog_post %}BlogPosting{% else %}WebPage{% endif %}",
       "@id": {{ structured_webpage_id | strip | jsonify }},
       "url": {{ structured_page_url | strip | jsonify }},
       "name": {{ structured_page_title | strip | jsonify }},
@@ -111,7 +111,11 @@
       },
       "about": {
         "@id": {{ structured_person_id | strip | jsonify }}
-      }{% if page.last_modified_at %},
+      }{% if page.blog_post %},
+      "author": {
+        "@id": {{ structured_person_id | strip | jsonify }}
+      },
+      "datePublished": "{{ page.date | date: '%Y-%m-%d' }}"{% endif %}{% if page.last_modified_at %},
       "dateModified": "{{ page.last_modified_at | date: '%Y-%m-%d' }}"{% endif %}
     }
     {% endif %}

@@ -12,6 +12,8 @@ Dane completed an MSc in Computer Science at McGill University and conducted the
 
 - [About]({{ site.url }}/): Biography, research interests, education, affiliations, and selected updates.
 - [Publications]({{ site.url }}/publications/): Conference and workshop publications with research questions, contributions, figures, papers, code, and citation links.
+- [Blogs]({{ site.url }}/blogs/): Research notes and interactive explanations.
+- [Interactive Dialogue Moral Hazard]({{ site.url }}/blogs/dialogue-moral-hazard/): An article-led explanation of the Dialogue Moral Hazard Game with a playable human–scripted, human–language-agent, and language-agent–language-agent experiment at the end.
 - [Experience]({{ site.url }}/experience/): Professional work, workshop organizing, supervision, and peer reviewing.
 - [Awards]({{ site.url }}/awards/): Fellowships, presentation awards, and community honours.
 - [Presentations]({{ site.url }}/presentations/): Invited talks, panels, and research posters.
@@ -22,9 +24,9 @@ Dane completed an MSc in Computer Science at McGill University and conducted the
 
 - [The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning]({{ site.url }}/publications/#hidden-gifts-title): Reciprocal behaviour when helpful actions have delayed or difficult-to-observe benefits; RLC 2026.
 - [Contrastive Retrospection: honing in on critical steps for rapid learning and generalization in RL]({{ site.url }}/publications/#conspec-title): Contrastive identification of critical states for reinforcement learning; NeurIPS 2023.
-- [Moral Hazard in Multi-Agent Language Models]({{ site.url }}/publications/#moral-hazard-title): Cooperation when information gathering is costly, hidden, and benefits another language agent; COLM 2026 workshop.
+- [Moral Hazard in Multi-Agent Language Models]({{ site.url }}/publications/#moral-hazard-title): A controlled query–warning–decision game for costly information acquisition and transfer, evaluated on fourteen open-weight and four frontier models; revised arXiv v7 with the CREDIT mechanism-aligned optimizer. [Read the interactive blog and play the game]({{ site.url }}/blogs/dialogue-moral-hazard/) or inspect the [code and reproducibility artifacts](https://github.com/Carndaenmal/dialogue-moral-hazard-game).
 - [Compositional Flow Matching with Factored Velocity Fields]({{ site.url }}/publications/#factored-flow-title): Zero-shot generalization to unseen combinations of generative factors; ICML 2026 workshop spotlight.
-- [Reinforcing the World's Edge: Continual Learning at the Multi-Agent–World Boundary]({{ site.url }}/publications/#worlds-edge-title): Sharp survival guarantees for success-conditioned reusable structure under peer learning, with registered continual-control and cue-MNIST validation; revised arXiv v2.
+- [Reinforcing the World's Edge: Continual Learning at the Multi-Agent–World Boundary]({{ site.url }}/publications/#worlds-edge-title): Sharp survival guarantees for success-conditioned reusable structure under peer learning, with registered continual-control and cue-MNIST validation; revised arXiv v2. [Code and reproducibility artifacts](https://github.com/Carndaenmal/reinforcing-worlds-edge).
 - [Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States]({{ site.url }}/publications/#nato-policy-title): Comparative analysis of public national and military AI strategies; 2024.
 - [Causality Mining in Fiction]({{ site.url }}/publications/#causality-fiction-title): Causal-relation extraction and domain differences in literary fiction; Text2Story 2022.
 

@@ -9,7 +9,7 @@
 </head>
 
 
-<body class="page" itemscope itemtype="http://schema.org/WebPage">
+<body class="page{% if page.dmhg_lab %} dmhg-page{% endif %}{% if page.blog_page %} blog-page{% endif %}" itemscope itemtype="http://schema.org/WebPage">
 
 <a class="skip-link" href="#main">Skip to main content</a>
 
@@ -31,7 +31,7 @@
   <div class="article-author-top">
     {% include author-bio.html %}
   </div>
-  <article itemscope itemtype="http://schema.org/CreativeWork">
+  <article itemscope itemtype="{% if page.blog_post %}http://schema.org/BlogPosting{% else %}http://schema.org/CreativeWork{% endif %}">
     {% unless page.identity_masthead %}<h1 class="sr-only" itemprop="headline">{{ page.title }}</h1>{% endunless %}
     <div class="article-wrap" itemprop="text">
       {{ content }}
