@@ -5,6 +5,44 @@
   if (!lab) return;
 
   var OPENROUTER_API = "https://openrouter.ai/api/v1";
+  var PROVIDERS = {
+    openrouter: {
+      label: "OpenRouter",
+      apiBase: OPENROUTER_API,
+      defaultModel: "openrouter/free",
+      keyLabel: "OpenRouter API key",
+      keyPlaceholder: "sk-or-v1-…",
+      modelHelp: "Defaults to OpenRouter’s free-model router.",
+      providerHelp: "Use OpenRouter OAuth or an OpenRouter API key. Its free-model router remains the default, and separate model IDs can be used for each agent."
+    },
+    openai: {
+      label: "OpenAI",
+      apiBase: "https://api.openai.com/v1",
+      defaultModel: "gpt-4.1-mini",
+      keyLabel: "OpenAI API key",
+      keyPlaceholder: "sk-…",
+      modelHelp: "Defaults to gpt-4.1-mini; enter any Chat Completions-compatible model available to your account.",
+      providerHelp: "Calls OpenAI directly from this browser for every language-agent seat. OpenAI billing and project limits apply; use OpenRouter for a mixed-provider match."
+    },
+    anthropic: {
+      label: "Anthropic",
+      apiBase: "https://api.anthropic.com/v1",
+      defaultModel: "claude-haiku-4-5-20251001",
+      keyLabel: "Anthropic API key",
+      keyPlaceholder: "sk-ant-…",
+      modelHelp: "Defaults to Claude Haiku 4.5; enter another Messages API model available to your account.",
+      providerHelp: "Calls Anthropic’s Messages API directly from this browser for every language-agent seat. Anthropic billing and workspace limits apply; use OpenRouter for a mixed-provider match."
+    },
+    meta: {
+      label: "Meta Llama API",
+      apiBase: "https://api.llama.com/v1",
+      defaultModel: "Llama-4-Maverick-17B-128E-Instruct-FP8",
+      keyLabel: "Meta Llama API key",
+      keyPlaceholder: "Enter your Llama API key",
+      modelHelp: "Defaults to Llama 4 Maverick; enter another model identifier available to your Llama API account.",
+      providerHelp: "Calls Meta’s Llama API directly from this browser for every language-agent seat. Meta billing and account limits apply; use OpenRouter for a mixed-provider match."
+    }
+  };
   var PROTOCOL_VERSION = lab.getAttribute("data-protocol-version") || "web-v1";
   var FREE_MODEL_DELAY = 60000;
   var MAX_FORMAT_ATTEMPTS = 3;
@@ -140,21 +178,31 @@
     modelSetup: $("dmhg-model-setup"),
     connectionStatus: $("dmhg-connection-status"),
     forgetKey: $("dmhg-forget-key"),
+    provider: $("dmhg-provider"),
+    providerHelp: $("dmhg-provider-help"),
     oauth: $("dmhg-oauth"),
+    manualKeySummary: $("dmhg-manual-key-summary"),
+    apiKeyLabel: $("dmhg-api-key-label"),
     apiKey: $("dmhg-api-key"),
     useKey: $("dmhg-use-key"),
     modelList: $("dmhg-model-list"),
     modelOneField: $("dmhg-agent-one-model-field"),
     modelOne: $("dmhg-model-one"),
+    modelOneHelp: $("dmhg-model-one-help"),
     modelTwo: $("dmhg-model-two"),
     modelTwoLabel: $("dmhg-model-two-label"),
+    modelTwoHelp: $("dmhg-model-two-help"),
+    budgetField: $("dmhg-budget-field"),
     budget: $("dmhg-budget"),
     seed: $("dmhg-seed"),
     temperature: $("dmhg-temperature"),
     maxTokens: $("dmhg-max-tokens"),
     delay: $("dmhg-delay"),
+    delayHelp: $("dmhg-delay-help"),
+    privateRoutingField: $("dmhg-private-routing-field"),
     privateRouting: $("dmhg-private-routing"),
     systemPrompt: $("dmhg-system-prompt"),
+    systemPromptHelp: $("dmhg-system-prompt-help"),
     modeHelp: $("dmhg-mode-help"),
     start: $("dmhg-start"),
     continuous: $("dmhg-continuous"),
@@ -180,6 +228,7 @@
     metricQuery: $("dmhg-metric-query"),
     metricTransfer: $("dmhg-metric-transfer"),
     metricReward: $("dmhg-metric-reward"),
+    metricCostLabel: $("dmhg-metric-cost-label"),
     metricCost: $("dmhg-metric-cost"),
     metricValidity: $("dmhg-metric-validity"),
     chart: $("dmhg-history-chart"),
@@ -196,6 +245,7 @@
 
   var state = {
     apiKey: null,
+    keyProvider: null,
     keySource: null,
     round: 0,
     episode: null,
@@ -324,6 +374,29 @@
     return scenarioDefinition(scenarioId);
   }
 
+  function providerDefinition(providerId) {
+    return PROVIDERS[providerId] || PROVIDERS.openrouter;
+  }
+
+  function selectedProviderId() {
+    return PROVIDERS[ui.provider.value] ? ui.provider.value : "openrouter";
+  }
+
+  function selectedProvider() {
+    return providerDefinition(selectedProviderId());
+  }
+
+  function hasCurrentProviderKey() {
+    return Boolean(state.apiKey && state.keyProvider === selectedProviderId());
+  }
+
+  function clearCredential() {
+    ui.apiKey.value = "";
+    state.apiKey = null;
+    state.keyProvider = null;
+    state.keySource = null;
+  }
+
   function scenarioText(template, values) {
     return Object.keys(values || {}).reduce(function (text, key) {
       return text.split("{" + key + "}").join(String(values[key]));
@@ -402,8 +475,11 @@
 
   function readConfig(roundOffset) {
     var seed = Math.max(0, Math.floor(numberValue(ui.seed, 42, 0, 2147483647)));
+    var providerId = selectedProviderId();
+    var provider = providerDefinition(providerId);
     return {
       mode: ui.mode.value,
+      provider: providerId,
       scenario: ui.scenario.value,
       memory: ui.memory.value,
       mapping: ui.mapping.value,
@@ -415,8 +491,8 @@
       delay: numberValue(ui.delay, 60, 1, 300) * 1000,
       privateRouting: ui.privateRouting.checked,
       systemPrompt: ui.systemPrompt.value.trim().slice(0, 4000),
-      modelOne: ui.modelOne.value.trim() || "openrouter/free",
-      modelTwo: ui.modelTwo.value.trim() || "openrouter/free"
+      modelOne: ui.modelOne.value.trim() || provider.defaultModel,
+      modelTwo: ui.modelTwo.value.trim() || provider.defaultModel
     };
   }
 
@@ -435,7 +511,8 @@
     state.busy = isBusy;
     ui.game.setAttribute("aria-busy", isBusy ? "true" : "false");
     [
-      ui.mode, ui.scenario, ui.memory, ui.mapping, ui.queryCost,
+      ui.mode, ui.scenario, ui.memory, ui.mapping, ui.queryCost, ui.provider,
+      ui.oauth, ui.apiKey, ui.useKey, ui.forgetKey,
       ui.modelOne, ui.modelTwo, ui.budget, ui.seed, ui.temperature,
       ui.maxTokens, ui.delay, ui.privateRouting, ui.systemPrompt
     ].forEach(function (control) { control.disabled = isBusy; });
@@ -451,13 +528,58 @@
   function setConnection(message, status) {
     ui.connectionStatus.textContent = message;
     ui.connectionStatus.setAttribute("data-state", status || "offline");
-    ui.forgetKey.hidden = !state.apiKey;
+    ui.forgetKey.hidden = !hasCurrentProviderKey();
+  }
+
+  function addModelOption(modelId, label) {
+    if (!modelId) return;
+    var exists = Array.prototype.some.call(ui.modelList.options, function (option) {
+      return option.value === modelId;
+    });
+    if (exists) return;
+    var option = document.createElement("option");
+    option.value = modelId;
+    option.label = label || modelId;
+    ui.modelList.appendChild(option);
+  }
+
+  function updateProviderUI(resetModels) {
+    var providerId = selectedProviderId();
+    var provider = providerDefinition(providerId);
+    if (resetModels) {
+      clearCredential();
+      ui.modelOne.value = provider.defaultModel;
+      ui.modelTwo.value = provider.defaultModel;
+    }
+    ui.oauth.hidden = providerId !== "openrouter";
+    ui.providerHelp.textContent = provider.providerHelp;
+    ui.manualKeySummary.textContent = providerId === "openrouter" ? "Use an API key manually" : "Use your " + provider.keyLabel;
+    ui.apiKeyLabel.textContent = provider.keyLabel;
+    ui.apiKey.placeholder = provider.keyPlaceholder;
+    ui.modelOneHelp.textContent = provider.modelHelp;
+    ui.modelTwoHelp.textContent = provider.modelHelp;
+    ui.budgetField.hidden = providerId !== "openrouter";
+    ui.privateRoutingField.hidden = providerId !== "openrouter";
+    ui.temperature.max = providerId === "anthropic" ? "1" : "2";
+    if (providerId === "anthropic" && Number(ui.temperature.value) > 1) ui.temperature.value = "1";
+    ui.delayHelp.textContent = providerId === "openrouter"
+      ? "Free OpenRouter models always wait at least 60 seconds between rounds to reduce per-minute rate-limit errors."
+      : "Applied between automatic rounds. " + provider.label + " rate limits still apply.";
+    ui.systemPromptHelp.textContent = "Sent to " + provider.label + " on every model call. The game protocol and one-line action format remain authoritative. Incomplete or malformed action responses are retried up to twice.";
+    ui.modelList.textContent = "";
+    addModelOption(provider.defaultModel, provider.defaultModel + " · default");
+    loadModels(providerId, hasCurrentProviderKey() ? state.apiKey : null);
+    updateCostMetric();
+    updateModeUI();
+    if (resetModels) announce("Provider changed to " + provider.label + ". Enter a key for this provider to use model-powered modes.");
   }
 
   function updateModeUI() {
     var mode = ui.mode.value;
     var needsModel = mode !== "guided";
     var role = scenarioDefinition(ui.scenario.value).role;
+    var provider = selectedProvider();
+    var connected = hasCurrentProviderKey();
     ui.modelSetup.hidden = !needsModel;
     ui.modelOneField.hidden = mode !== "agent-agent";
     ui.continuous.hidden = mode !== "agent-agent" || state.continuous;
@@ -474,19 +596,21 @@
       ui.runNote.textContent = "You are " + role + " 1. Your scripted partner follows a cooperative query policy.";
       setConnection("No model connection needed", "offline");
     } else if (mode === "human-agent") {
-      ui.modeHelp.textContent = "You play one seat; an OpenRouter model plays the other.";
+      ui.modeHelp.textContent = "You play one seat; a model from " + provider.label + " plays the other.";
       ui.modelTwoLabel.textContent = "Partner model";
       ui.start.textContent = "Play one round";
       ui.runNote.textContent = "You are " + role + " 1. The selected model is " + role + " 2.";
-      if (state.apiKey) setConnection("OpenRouter connected for this tab", "connected");
-      else setConnection("OpenRouter connection required", "offline");
+      if (connected) setConnection(provider.label + " connected for this tab", "connected");
+      else setConnection(provider.label + " connection required", "offline");
     } else {
       ui.modeHelp.textContent = "Watch two independently configured models play the full protocol.";
       ui.modelTwoLabel.textContent = "Agent 2 model";
       ui.start.textContent = "Run one round";
-      ui.runNote.textContent = "One round uses 4–6 model calls. Continuous play pauses at your session budget.";
-      if (state.apiKey) setConnection("OpenRouter connected for this tab", "connected");
-      else setConnection("OpenRouter connection required", "offline");
+      ui.runNote.textContent = provider.label === "OpenRouter"
+        ? "One round uses 4–6 model calls. Continuous play pauses at your OpenRouter session budget."
+        : "One round uses 4–6 model calls. Your " + provider.label + " account’s billing and rate limits apply.";
+      if (connected) setConnection(provider.label + " connected for this tab", "connected");
+      else setConnection(provider.label + " connection required", "offline");
     }
   }
 
@@ -746,23 +870,118 @@
   }
 
   function assertCanCallModel() {
-    if (!state.apiKey) throw new Error("Connect OpenRouter before starting a model-powered round.");
-    if (state.totalCost >= state.currentConfig.budget) {
+    var provider = providerDefinition(state.currentConfig.provider);
+    if (!state.apiKey || state.keyProvider !== state.currentConfig.provider) {
+      throw new Error("Connect " + provider.label + " before starting a model-powered round.");
+    }
+    if (state.currentConfig.provider === "openrouter" && state.totalCost >= state.currentConfig.budget) {
       throw new Error("The session budget has been reached. Increase it or reset the session to continue.");
     }
   }
 
-  function extractResponseText(payload) {
-    var content = payload && payload.choices && payload.choices[0] && payload.choices[0].message
-      ? payload.choices[0].message.content
-      : "";
+  function contentText(content) {
     if (typeof content === "string") return content;
     if (Array.isArray(content)) {
       return content.map(function (part) {
-        return part && typeof part.text === "string" ? part.text : "";
+        return contentText(part);
       }).join("\n");
     }
+    if (content && typeof content.text === "string") return content.text;
+    if (content && typeof content.content === "string") return content.content;
     return "";
+  }
+
+  function extractResponseText(payload, providerId) {
+    if (!payload) return "";
+    if (providerId === "anthropic") return contentText(payload.content);
+    if (providerId === "meta" && payload.completion_message) {
+      return contentText(payload.completion_message.content);
+    }
+    var content = payload.choices && payload.choices[0] && payload.choices[0].message
+      ? payload.choices[0].message.content
+      : payload.output_text;
+    return contentText(content);
+  }
+
+  function sanitizeApiMessage(message, key) {
+    var safe = String(message || "");
+    if (key) safe = safe.split(key).join("[redacted API key]");
+    return safe
+      .replace(/\b(?:sk|key)[-_][A-Za-z0-9._*:-]{6,}\b/gi, "[redacted API key]")
+      .replace(/\b\S*\*{2,}\S*\b/g, "[redacted API key]");
+  }
+
+  function apiErrorMessage(payload, response, provider, key) {
+    var message = "";
+    if (payload && payload.error) {
+      if (typeof payload.error === "string") message = payload.error;
+      else if (payload.error.message) message = payload.error.message;
+      else if (payload.error.error && payload.error.error.message) message = payload.error.error.message;
+    }
+    if (!message && payload && payload.detail) {
+      if (typeof payload.detail === "string") message = payload.detail;
+      else if (payload.detail.message) message = payload.detail.message;
+    }
+    if (!message && payload && typeof payload.message === "string") message = payload.message;
+    if (!message) message = provider.label + " request failed with status " + response.status + ".";
+    return sanitizeApiMessage(message, key);
+  }
+
+  function providerRequest(providerId, model, systemContent, prompt, temperature, maxTokens, attempt) {
+    var provider = providerDefinition(providerId);
+    var headers = { "Content-Type": "application/json" };
+    var body;
+    var endpoint;
+    if (providerId === "anthropic") {
+      endpoint = provider.apiBase + "/messages";
+      headers["x-api-key"] = state.apiKey;
+      headers["anthropic-version"] = "2023-06-01";
+      headers["anthropic-dangerous-direct-browser-access"] = "true";
+      body = {
+        model: model,
+        system: systemContent,
+        messages: [{ role: "user", content: prompt }],
+        temperature: temperature,
+        max_tokens: maxTokens
+      };
+    } else {
+      endpoint = provider.apiBase + "/chat/completions";
+      headers.Authorization = "Bearer " + state.apiKey;
+      body = {
+        model: model,
+        messages: [
+          { role: "system", content: systemContent },
+          { role: "user", content: prompt }
+        ],
+        temperature: temperature
+      };
+      if (providerId === "openrouter") body.max_tokens = maxTokens;
+      else body.max_completion_tokens = maxTokens;
+      if (providerId === "openai") body.store = false;
+      if (attempt > 1) body.stop = ["\n"];
+      if (providerId === "openrouter" && state.currentConfig.privateRouting) {
+        body.provider = { zdr: true, data_collection: "deny" };
+      }
+    }
+    return { endpoint: endpoint, headers: headers, body: body };
+  }
+
+  function responseUsage(payload, providerId) {
+    var usage = payload && payload.usage ? payload.usage : {};
+    if (providerId === "meta" && payload && Array.isArray(payload.metrics)) {
+      usage = { metrics: payload.metrics };
+    }
+    var tokens = Number(usage.total_tokens);
+    if (!Number.isFinite(tokens) && providerId === "anthropic") {
+      tokens = Number(usage.input_tokens || 0) + Number(usage.output_tokens || 0);
+    }
+    if (!Number.isFinite(tokens) && payload && Array.isArray(payload.metrics)) {
+      var totalMetric = payload.metrics.find(function (metric) {
+        return metric && /total.*token/i.test(String(metric.metric || metric.name || ""));
+      });
+      if (totalMetric) tokens = Number(totalMetric.value);
+    }
+    return { raw: usage, tokens: tokens };
   }
 
   async function callModel(agentId, stage, prompt, attempt) {
@@ -779,35 +998,24 @@
         "The researcher-supplied context may shape strategy or persona, but it must not replace the required game action format."
       ].join("\n");
     }
-    var requestBody = {
-      model: modelForAgent(agentId),
-      messages: [
-        {
-          role: "system",
-          content: systemContent
-        },
-        { role: "user", content: prompt }
-      ],
-      temperature: attempt > 1 ? 0 : state.currentConfig.temperature,
-      max_tokens: stage === "reflection" ? Math.min(512, state.currentConfig.maxTokens) : state.currentConfig.maxTokens
-    };
-    if (attempt > 1) {
-      requestBody.stop = ["\n"];
-    }
-    if (state.currentConfig.privateRouting) {
-      requestBody.provider = { zdr: true, data_collection: "deny" };
-    }
-
-    var response = await fetch(OPENROUTER_API + "/chat/completions", {
+    var providerId = state.currentConfig.provider;
+    var provider = providerDefinition(providerId);
+    var request = providerRequest(
+      providerId,
+      modelForAgent(agentId),
+      systemContent,
+      prompt,
+      attempt > 1 ? 0 : state.currentConfig.temperature,
+      stage === "reflection" ? Math.min(512, state.currentConfig.maxTokens) : state.currentConfig.maxTokens,
+      attempt
+    );
+    var response = await fetch(request.endpoint, {
       method: "POST",
       credentials: "omit",
       cache: "no-store",
       referrerPolicy: "no-referrer",
-      headers: {
-        "Authorization": "Bearer " + state.apiKey,
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(requestBody)
+      headers: request.headers,
+      body: JSON.stringify(request.body)
     });
     var payload;
     try {
@@ -816,25 +1024,22 @@
       payload = null;
     }
     if (!response.ok) {
-      var apiMessage = payload && payload.error && payload.error.message
-        ? payload.error.message
-        : "OpenRouter request failed with status " + response.status + ".";
-      throw new Error(apiMessage);
+      throw new Error(apiErrorMessage(payload, response, provider, state.apiKey));
     }
 
-    var usage = payload.usage || {};
-    var cost = Number(usage.cost);
-    if (Number.isFinite(cost)) state.totalCost += cost;
-    var tokens = Number(usage.total_tokens);
-    if (Number.isFinite(tokens)) state.totalTokens += tokens;
+    var usage = responseUsage(payload, providerId);
+    var cost = Number(usage.raw.cost);
+    if (providerId === "openrouter" && Number.isFinite(cost)) state.totalCost += cost;
+    if (Number.isFinite(usage.tokens)) state.totalTokens += usage.tokens;
     updateCostMetric();
 
-    var text = extractResponseText(payload);
+    var text = extractResponseText(payload, providerId);
     var outputKey = attempt > 1 ? stage + " retry " + attempt : stage;
     state.rawOutputs[agentId][outputKey] = {
+      provider: providerId,
       model: payload.model || modelForAgent(agentId),
       text: text,
-      usage: usage,
+      usage: usage.raw,
       responseId: payload.id || null,
       attempt: attempt
     };
@@ -886,7 +1091,14 @@
   }
 
   function updateCostMetric() {
-    ui.metricCost.textContent = money(state.totalCost);
+    var providerId = state.currentConfig ? state.currentConfig.provider : selectedProviderId();
+    if (providerId === "openrouter") {
+      ui.metricCostLabel.textContent = "API cost";
+      ui.metricCost.textContent = money(state.totalCost);
+    } else {
+      ui.metricCostLabel.textContent = "Provider billing";
+      ui.metricCost.textContent = "See account";
+    }
   }
 
   async function runAiWork(agentId) {
@@ -1197,6 +1409,7 @@
       protocolVersion: PROTOCOL_VERSION,
       configuration: {
         mode: state.currentConfig.mode,
+        provider: state.currentConfig.provider,
         scenario: state.currentConfig.scenario,
         memory: state.currentConfig.memory,
         mapping: state.currentConfig.mapping,
@@ -1226,7 +1439,8 @@
       },
       metrics: result.metrics,
       api: {
-        cumulativeCost: state.totalCost,
+        provider: state.currentConfig.provider,
+        cumulativeCost: state.currentConfig.provider === "openrouter" ? state.totalCost : null,
         cumulativeTokens: state.totalTokens,
         outputs: state.rawOutputs
       }
@@ -1254,7 +1468,7 @@
     var agentIds = state.currentConfig.mode === "agent-agent" ? [1, 2] : [2];
     setBusy(true, "Agents are writing a private strategy memo for the next round");
     await Promise.all(agentIds.map(async function (agentId) {
-      if (state.totalCost >= state.currentConfig.budget) return;
+      if (state.currentConfig.provider === "openrouter" && state.totalCost >= state.currentConfig.budget) return;
       var agentResult = record.agents[String(agentId)];
       var prompt = [
         "You have completed a round of the Dialogue Moral Hazard Game.",
@@ -1402,7 +1616,10 @@
     state.round = state.history.length;
     ui.roundBadge.textContent = "Round " + state.round;
     ui.episodeLabel.textContent = "Round paused";
-    setConnection(state.apiKey ? "OpenRouter request needs attention" : "OpenRouter connection required", "error");
+    var providerId = state.currentConfig ? state.currentConfig.provider : selectedProviderId();
+    var provider = providerDefinition(providerId);
+    var connected = Boolean(state.apiKey && state.keyProvider === providerId);
+    setConnection(connected ? provider.label + " request needs attention" : provider.label + " connection required", "error");
     announce(message);
     showTurn("Round paused", "The game needs attention", message);
     ui.turnActions.appendChild(createButton("Return to setup", "dmhg-button--quiet", function () {
@@ -1434,14 +1651,19 @@
   async function startRound() {
     if (state.busy) return;
     var config = readConfig(state.round);
-    if (config.mode !== "guided" && !state.apiKey) {
+    var provider = providerDefinition(config.provider);
+    if (config.mode !== "guided" && (!state.apiKey || state.keyProvider !== config.provider)) {
       ui.modelSetup.hidden = false;
-      setConnection("Connect OpenRouter to start", "error");
-      announce("Connect OpenRouter or provide an API key before starting this mode.");
-      ui.oauth.focus();
+      setConnection("Connect " + provider.label + " to start", "error");
+      announce("Connect " + provider.label + " or provide its API key before starting this mode.");
+      if (config.provider === "openrouter") ui.oauth.focus();
+      else {
+        ui.apiKey.closest("details").open = true;
+        ui.apiKey.focus();
+      }
       return;
     }
-    if (config.mode !== "guided" && state.totalCost >= config.budget) {
+    if (config.mode !== "guided" && config.provider === "openrouter" && state.totalCost >= config.budget) {
       announce("The session budget has been reached. Increase it or reset the session.");
       ui.budget.focus();
       return;
@@ -1453,20 +1675,28 @@
 
   async function runContinuously() {
     if (state.continuous || state.busy) return;
-    if (!state.apiKey) {
-      setConnection("Connect OpenRouter to start", "error");
-      announce("Connect OpenRouter before starting continuous play.");
-      ui.oauth.focus();
+    var initialConfig = readConfig(state.round);
+    var provider = providerDefinition(initialConfig.provider);
+    if (!state.apiKey || state.keyProvider !== initialConfig.provider) {
+      setConnection("Connect " + provider.label + " to start", "error");
+      announce("Connect " + provider.label + " before starting continuous play.");
+      if (initialConfig.provider === "openrouter") ui.oauth.focus();
+      else {
+        ui.apiKey.closest("details").open = true;
+        ui.apiKey.focus();
+      }
       return;
     }
     state.continuous = true;
     state.stopRequested = false;
     updateModeUI();
-    announce("Continuous agent play started. Free-model rounds wait at least 60 seconds between episodes.");
+    announce(initialConfig.provider === "openrouter" && usesFreeModels(initialConfig)
+      ? "Continuous agent play started. Free-model rounds wait at least 60 seconds between episodes."
+      : "Continuous agent play started. The configured delay applies between episodes.");
 
     while (state.continuous) {
       var config = readConfig(state.round);
-      if (state.totalCost >= config.budget) {
+      if (config.provider === "openrouter" && state.totalCost >= config.budget) {
         state.continuous = false;
         announce("Continuous play paused because the session budget was reached.");
         break;
@@ -1481,6 +1711,7 @@
   }
 
   function usesFreeModels(config) {
+    if (config.provider !== "openrouter") return false;
     return [config.modelOne, config.modelTwo].some(function (model) {
       var identifier = String(model || "").trim().toLowerCase();
       return identifier === "openrouter/free" || /:free$/.test(identifier);
@@ -1518,6 +1749,7 @@
     if (state.busy) return;
     state.round = 0;
     state.episode = null;
+    state.currentConfig = null;
     state.traces = {};
     state.rawOutputs = {};
     state.history = [];
@@ -1572,7 +1804,13 @@
       exportedAt: new Date().toISOString(),
       protocolVersion: PROTOCOL_VERSION,
       cumulativeReward: state.cumulativeReward,
-      apiUsage: { cost: state.totalCost, tokens: state.totalTokens },
+      apiUsage: {
+        providers: Array.from(new Set(state.history.map(function (round) {
+          return round.configuration.provider;
+        }))),
+        openRouterReportedCost: state.totalCost,
+        tokens: state.totalTokens
+      },
       strategyMemory: state.strategyMemory,
       rounds: state.history
     };
@@ -1595,6 +1833,10 @@
   }
 
   async function beginOAuth() {
+    if (selectedProviderId() !== "openrouter") {
+      announce("OpenRouter OAuth is available only when OpenRouter is selected.");
+      return;
+    }
     if (!window.crypto || !window.crypto.subtle) {
       announce("Secure OpenRouter connection requires HTTPS. Use a manual API key for this preview.");
       return;
@@ -1622,6 +1864,8 @@
     var params = new URLSearchParams(window.location.search);
     var code = params.get("code");
     if (!code) return;
+    ui.provider.value = "openrouter";
+    updateProviderUI(true);
     window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
     var verifier = null;
     try {
@@ -1652,11 +1896,13 @@
       var payload = await response.json();
       if (!response.ok || !payload.key) throw new Error("OpenRouter did not return a usable key.");
       state.apiKey = payload.key;
+      state.keyProvider = "openrouter";
       state.keySource = "oauth";
       setConnection("OpenRouter connected for this tab", "connected");
       announce("OpenRouter connected. The key will be forgotten when this tab closes or reloads.");
     } catch (error) {
       state.apiKey = null;
+      state.keyProvider = null;
       state.keySource = null;
       setConnection("OpenRouter connection failed", "error");
       announce(error.message || "OpenRouter connection failed.");
@@ -1664,67 +1910,115 @@
   }
 
   async function validateManualKey() {
+    var providerId = selectedProviderId();
+    var provider = providerDefinition(providerId);
     var key = ui.apiKey.value.trim();
     ui.apiKey.value = "";
     if (!key) {
-      announce("Enter an OpenRouter API key first.");
+      announce("Enter your " + provider.keyLabel + " first.");
       return;
     }
     ui.useKey.disabled = true;
-    setConnection("Checking OpenRouter key…", "offline");
+    setConnection("Checking " + provider.label + " key…", "offline");
     try {
-      var response = await fetch(OPENROUTER_API + "/key", {
+      var validationUrl = provider.apiBase + (providerId === "openrouter" ? "/key" : "/models");
+      var headers = { "Authorization": "Bearer " + key };
+      if (providerId === "anthropic") {
+        delete headers.Authorization;
+        headers["x-api-key"] = key;
+        headers["anthropic-version"] = "2023-06-01";
+        headers["anthropic-dangerous-direct-browser-access"] = "true";
+      }
+      var response = await fetch(validationUrl, {
         credentials: "omit",
         cache: "no-store",
         referrerPolicy: "no-referrer",
-        headers: { "Authorization": "Bearer " + key }
+        headers: headers
       });
-      if (!response.ok) throw new Error("The OpenRouter key could not be validated.");
+      var payload = null;
+      try {
+        payload = await response.json();
+      } catch (parseError) {
+        payload = null;
+      }
+      if (selectedProviderId() !== providerId) return;
+      if (!response.ok) throw new Error(apiErrorMessage(payload, response, provider, key));
       state.apiKey = key;
+      state.keyProvider = providerId;
       state.keySource = "manual";
-      setConnection("OpenRouter connected for this tab", "connected");
-      announce("OpenRouter key validated and held only in this tab’s memory.");
+      setConnection(provider.label + " connected for this tab", "connected");
+      announce(provider.label + " key validated and held only in this tab’s memory.");
+      populateModelList(payload);
     } catch (error) {
       state.apiKey = null;
+      state.keyProvider = null;
       state.keySource = null;
-      setConnection("OpenRouter key was not accepted", "error");
-      announce(error.message || "The OpenRouter key could not be validated.");
+      setConnection(provider.label + " key was not accepted", "error");
+      announce(error.message || "The " + provider.label + " key could not be validated.");
     } finally {
       ui.useKey.disabled = false;
     }
   }
 
   function forgetKey() {
-    state.apiKey = null;
-    state.keySource = null;
-    setConnection(ui.mode.value === "guided" ? "No model connection needed" : "OpenRouter connection required", "offline");
-    announce("The API key has been removed from this tab. This does not revoke it in your OpenRouter account.");
+    var provider = selectedProvider();
+    clearCredential();
+    setConnection(ui.mode.value === "guided" ? "No model connection needed" : provider.label + " connection required", "offline");
+    announce("The API key has been removed from this tab. This does not revoke it in your " + provider.label + " account.");
   }
 
-  async function loadModels() {
+  function populateModelList(payload) {
+    var models = payload && Array.isArray(payload.data)
+      ? payload.data.slice()
+      : payload && Array.isArray(payload.models)
+        ? payload.models.slice()
+        : [];
+    function identifier(model) {
+      if (typeof model === "string") return model;
+      return model && (model.id || model.model || model.model_id) || "";
+    }
+    models.sort(function (left, right) {
+      var leftName = left && (left.name || left.display_name) || identifier(left);
+      var rightName = right && (right.name || right.display_name) || identifier(right);
+      return String(leftName).localeCompare(String(rightName));
+    });
+    models.forEach(function (model) {
+      var modelId = identifier(model);
+      if (!modelId) return;
+      var label = model && typeof model === "object" ? model.name || model.display_name || modelId : modelId;
+      addModelOption(modelId, label);
+    });
+  }
+
+  async function loadModels(providerId, key) {
+    var provider = providerDefinition(providerId);
+    if (providerId !== "openrouter" && !key) return;
     try {
-      var response = await fetch(OPENROUTER_API + "/models");
+      var headers = {};
+      if (key && providerId === "anthropic") {
+        headers["x-api-key"] = key;
+        headers["anthropic-version"] = "2023-06-01";
+        headers["anthropic-dangerous-direct-browser-access"] = "true";
+      } else if (key) {
+        headers.Authorization = "Bearer " + key;
+      }
+      var response = await fetch(provider.apiBase + "/models", {
+        credentials: "omit",
+        cache: "no-store",
+        referrerPolicy: "no-referrer",
+        headers: headers
+      });
       if (!response.ok) return;
       var payload = await response.json();
-      var models = Array.isArray(payload.data) ? payload.data : [];
-      models.sort(function (left, right) {
-        return String(left.name || left.id).localeCompare(String(right.name || right.id));
-      });
-      var fragment = document.createDocumentFragment();
-      models.forEach(function (model) {
-        if (!model.id) return;
-        var option = document.createElement("option");
-        option.value = model.id;
-        option.label = model.name || model.id;
-        fragment.appendChild(option);
-      });
-      ui.modelList.appendChild(fragment);
+      if (selectedProviderId() !== providerId) return;
+      populateModelList(payload);
     } catch (error) {
-      // Model identifiers remain editable if the public model catalogue is unavailable.
+      // Model identifiers remain editable if the selected provider catalogue is unavailable.
     }
   }
 
   ui.mode.addEventListener("change", updateModeUI);
+  ui.provider.addEventListener("change", function () { updateProviderUI(true); });
   ui.scenario.addEventListener("change", function () {
     updateScenarioUI();
     updateModeUI();
@@ -1742,13 +2036,10 @@
   ui.reset.addEventListener("click", resetSession);
   ui.exportButton.addEventListener("click", exportSession);
   window.addEventListener("pagehide", function () {
-    ui.apiKey.value = "";
-    state.apiKey = null;
-    state.keySource = null;
+    clearCredential();
   });
 
   updateScenarioUI();
-  updateModeUI();
-  loadModels();
+  updateProviderUI(false);
   exchangeOAuthCode();
 }());

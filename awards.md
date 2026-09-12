@@ -3,7 +3,7 @@ layout: page
 permalink: /awards/index.html
 title: Awards
 description: "Fellowships, research communication awards, and community honours received by Dane Malenfant."
-last_modified_at: 2026-08-21
+last_modified_at: 2026-09-12
 ---
 
 <nav class="section-nav" aria-label="Award sections">
@@ -27,7 +27,7 @@ last_modified_at: 2026-08-21
         </li>
         <li class="timeline-row">
           <time datetime="2024">2024</time>
-          <div><strong class="timeline-row__title">NSERC CGS-M · $32,000</strong><span class="timeline-row__detail">Natural Sciences and Engineering Research Council of Canada</span></div>
+          <div><strong class="timeline-row__title"><a href="https://search.open.canada.ca/grants/record/nserc-crsng%2C110_2024_2025_Q4_273%2Ccurrent">NSERC CGS-M</a> · $32,000</strong><span class="timeline-row__detail">Natural Sciences and Engineering Research Council of Canada</span></div>
         </li>
         <li class="timeline-row">
           <time datetime="2024">2024</time>

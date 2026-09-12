@@ -327,6 +327,11 @@ html[data-theme="dark"] .dmhg-lab {
   line-height: 1.5;
 }
 
+.dmhg-provider-field {
+  max-width: 31rem;
+  margin-bottom: 1rem;
+}
+
 #dmhg-api-key {
   -webkit-text-security: disc;
 }

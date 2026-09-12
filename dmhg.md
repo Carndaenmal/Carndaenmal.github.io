@@ -2,11 +2,11 @@
 layout: page
 permalink: /blogs/dialogue-moral-hazard/index.html
 title: Interactive Dialogue Moral Hazard
-description: "Why costly information sharing fails between language agents—and an interactive Dialogue Moral Hazard Game you can play yourself or run through OpenRouter."
+description: "Why costly information sharing fails between language agents—and an interactive Dialogue Moral Hazard Game you can play yourself or run with OpenRouter, OpenAI, Anthropic, or Meta."
 date: 2026-09-11
 last_modified_at: 2026-09-11
 dmhg_lab: true
-dmhg_asset_version: 20260911-6
+dmhg_asset_version: 20260911-7
 blog_page: true
 blog_post: true
 no_analytics: true
@@ -86,14 +86,14 @@ no_analytics: true
     <p class="eyebrow">From evaluation to interaction</p>
     <h2>Repeated episodes let strategies develop over time</h2>
     <p>The paper-faithful setting treats episodes independently. The public-history extension gives agents the last eight completed rounds, while strategy reflection asks each language agent to write a short private memo for its future self. These repeated-game modes are exploratory extensions: their trajectories are not results reported in the paper.</p>
-    <p>In the game below, you can play with a scripted partner, connect a free OpenRouter model, or let two models play continuously. Figure 1 tracks team success, querying, transfer, local reward, realized value of information, and model-output validity as the session unfolds.</p>
+    <p>In the game below, you can play with a scripted partner, connect OpenRouter or a direct OpenAI, Anthropic, or Meta API key, or let two models play continuously. Figure 1 tracks team success, querying, transfer, local reward, realized value of information, and model-output validity as the session unfolds.</p>
   </section>
 </div>
 
 <header class="dmhg-play-intro">
   <p class="eyebrow">Interactive experiment</p>
   <h2>Play the Dialogue Moral Hazard Game</h2>
-  <p>Start without a model, or connect OpenRouter to play against an agent or observe two agents across repeated episodes.</p>
+  <p>Start without a model, or connect a supported model provider to play against an agent or observe two agents across repeated episodes.</p>
 </header>
 
 <section class="dmhg-lab" id="dmhg-lab" data-protocol-version="web-v1" aria-label="Playable Dialogue Moral Hazard Game">
@@ -175,20 +175,31 @@ no_analytics: true
       <div class="dmhg-section-heading dmhg-section-heading--compact">
         <div>
           <p class="dmhg-kicker">Bring your own inference</p>
-          <h4 id="dmhg-model-title">Connect OpenRouter</h4>
+          <h4 id="dmhg-model-title">Connect a model provider</h4>
         </div>
         <button class="dmhg-button dmhg-button--quiet" id="dmhg-forget-key" type="button" hidden>Forget key</button>
       </div>
 
-      <p class="dmhg-privacy-note" id="dmhg-key-privacy">Your key is masked while you type, cleared from the field immediately after validation, and held only in this tab’s memory. Requests go directly from your browser to OpenRouter; the key is never added to this site’s URLs, analytics, transcripts, or exports. OpenRouter can still associate requests with the account that issued the key.</p>
+      <p class="dmhg-privacy-note" id="dmhg-key-privacy">Your key is masked while you type, cleared from the field immediately after validation, and held only in this tab’s memory. Requests go directly from your browser to the selected provider; the key is never added to this site’s URLs, analytics, transcripts, or exports. Use a restricted or temporary key with a provider spending limit: any browser-supplied key is available to JavaScript delivered by this page, and the provider can associate requests with the issuing account.</p>
+
+      <label class="dmhg-field dmhg-provider-field">
+        <span>Model provider</span>
+        <select id="dmhg-provider" aria-describedby="dmhg-provider-help">
+          <option value="openrouter">OpenRouter</option>
+          <option value="openai">OpenAI</option>
+          <option value="anthropic">Anthropic</option>
+          <option value="meta">Meta Llama API</option>
+        </select>
+        <small id="dmhg-provider-help">Use OpenRouter OAuth or an OpenRouter API key. Its free-model router remains the default, and separate model IDs can be used for each agent.</small>
+      </label>
 
       <div class="dmhg-auth-actions">
         <button class="dmhg-button dmhg-button--secondary" id="dmhg-oauth" type="button">Connect with OpenRouter</button>
         <details class="dmhg-manual-key">
-          <summary>Use an API key manually</summary>
+          <summary id="dmhg-manual-key-summary">Use an API key manually</summary>
           <div class="dmhg-manual-key__row">
             <label class="dmhg-field dmhg-field--grow">
-              <span>OpenRouter API key</span>
+              <span id="dmhg-api-key-label">OpenRouter API key</span>
               <input id="dmhg-api-key" type="password" inputmode="text" autocomplete="off" autocapitalize="none" spellcheck="false" placeholder="sk-or-v1-…" aria-describedby="dmhg-key-privacy" data-1p-ignore data-lpignore="true" data-form-type="other">
             </label>
             <button class="dmhg-button dmhg-button--secondary" id="dmhg-use-key" type="button">Use this key</button>
@@ -201,22 +212,22 @@ no_analytics: true
         <label class="dmhg-field" id="dmhg-agent-one-model-field" hidden>
           <span>Agent 1 model</span>
           <input id="dmhg-model-one" list="dmhg-model-list" autocomplete="off" autocapitalize="none" spellcheck="false" value="openrouter/free">
-          <small>Defaults to OpenRouter’s free-model router.</small>
+          <small id="dmhg-model-one-help">Defaults to OpenRouter’s free-model router.</small>
         </label>
         <label class="dmhg-field">
           <span id="dmhg-model-two-label">Partner model</span>
           <input id="dmhg-model-two" list="dmhg-model-list" autocomplete="off" autocapitalize="none" spellcheck="false" value="openrouter/free">
-          <small>Defaults to OpenRouter’s free-model router.</small>
+          <small id="dmhg-model-two-help">Defaults to OpenRouter’s free-model router.</small>
         </label>
-        <label class="dmhg-field">
+        <label class="dmhg-field" id="dmhg-budget-field">
           <span>Session budget (USD)</span>
           <input id="dmhg-budget" type="number" min="0.01" max="100" step="0.01" value="0.25">
-          <small>Continuous play pauses at this soft limit.</small>
+          <small>OpenRouter reports per-request cost; continuous play pauses at this soft limit.</small>
         </label>
         <label class="dmhg-field dmhg-field--full">
           <span>Custom system prompt</span>
           <textarea id="dmhg-system-prompt" rows="4" maxlength="4000" placeholder="Optional: add a persona, strategy, or experimental instruction for every language agent."></textarea>
-          <small>Sent to OpenRouter on every model call. The game protocol and one-line action format remain authoritative. Incomplete or malformed action responses are retried up to twice.</small>
+          <small id="dmhg-system-prompt-help">Sent to the selected provider on every model call. The game protocol and one-line action format remain authoritative. Incomplete or malformed action responses are retried up to twice.</small>
         </label>
       </div>
     </section>
@@ -240,9 +251,9 @@ no_analytics: true
         <label class="dmhg-field">
           <span>Delay between automatic rounds (seconds)</span>
           <input id="dmhg-delay" type="number" min="1" max="300" step="1" value="60">
-          <small>Free models always wait at least 60 seconds between rounds to reduce per-minute rate-limit errors.</small>
+          <small id="dmhg-delay-help">Free OpenRouter models always wait at least 60 seconds between rounds to reduce per-minute rate-limit errors.</small>
         </label>
-        <label class="dmhg-check">
+        <label class="dmhg-check" id="dmhg-private-routing-field">
           <input id="dmhg-private-routing" type="checkbox" checked>
           <span>Require zero-data-retention providers</span>
         </label>
@@ -318,7 +329,7 @@ no_analytics: true
         <div class="dmhg-metric"><span>Query rate</span><strong id="dmhg-metric-query">—</strong></div>
         <div class="dmhg-metric"><span>Realized transfer</span><strong id="dmhg-metric-transfer">—</strong></div>
         <div class="dmhg-metric"><span>Session reward</span><strong id="dmhg-metric-reward">0.000</strong></div>
-        <div class="dmhg-metric"><span>API cost</span><strong id="dmhg-metric-cost">$0.0000</strong></div>
+        <div class="dmhg-metric"><span id="dmhg-metric-cost-label">API cost</span><strong id="dmhg-metric-cost">$0.0000</strong></div>
         <div class="dmhg-metric"><span>Format validity</span><strong id="dmhg-metric-validity">—</strong></div>
       </div>
 
