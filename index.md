@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /
 description: "Dane Malenfant is a machine learning researcher studying reciprocity, credit assignment, continual learning, and AI safety."
-last_modified_at: 2026-08-21
+last_modified_at: 2026-09-16
 identity_masthead: true
 masthead_eyebrow: Machine learning researcher
 masthead_title: Dane Malenfant
@@ -37,7 +37,7 @@ Previously, I completed a bachelor's degree in Computer Science, with additional
 
 ---
 
-During my undergraduate studies, I was involved with [Encode Canada](https://encodecanada.ca/#/team), where I contributed to AI literacy and ethics initiatives by writing [blog posts](https://montrealethics.ai/category/columns/recess/) for the [Montréal AI Ethics Institute](https://montrealethics.ai/) and judging hackathons. I also co-led the machine learning division of [McGill Neurotech](https://github.com/NTX-McGill/NeuroTechX-McGill-2021), where we developed a brain–computer interface speller that used EEG responses to visually presented letters. In my final year, I co-authored a [paper on causal reasoning in narrative](https://txtlab.org/2022/05/why-capturing-causal-reasoning-in-narrative/).
+During my undergraduate studies, I was involved with [Encode Canada](https://encodecanada.ca/#/team), where I contributed to AI literacy and ethics initiatives by writing [blog posts](https://montrealethics.ai/category/columns/recess/) for the [Montréal AI Ethics Institute](https://montrealethics.ai/) and judging hackathons. I also co-led the machine learning division of [McGill Neurotech](https://github.com/NTX-McGill/NeuroTechX-McGill-2021), where we developed a [brain–computer interface speller](https://youtu.be/NdMm_riAEsY?si=R1XNsxR7Mtio7dLj) that used EEG responses to visually presented letters. In my final year, I co-authored a [paper on causal reasoning in narrative](https://txtlab.org/2022/05/why-capturing-causal-reasoning-in-narrative/).
 
 Currently, I serve on the advisory board of [Indigenous Pathfinders in AI](https://mila.quebec/en/ai4humanity/learning/indigenous-pathfinders-in-ai) and am a citizen of [Métis Nation—Saskatchewan](https://metisnationsk.com/about-metis/).
 
