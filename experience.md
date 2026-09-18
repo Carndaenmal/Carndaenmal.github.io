@@ -3,7 +3,7 @@ layout: page
 permalink: /experience/index.html
 title: Experience
 description: "Professional experience, academic service, supervision, workshop organizing, and peer review by Dane Malenfant."
-last_modified_at: 2026-08-21
+last_modified_at: 2026-09-18
 ---
 
 <nav class="section-nav" aria-label="Experience sections">
@@ -82,7 +82,7 @@ last_modified_at: 2026-08-21
         </li>
         <li class="timeline-row">
           <time datetime="2026">2026</time>
-          <div><strong class="timeline-row__title">Finding the Frames Workshop</strong><span class="timeline-row__detail">RLC · Montréal, Canada</span></div>
+          <div><a class="timeline-row__title" href="https://sites.google.com/view/findingtheframe/reviewing">Finding the Frames Workshop</a><span class="timeline-row__detail">RLC · Montréal, Canada</span></div>
         </li>
         <li class="timeline-row">
           <time datetime="2026">2026</time>
