@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /
 description: "Dane Malenfant is a machine learning researcher studying reciprocity, credit assignment, continual learning, and AI safety."
-last_modified_at: 2026-09-16
+last_modified_at: 2026-09-20
 identity_masthead: true
 masthead_eyebrow: Machine learning researcher
 masthead_title: Dane Malenfant
@@ -49,6 +49,10 @@ Currently, I serve on the advisory board of [Indigenous Pathfinders in AI](https
   <li class="timeline-row" data-reveal>
     <time datetime="2026-08">August 2026</time>
     <div>I started an AI Engineering and Software internship at <a href="https://veris.ai/">Veris AI</a> in New York.</div>
+  </li>
+  <li class="timeline-row" data-reveal>
+    <time datetime="2026-08">August 2026</time>
+    <div>I submitted the final version of my master’s thesis.</div>
   </li>
   <li class="timeline-row" data-reveal>
     <time datetime="2026-05">May 2026</time>
