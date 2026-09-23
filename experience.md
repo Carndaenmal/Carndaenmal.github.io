@@ -3,7 +3,7 @@ layout: page
 permalink: /experience/index.html
 title: Experience
 description: "Professional experience, academic service, supervision, workshop organizing, and peer review by Dane Malenfant."
-last_modified_at: 2026-09-21
+last_modified_at: 2026-09-23
 ---
 
 <nav class="section-nav" aria-label="Experience sections">
@@ -98,7 +98,11 @@ last_modified_at: 2026-09-21
         </li>
         <li class="timeline-row">
           <time datetime="2026">2026</time>
-          <div><a class="timeline-row__title" href="https://trustworthy-ai-for-good.github.io/">AI4GOOD Workshop</a><span class="timeline-row__detail">ICML · Seoul, South Korea</span></div>
+          <div><a class="timeline-row__title" href="https://trustworthy-ai-for-good.github.io/">Trustworthy AI for Good (AI4GOOD)</a><span class="timeline-row__detail">NeurIPS · Paris, France</span></div>
+        </li>
+        <li class="timeline-row">
+          <time datetime="2026">2026</time>
+          <div><a class="timeline-row__title" href="https://trustworthy-ai-for-good.github.io/icml-2026.html">Trustworthy AI for Good (AI4GOOD)</a><span class="timeline-row__detail">ICML · Seoul, South Korea</span></div>
         </li>
         <li class="timeline-row">
           <time datetime="2026">2026</time>
