@@ -3,7 +3,7 @@ layout: page
 permalink: /presentations/index.html
 title: Presentations
 description: "Invited talks, panels, and research poster presentations by Dane Malenfant."
-last_modified_at: 2026-08-21
+last_modified_at: 2026-09-23
 ---
 
 <nav class="section-nav" aria-label="Presentation sections">
@@ -104,6 +104,17 @@ last_modified_at: 2026-08-21
 <section class="page-section" aria-labelledby="posters">
   <h2 id="posters">Posters</h2>
   <div class="card-grid">
+    <article class="content-card" data-reveal>
+      <p class="eyebrow">August 2026 · Montréal</p>
+      <h3>The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning</h3>
+      <p class="content-card__description"><strong>Dane Malenfant</strong> and Blake Aaron Richards</p>
+      <p class="content-card__meta">Third Reinforcement Learning Conference (RLC 2026)</p>
+      <div class="content-card__actions">
+        <a href="https://rlj.cs.umass.edu/2026/papers/Paper142.pdf">Paper</a>
+        <a href="https://rlj.cs.umass.edu/2026/papers/Paper142.html">Conference entry</a>
+      </div>
+    </article>
+
     <article class="content-card" data-reveal>
       <p class="eyebrow">February 2026 · Montréal</p>
       <h3>Reinforcing the World’s Edge: A Continual Learning Problem in the Multi-Agent-World Boundary</h3>
