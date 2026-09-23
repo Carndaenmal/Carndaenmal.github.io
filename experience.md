@@ -73,12 +73,12 @@ last_modified_at: 2026-09-23
     </article>
 
     <article class="content-card content-card--wide" data-reveal>
-      <p class="eyebrow">2024–2027</p>
+      <p class="eyebrow">2024–2026</p>
       <h3 id="reviewing">Official Reviewer</h3>
       <ol class="timeline-list timeline-list--progress timeline-list--split" aria-label="Official reviewing activity">
         <li class="timeline-row">
-          <time datetime="2027">2027</time>
-          <div><a class="timeline-row__title" href="https://iclr.cc/Conferences/2027/ReviewerGuidelines">Main Track</a><span class="timeline-row__detail">ICLR · Location to be announced</span></div>
+          <time datetime="2026">2026</time>
+          <div><a class="timeline-row__title" href="https://iclr.cc/Conferences/2027/ReviewerGuidelines">Main Track</a><span class="timeline-row__detail">ICLR 2027 · Location to be announced</span></div>
         </li>
         <li class="timeline-row">
           <time datetime="2026">2026</time>
