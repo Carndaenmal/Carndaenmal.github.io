@@ -2,8 +2,8 @@
 layout: page
 permalink: /experience/index.html
 title: Experience
-description: "Professional experience, academic service, supervision, workshop organizing, and peer review by Dane Malenfant."
-last_modified_at: 2026-09-23
+description: "Professional experience, academic service, supervision, workshop organizing, judging, and peer review by Dane Malenfant."
+last_modified_at: 2026-09-24
 ---
 
 <nav class="section-nav" aria-label="Experience sections">
@@ -11,6 +11,7 @@ last_modified_at: 2026-09-23
     <a href="#professional">Professional</a>
     <a href="#organizing">Organizing</a>
     <a href="#supervision">Supervision</a>
+    <a href="#judging">Judging</a>
     <a href="#reviewing">Reviewing</a>
   </div>
 </nav>
@@ -73,16 +74,23 @@ last_modified_at: 2026-09-23
     </article>
 
     <article class="content-card content-card--wide" data-reveal>
+      <p class="eyebrow">2026</p>
+      <h3 id="judging">Judge</h3>
+      <ol class="timeline-list timeline-list--progress timeline-list--split" aria-label="Judging activity">
+        <li class="timeline-row">
+          <time datetime="2026">2026</time>
+          <div><strong class="timeline-row__title">Digital Minds Research Sprint</strong><span class="timeline-row__detail">Apart Research</span></div>
+        </li>
+      </ol>
+    </article>
+
+    <article class="content-card content-card--wide" data-reveal>
       <p class="eyebrow">2024–2026</p>
       <h3 id="reviewing">Official Reviewer</h3>
       <ol class="timeline-list timeline-list--progress timeline-list--split" aria-label="Official reviewing activity">
         <li class="timeline-row">
           <time datetime="2026">2026</time>
           <div><a class="timeline-row__title" href="https://iclr.cc/Conferences/2027/ReviewerGuidelines">Main Track</a><span class="timeline-row__detail">ICLR 2027 · Location to be announced</span></div>
-        </li>
-        <li class="timeline-row">
-          <time datetime="2026">2026</time>
-          <div><strong class="timeline-row__title">Digital Minds Research Sprint</strong><span class="timeline-row__detail">Apart Research</span></div>
         </li>
         <li class="timeline-row">
           <time datetime="2026">2026</time>

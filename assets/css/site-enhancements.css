@@ -351,13 +351,23 @@ html[data-theme="dark"] .theme-toggle__sun {
 }
 
 .article-wrap > p {
-  margin-bottom: 1.65rem;
-  line-height: 1.75;
+  margin-bottom: 1.4rem;
+  line-height: 1.65;
 }
 
 .article-wrap p + p {
-  margin-top: 0.15rem;
+  margin-top: 0;
   text-indent: 0;
+}
+
+.article-wrap > ul:not(.timeline-list),
+.article-wrap > ol:not(.timeline-list) {
+  line-height: 1.6;
+}
+
+.article-wrap > ul:not(.timeline-list) > li + li,
+.article-wrap > ol:not(.timeline-list) > li + li {
+  margin-top: 0.8rem;
 }
 
 .home-hero {

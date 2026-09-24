@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /
 description: "Dane Malenfant is a machine learning researcher studying reciprocity, credit assignment, continual learning, and AI safety."
-last_modified_at: 2026-09-20
+last_modified_at: 2026-09-23
 identity_masthead: true
 masthead_eyebrow: Machine learning researcher
 masthead_title: Dane Malenfant
@@ -14,7 +14,9 @@ masthead_focus: I study cooperation, credit assignment, and behavioural control 
 
 
 
-Tānishi, wīpēsākāstēw. I recently completed my MSc thesis in Computer Science at [McGill University](https://www.mcgill.ca/), conducting my research at [Mila – The Québec AI Institute](https://mila.quebec/en) under the supervision of [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/). I am based in [Mile End](https://www.thetribune.ca/the-mile-end-music-history-montreal-artist/), Montréal.
+Tānishi, wīpēsākāstēw. I recently completed my MSc thesis in Computer Science at [McGill University](https://www.mcgill.ca/), conducting my research at [Mila – The Québec AI Institute](https://mila.quebec/en) under the supervision of [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/).
+
+I am based in [Mile End](https://www.thetribune.ca/the-mile-end-music-history-montreal-artist/), Montréal.
 
 <div class="page-actions" aria-label="Primary links">
   <a class="site-button site-button--primary" href="/publications/">View publications</a>
@@ -24,7 +26,9 @@ Tānishi, wīpēsākāstēw. I recently completed my MSc thesis in Computer Scie
 
 My research has been generously supported computationally by the Digital Research Alliance of Canada (DRAC), the Innovation, Development and Technologies (IDT) team at Mila, and the National Energy Research Scientific Computing Center (NERSC), a U.S. Department of Energy Office of Science User Facility.
 
-Previously, I completed a bachelor's degree in Computer Science, with additional studies in psychology, at McGill University in 2022 as a first-generation student. Before that, I earned a certificate in French as a Second Language from the [University of Regina](https://www.uregina.ca/) in 2018 and later passed the B2 DELF.
+Previously, I completed a bachelor's degree in Computer Science, with additional studies in psychology, at McGill University in 2022 as a first-generation student.
+
+Before that, I earned a certificate in French as a Second Language from the [University of Regina](https://www.uregina.ca/) in 2018 and later passed the B2 DELF.
 
 ---
 
@@ -37,7 +41,11 @@ Previously, I completed a bachelor's degree in Computer Science, with additional
 
 ---
 
-During my undergraduate studies, I was involved with [Encode Canada](https://encodecanada.ca/#/team), where I contributed to AI literacy and ethics initiatives by writing [blog posts](https://montrealethics.ai/category/columns/recess/) for the [Montréal AI Ethics Institute](https://montrealethics.ai/) and judging hackathons. I also co-led the machine learning division of [McGill Neurotech](https://github.com/NTX-McGill/NeuroTechX-McGill-2021), where we developed a [brain–computer interface speller](https://youtu.be/NdMm_riAEsY?si=R1XNsxR7Mtio7dLj) that used EEG responses to visually presented letters. In my final year, I co-authored a [paper on causal reasoning in narrative](https://txtlab.org/2022/05/why-capturing-causal-reasoning-in-narrative/).
+During my undergraduate studies, I was involved with [Encode Canada](https://encodecanada.ca/#/team), where I contributed to AI literacy and ethics initiatives by writing [blog posts](https://montrealethics.ai/category/columns/recess/) for the [Montréal AI Ethics Institute](https://montrealethics.ai/) and judging hackathons.
+
+I also co-led the machine learning division of [McGill Neurotech](https://github.com/NTX-McGill/NeuroTechX-McGill-2021), where we developed a [brain–computer interface speller](https://youtu.be/NdMm_riAEsY?si=R1XNsxR7Mtio7dLj) that used EEG responses to visually presented letters.
+
+In my final year, I co-authored a [paper on causal reasoning in narrative](https://txtlab.org/2022/05/why-capturing-causal-reasoning-in-narrative/).
 
 Currently, I serve on the advisory board of [Indigenous Pathfinders in AI](https://mila.quebec/en/ai4humanity/learning/indigenous-pathfinders-in-ai) and am a citizen of [Métis Nation—Saskatchewan](https://metisnationsk.com/about-metis/).
 
