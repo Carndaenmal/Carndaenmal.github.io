@@ -184,12 +184,12 @@ last_modified_at: 2026-09-29
   <div class="publication-family__papers">
     <article class="publication-feature" aria-labelledby="kv-streams-title" data-project-family="learning" data-reveal>
       <img
-        src="/images/kv-streams-fruit-actor-diagrams.svg"
+        src="/images/kv-streams-actor-recall.png"
         class="publication-feature__image"
-        alt="Post-eviction retrieval protocols for held-out fruit assignments and actor-name generalization"
-        data-figure-caption="Protocol diagrams from Figure 8A–B. After an assigned fruit or actor name is evicted from the visible context, the model must recover it using information carried by retained KV-cache entries; the actor task tests generalization beyond the fruit training domain."
-        width="560"
-        height="360"
+        alt="Five actor-name candidates and the actor recalled after context eviction"
+        data-figure-caption="Detail from Figure 8B. After the assigned actor name leaves the visible context, the model must recover it from the candidates using information carried by retained KV-cache entries. This tests whether KV-streams trained on fruit assignments generalizes to actor names."
+        width="498"
+        height="150"
         loading="lazy"
       >
       <div class="publication-feature__status" aria-label="Publication status">
