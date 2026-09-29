@@ -4,7 +4,7 @@ sitemap: false
 ---
 # Dane Malenfant
 
-> Dane Malenfant is a machine learning researcher studying multi-agent reinforcement learning, reciprocity, temporal credit assignment, continual learning, and AI safety.
+> Dane Malenfant is a machine learning researcher studying agentic and multi-agent reinforcement learning, reciprocity, memory, temporal credit assignment, continual learning, and AI safety.
 
 Dane completed an MSc in Computer Science at McGill University and conducted the research at Mila – The Québec AI Institute in the Learning in Neural Circuits Lab. The canonical website is [danemalenfant.com]({{ site.url }}/).
 
@@ -23,6 +23,7 @@ Dane completed an MSc in Computer Science at McGill University and conducted the
 ## Selected research
 
 - [The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning]({{ site.url }}/publications/#hidden-gifts-title): Reciprocal behaviour when helpful actions have delayed or difficult-to-observe benefits; RLC 2026.
+- [KV-streams for Efficient Compaction in Agentic Reinforcement Learning]({{ site.url }}/publications/#kv-streams-title): A plug-and-play approach that streams KV caches across context compaction events, accelerating agentic-RL training by 2.6–5× while enabling recurrent state to emerge through reinforcement learning.
 - [Contrastive Retrospection: honing in on critical steps for rapid learning and generalization in RL]({{ site.url }}/publications/#conspec-title): Contrastive identification of critical states for reinforcement learning; NeurIPS 2023.
 - [Moral Hazard in Multi-Agent Language Models]({{ site.url }}/publications/#moral-hazard-title): A controlled query–warning–decision game for costly information acquisition and transfer, evaluated on fourteen open-weight and four frontier models; revised arXiv v7 with the CREDIT mechanism-aligned optimizer. [Read the interactive blog and play the game]({{ site.url }}/blogs/dialogue-moral-hazard/) or inspect the [code and reproducibility artifacts](https://github.com/Carndaenmal/dialogue-moral-hazard-game).
 - [Compositional Flow Matching with Factored Velocity Fields]({{ site.url }}/publications/#factored-flow-title): Zero-shot generalization to unseen combinations of generative factors; ICML 2026 workshop spotlight.

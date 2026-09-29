@@ -2,14 +2,14 @@
 layout: page
 permalink: /publications/index.html
 title: Publications
-description: "Research publications by Dane Malenfant on multi-agent reinforcement learning, reciprocity, continual learning, generative modelling, and AI governance."
-last_modified_at: 2026-09-11
+description: "Research publications by Dane Malenfant on agentic and multi-agent reinforcement learning, reciprocity, memory, continual learning, generative modelling, and AI governance."
+last_modified_at: 2026-09-29
 ---
 
 <nav class="section-nav" aria-label="Research programmes">
   <div class="section-nav__scroll">
     <a href="#reciprocity">Reciprocity</a>
-    <a href="#learning">Learning and generalization</a>
+    <a href="#learning">Learning, memory, and generalization</a>
     <a href="#society">AI in society and culture</a>
   </div>
 </nav>
@@ -17,7 +17,7 @@ last_modified_at: 2026-09-11
 <header class="publication-page-intro">
   <p class="eyebrow">Research programmes</p>
   <h2>Questions that connect the papers</h2>
-  <p>My work spans several publication venues, but it is organized here by the research problems that connect it: cooperation among learning agents, credit and generalization across time and structure, and the wider social and cultural contexts of AI.</p>
+  <p>My work spans several publication venues, but it is organized here by the research problems that connect it: cooperation among learning agents, memory and credit across time and structure, and the wider social and cultural contexts of AI.</p>
 </header>
 
 <section class="publication-family publication-family--reciprocity" id="reciprocity" aria-labelledby="reciprocity-title">
@@ -176,12 +176,58 @@ last_modified_at: 2026-09-11
   <header class="publication-family__header" data-reveal>
     <div class="publication-family__summary">
       <p class="publication-family__eyebrow">Research programme · Ongoing</p>
-      <h2 id="learning-title">Credit Assignment &amp; Compositional Learning</h2>
-      <p>How can learning systems isolate the decisions and representations that matter, then reuse them across long horizons or unseen combinations?</p>
+      <h2 id="learning-title">Credit Assignment, Memory &amp; Compositional Learning</h2>
+      <p>How can learning systems isolate, retain, and reuse the information that matters across long horizons or unseen combinations?</p>
     </div>
   </header>
 
   <div class="publication-family__papers">
+    <article class="publication-feature" aria-labelledby="kv-streams-title" data-project-family="learning" data-reveal>
+      <img
+        src="/images/kv-streams-fruit-actor-diagrams.svg"
+        class="publication-feature__image"
+        alt="Post-eviction retrieval protocols for held-out fruit assignments and actor-name generalization"
+        data-figure-caption="Protocol diagrams from Figure 8A–B. After an assigned fruit or actor name is evicted from the visible context, the model must recover it using information carried by retained KV-cache entries; the actor task tests generalization beyond the fruit training domain."
+        width="560"
+        height="360"
+        loading="lazy"
+      >
+      <div class="publication-feature__status" aria-label="Publication status">
+        <span class="status-badge">Preprint</span>
+        <span class="status-badge status-badge--secondary">arXiv v1</span>
+      </div>
+      <p class="publication-feature__eyebrow">arXiv v1 · Submitted September 2026</p>
+      <h3 id="kv-streams-title">KV-streams for Efficient Compaction in Agentic Reinforcement Learning</h3>
+      <p class="publication-feature__authors">Emiliano Penaloza, <strong>Dane Malenfant</strong>, Dheeraj Vattikonda, Roger Creus Castanyer, Siddarth Venkatraman, Abhay Puri, Jonathan Light, Matthew James Sargent, Augustine N. Mavor-Parker, Massimo Caccia, Lucas Caccia, Glen Berseth, Esmeralda S. Whitammer, Alessandro Sordoni, Minseon Kim, Marc-Alexandre Côté, Laurent Charlin, and Guillaume Lajoie</p>
+
+      <dl class="publication-feature__details">
+        <dt>Question</dt>
+        <dd>How can agentic language models compact increasingly long interaction traces without repeatedly prefilling the full context or losing information needed later?</dd>
+
+        <dt>Contribution</dt>
+        <dd>We introduce KV-streams, a plug-and-play mechanism that streams the KV cache across compaction events instead of flushing it. Across three compaction strategies, it delivers 2.6–5× wall-clock training speedups without evidence of performance loss, while the streamed cache can learn through reinforcement learning alone to act as recurrent state carrying information no longer present in context.</dd>
+      </dl>
+
+      <nav class="publication-feature__links" aria-label="Resources for KV-streams for Efficient Compaction in Agentic Reinforcement Learning">
+        <a href="https://arxiv.org/pdf/2609.35750">Paper</a>
+        <a href="https://arxiv.org/abs/2609.35750">arXiv</a>
+        <a href="https://arxiv.org/html/2609.35750">HTML</a>
+        <a href="https://doi.org/10.48550/arXiv.2609.35750">DOI</a>
+      </nav>
+      <div class="publication-copy-sources" hidden>
+        <span data-copy-source="citation">Penaloza, E., Malenfant, D., Vattikonda, D., Creus Castanyer, R., Venkatraman, S., Puri, A., Light, J., Sargent, M. J., Mavor-Parker, A. N., Caccia, M., Caccia, L., Berseth, G., Whitammer, E. S., Sordoni, A., Kim, M., Côté, M.-A., Charlin, L., &amp; Lajoie, G. (2026). KV-streams for efficient compaction in agentic reinforcement learning. arXiv preprint arXiv:2609.35750. https://doi.org/10.48550/arXiv.2609.35750</span>
+        <pre data-copy-source="bibtex">@article{penaloza2026kvstreams,
+  title={KV-streams for Efficient Compaction in Agentic Reinforcement Learning},
+  author={Penaloza, Emiliano and Malenfant, Dane and Vattikonda, Dheeraj and Creus Castanyer, Roger and Venkatraman, Siddarth and Puri, Abhay and Light, Jonathan and Sargent, Matthew James and Mavor-Parker, Augustine N. and Caccia, Massimo and Caccia, Lucas and Berseth, Glen and Whitammer, Esmeralda S. and Sordoni, Alessandro and Kim, Minseon and Côté, Marc-Alexandre and Charlin, Laurent and Lajoie, Guillaume},
+  journal={arXiv preprint arXiv:2609.35750},
+  year={2026},
+  doi={10.48550/arXiv.2609.35750},
+  url={https://arxiv.org/abs/2609.35750}
+}</pre>
+        <span data-copy-source="doi">10.48550/arXiv.2609.35750</span>
+      </div>
+    </article>
+
     <article class="publication-feature" aria-labelledby="conspec-title" data-project-family="learning" data-reveal>
       <img
         src="/images/conspec.png"

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 360" role="img" aria-labelledby="title description">
+  <title id="title">Fruit and actor post-eviction retrieval protocols</title>
+  <desc id="description">Two diagrams show a language model receiving a fruit or actor assignment, generating number tokens, losing the assignment through context eviction, and recalling it from retained KV-cache information.</desc>
+  <image href="kv-streams-fruit-actor-retrieval.png" width="825" height="525" />
+</svg>
