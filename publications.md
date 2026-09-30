@@ -31,14 +31,8 @@ last_modified_at: 2026-09-29
 
   <div class="publication-family__papers">
     <article class="publication-feature" aria-labelledby="hidden-gifts-title" data-project-family="reciprocity" data-reveal>
-      <img
-        src="/images/var_pic.png"
-        class="publication-feature__image"
-        alt="Variance in collective success across training for four policy-gradient variants"
-        data-figure-caption="Figure 5b. Variance in collective success across training for vanilla policy-gradient, maximum-entropy, correction, and self-correction agents. Self-correction produces the lowest variance, making cooperative learning more reliable."
-        width="200"
-        height="183"
-      >
+      <span class="publication-record-number" aria-hidden="true">01</span>
+      <div class="publication-record-copy">
       <div class="publication-feature__status" aria-label="Publication status">
         <span class="status-badge">Accepted</span>
         <span class="status-badge status-badge--secondary">Code available</span>
@@ -71,18 +65,23 @@ last_modified_at: 2026-09-29
   year={2026}
 }</pre>
       </div>
+      </div>
+      <figure class="publication-record-figure">
+        <img
+          src="/images/var_pic.png"
+          class="publication-feature__image"
+          alt="Variance in collective success across training for four policy-gradient variants"
+          data-figure-caption="Figure 5b. Variance in collective success across training for vanilla policy-gradient, maximum-entropy, correction, and self-correction agents. Self-correction produces the lowest variance, making cooperative learning more reliable."
+          width="200"
+          height="183"
+        >
+        <figcaption class="publication-record-caption">Figure 5b. Variance in collective success across training for vanilla policy-gradient, maximum-entropy, correction, and self-correction agents. Self-correction produces the lowest variance, making cooperative learning more reliable.</figcaption>
+      </figure>
     </article>
 
     <article class="publication-feature" aria-labelledby="moral-hazard-title" data-project-family="reciprocity" data-reveal>
-      <img
-        src="/images/gepa.png"
-        class="publication-feature__image"
-        alt="GPT-5.6 Sol query, team-success, and local-reward rates across query costs"
-        data-figure-caption="Figure 2A. GPT-5.6 Sol's query-cost sweep. As querying becomes more expensive, querying and team success decline while preservation of local reward increases."
-        width="1058"
-        height="730"
-        loading="lazy"
-      >
+      <span class="publication-record-number" aria-hidden="true">02</span>
+      <div class="publication-record-copy">
       <div class="publication-feature__status" aria-label="Publication status">
         <span class="status-badge">Preprint</span>
         <span class="status-badge status-badge--secondary">Revised v7</span>
@@ -120,18 +119,24 @@ last_modified_at: 2026-09-29
 }</pre>
         <span data-copy-source="doi">10.48550/arXiv.2607.23982</span>
       </div>
+      </div>
+      <figure class="publication-record-figure">
+        <img
+          src="/images/gepa.png"
+          class="publication-feature__image"
+          alt="GPT-5.6 Sol query, team-success, and local-reward rates across query costs"
+          data-figure-caption="Figure 2A. GPT-5.6 Sol's query-cost sweep. As querying becomes more expensive, querying and team success decline while preservation of local reward increases."
+          width="1058"
+          height="730"
+          loading="lazy"
+        >
+        <figcaption class="publication-record-caption">Figure 2A. GPT-5.6 Sol's query-cost sweep. As querying becomes more expensive, querying and team success decline while preservation of local reward increases.</figcaption>
+      </figure>
     </article>
 
     <article class="publication-feature" aria-labelledby="worlds-edge-title" data-project-family="reciprocity" data-reveal>
-      <img
-        src="/images/core_trigger_recovers_reward.png"
-        class="publication-feature__image"
-        alt="Mean reward comparison for core-triggered, oracle, random-matched, never-switch, and return-trigger control"
-        data-figure-caption="Figure 2c. In the registered 64-stream continual-control confirmation, core-triggered control achieves mean reward 0.994, matching the oracle and outperforming random-matched (0.536), never-switch (0.460), and return-trigger (0.458) controls."
-        width="1754"
-        height="1170"
-        loading="lazy"
-      >
+      <span class="publication-record-number" aria-hidden="true">03</span>
+      <div class="publication-record-copy">
       <div class="publication-feature__status" aria-label="Publication status">
         <span class="status-badge">Preprint</span>
         <span class="status-badge status-badge--secondary">Revised v2</span>
@@ -168,6 +173,19 @@ last_modified_at: 2026-09-29
 }</pre>
         <span data-copy-source="doi">10.48550/arXiv.2603.06813</span>
       </div>
+      </div>
+      <figure class="publication-record-figure">
+        <img
+          src="/images/core_trigger_recovers_reward.png"
+          class="publication-feature__image"
+          alt="Mean reward comparison for core-triggered, oracle, random-matched, never-switch, and return-trigger control"
+          data-figure-caption="Figure 2c. In the registered 64-stream continual-control confirmation, core-triggered control achieves mean reward 0.994, matching the oracle and outperforming random-matched (0.536), never-switch (0.460), and return-trigger (0.458) controls."
+          width="1754"
+          height="1170"
+          loading="lazy"
+        >
+        <figcaption class="publication-record-caption">Figure 2c. In the registered 64-stream continual-control confirmation, core-triggered control achieves mean reward 0.994, matching the oracle and outperforming random-matched (0.536), never-switch (0.460), and return-trigger (0.458) controls.</figcaption>
+      </figure>
     </article>
   </div>
 </section>
@@ -183,15 +201,8 @@ last_modified_at: 2026-09-29
 
   <div class="publication-family__papers">
     <article class="publication-feature" aria-labelledby="kv-streams-title" data-project-family="learning" data-reveal>
-      <img
-        src="/images/kv-streams-actor-recall.png"
-        class="publication-feature__image"
-        alt="Five actor-name candidates and the actor recalled after context eviction"
-        data-figure-caption="Detail from Figure 8B. After the assigned actor name leaves the visible context, the model must recover it from the candidates using information carried by retained KV-cache entries. This tests whether KV-streams trained on fruit assignments generalizes to actor names."
-        width="498"
-        height="150"
-        loading="lazy"
-      >
+      <span class="publication-record-number" aria-hidden="true">04</span>
+      <div class="publication-record-copy">
       <div class="publication-feature__status" aria-label="Publication status">
         <span class="status-badge">Preprint</span>
         <span class="status-badge status-badge--secondary">arXiv v1</span>
@@ -226,18 +237,24 @@ last_modified_at: 2026-09-29
 }</pre>
         <span data-copy-source="doi">10.48550/arXiv.2609.35750</span>
       </div>
+      </div>
+      <figure class="publication-record-figure">
+        <img
+          src="/images/kv-streams-actor-recall.png"
+          class="publication-feature__image"
+          alt="Five actor-name candidates and the actor recalled after context eviction"
+          data-figure-caption="Detail from Figure 8B. After the assigned actor name leaves the visible context, the model must recover it from the candidates using information carried by retained KV-cache entries. This tests whether KV-streams trained on fruit assignments generalizes to actor names."
+          width="498"
+          height="150"
+          loading="lazy"
+        >
+        <figcaption class="publication-record-caption">Detail from Figure 8B. After the assigned actor name leaves the visible context, the model must recover it from the candidates using information carried by retained KV-cache entries. This tests whether KV-streams trained on fruit assignments generalizes to actor names.</figcaption>
+      </figure>
     </article>
 
     <article class="publication-feature" aria-labelledby="conspec-title" data-project-family="learning" data-reveal>
-      <img
-        src="/images/conspec.png"
-        class="publication-feature__image"
-        alt="Reward curves for ConSpec with PPO and three reinforcement-learning baselines"
-        data-figure-caption="Figure 2b. Reward on the 3D OrangeTree task. ConSpec with PPO approaches the maximum reward, while PPO, SynthRs with PPO, and CURL with PPO remain substantially lower."
-        width="802"
-        height="546"
-        loading="lazy"
-      >
+      <span class="publication-record-number" aria-hidden="true">05</span>
+      <div class="publication-record-copy">
       <div class="publication-feature__status" aria-label="Publication status">
         <span class="status-badge">Published</span>
         <span class="status-badge status-badge--secondary">Code available</span>
@@ -272,18 +289,24 @@ last_modified_at: 2026-09-29
 }</pre>
         <span data-copy-source="doi">10.52202/075280-1356</span>
       </div>
+      </div>
+      <figure class="publication-record-figure">
+        <img
+          src="/images/conspec.png"
+          class="publication-feature__image"
+          alt="Reward curves for ConSpec with PPO and three reinforcement-learning baselines"
+          data-figure-caption="Figure 2b. Reward on the 3D OrangeTree task. ConSpec with PPO approaches the maximum reward, while PPO, SynthRs with PPO, and CURL with PPO remain substantially lower."
+          width="802"
+          height="546"
+          loading="lazy"
+        >
+        <figcaption class="publication-record-caption">Figure 2b. Reward on the 3D OrangeTree task. ConSpec with PPO approaches the maximum reward, while PPO, SynthRs with PPO, and CURL with PPO remain substantially lower.</figcaption>
+      </figure>
     </article>
 
     <article class="publication-feature" aria-labelledby="factored-flow-title" data-project-family="learning" data-reveal>
-      <img
-        src="/images/ff.png"
-        class="publication-feature__image"
-        alt="Shared encoder-decoder architecture with factor-specific velocity heads"
-        data-figure-caption="Figure 1. Factored velocity field for zero-shot compositional generalization. A shared encoder-decoder base velocity is augmented by factor-specific conditioned heads whose outputs are combined at the bottleneck."
-        width="1157"
-        height="1240"
-        loading="lazy"
-      >
+      <span class="publication-record-number" aria-hidden="true">06</span>
+      <div class="publication-record-copy">
       <div class="publication-feature__status" aria-label="Publication status">
         <span class="status-badge">Spotlight</span>
         <span class="status-badge status-badge--secondary">Workshop paper</span>
@@ -315,6 +338,19 @@ last_modified_at: 2026-09-29
   url={https://openreview.net/forum?id=77sT6Xaji7}
 }</pre>
       </div>
+      </div>
+      <figure class="publication-record-figure">
+        <img
+          src="/images/ff.png"
+          class="publication-feature__image"
+          alt="Shared encoder-decoder architecture with factor-specific velocity heads"
+          data-figure-caption="Figure 1. Factored velocity field for zero-shot compositional generalization. A shared encoder-decoder base velocity is augmented by factor-specific conditioned heads whose outputs are combined at the bottleneck."
+          width="1157"
+          height="1240"
+          loading="lazy"
+        >
+        <figcaption class="publication-record-caption">Figure 1. Factored velocity field for zero-shot compositional generalization. A shared encoder-decoder base velocity is augmented by factor-specific conditioned heads whose outputs are combined at the bottleneck.</figcaption>
+      </figure>
     </article>
   </div>
 </section>
@@ -330,15 +366,8 @@ last_modified_at: 2026-09-29
 
   <div class="publication-family__papers">
     <article class="publication-feature" aria-labelledby="nato-policy-title" data-project-family="society" data-reveal>
-      <img
-        src="/images/policy.png"
-        class="publication-feature__image"
-        alt="Stacked policy-strategy coverage bars for eleven NATO member states"
-        data-figure-caption="Derived visualization of public national AI, digital, national security, military-AI, and cybersecurity strategies among the NATO members shown. The complete analysis covers all 32 members, finding national AI strategies for 28 members but military-AI-specific policies for only 11."
-        width="742"
-        height="514"
-        loading="lazy"
-      >
+      <span class="publication-record-number" aria-hidden="true">07</span>
+      <div class="publication-record-copy">
       <div class="publication-feature__status" aria-label="Publication status">
         <span class="status-badge">Workshop paper</span>
         <span class="status-badge status-badge--secondary">Poster available</span>
@@ -370,18 +399,24 @@ last_modified_at: 2026-09-29
   url={https://openreview.net/forum?id=apB72N0nxF}
 }</pre>
       </div>
+      </div>
+      <figure class="publication-record-figure">
+        <img
+          src="/images/policy.png"
+          class="publication-feature__image"
+          alt="Stacked policy-strategy coverage bars for eleven NATO member states"
+          data-figure-caption="Derived visualization of public national AI, digital, national security, military-AI, and cybersecurity strategies among the NATO members shown. The complete analysis covers all 32 members, finding national AI strategies for 28 members but military-AI-specific policies for only 11."
+          width="742"
+          height="514"
+          loading="lazy"
+        >
+        <figcaption class="publication-record-caption">Derived visualization of public national AI, digital, national security, military-AI, and cybersecurity strategies among the NATO members shown. The complete analysis covers all 32 members, finding national AI strategies for 28 members but military-AI-specific policies for only 11.</figcaption>
+      </figure>
     </article>
 
     <article class="publication-feature" aria-labelledby="causality-fiction-title" data-project-family="society" data-reveal>
-      <img
-        src="/images/fiction.png"
-        class="publication-feature__image"
-        alt="Random Forest feature weights for literary and SemEval causal-relation data"
-        data-figure-caption="Figure 2. Feature weights from Random Forest models trained on annotated literary and SemEval data. Semantic similarity is the strongest indicator of causal relations in both datasets, with verb-related features also contributing."
-        width="1640"
-        height="1448"
-        loading="lazy"
-      >
+      <span class="publication-record-number" aria-hidden="true">08</span>
+      <div class="publication-record-copy">
       <div class="publication-feature__status" aria-label="Publication status">
         <span class="status-badge">Published</span>
       </div>
@@ -413,6 +448,19 @@ last_modified_at: 2026-09-29
   url={https://ceur-ws.org/Vol-3117/paper3.pdf}
 }</pre>
       </div>
+      </div>
+      <figure class="publication-record-figure">
+        <img
+          src="/images/fiction.png"
+          class="publication-feature__image"
+          alt="Random Forest feature weights for literary and SemEval causal-relation data"
+          data-figure-caption="Figure 2. Feature weights from Random Forest models trained on annotated literary and SemEval data. Semantic similarity is the strongest indicator of causal relations in both datasets, with verb-related features also contributing."
+          width="1640"
+          height="1448"
+          loading="lazy"
+        >
+        <figcaption class="publication-record-caption">Figure 2. Feature weights from Random Forest models trained on annotated literary and SemEval data. Semantic similarity is the strongest indicator of causal relations in both datasets, with verb-related features also contributing.</figcaption>
+      </figure>
     </article>
   </div>
 </section>

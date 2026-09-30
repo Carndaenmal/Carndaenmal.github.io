@@ -22,7 +22,7 @@
     root.setAttribute("data-theme", isDark ? "dark" : "light");
     root.style.colorScheme = isDark ? "dark" : "light";
 
-    if (themeColor) themeColor.setAttribute("content", isDark ? "#171516" : "#fffdfb");
+    if (themeColor) themeColor.setAttribute("content", isDark ? "#181516" : "#f6f6f0");
 
     if (themeToggle) {
       var actionLabel = isDark ? "Switch to light mode" : "Switch to dark mode";
@@ -31,7 +31,7 @@
       themeToggle.setAttribute("title", actionLabel);
     }
 
-    if (themeToggleLabel) themeToggleLabel.textContent = isDark ? "Day" : "Night";
+    if (themeToggleLabel) themeToggleLabel.textContent = isDark ? "Day mode" : "Night mode";
 
     if (persist) {
       try {
@@ -148,10 +148,10 @@
 
   var refreshNavigationChrome = function () {
     if (navigationWrapper) {
-      var headerHeight = Math.ceil(navigationWrapper.getBoundingClientRect().height);
-      if (headerHeight > 0) {
-        document.documentElement.style.setProperty("--site-header-offset", headerHeight + "px");
-      }
+      var headerPosition = window.getComputedStyle(navigationWrapper).position;
+      var headerHeight = headerPosition === "sticky" || headerPosition === "fixed"
+        ? Math.ceil(navigationWrapper.getBoundingClientRect().height) : 0;
+      document.documentElement.style.setProperty("--site-header-offset", headerHeight + "px");
     }
 
     sectionNavs.forEach(function (nav) {
@@ -433,7 +433,7 @@
         tools.appendChild(button);
       });
 
-      if (tools.children.length) publication.appendChild(tools);
+      if (tools.children.length) (publication.querySelector(".publication-record-copy") || publication).appendChild(tools);
     });
   }
 }());

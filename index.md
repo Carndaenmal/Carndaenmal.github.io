@@ -10,18 +10,17 @@ masthead_title: Dane Malenfant
 masthead_focus: I study cooperation, credit assignment, and behavioural control in adaptive learning systems.
 ---
 
-<img class="home-hero" src="/images/rathlyn-hero.jpg" alt="Dane Malenfant speaking at an event" width="1200" height="688" decoding="async" fetchpriority="high">
-
-
-
+<div class="home-intro" markdown="1">
+<div class="home-intro__text" markdown="1">
 Tānishi, wīpēsākāstēw. I recently completed my MSc thesis in Computer Science at [McGill University](https://www.mcgill.ca/), conducting my research at [Mila – The Québec AI Institute](https://mila.quebec/en) under the supervision of [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/).
 
 I am based in [Mile End](https://www.thetribune.ca/the-mile-end-music-history-montreal-artist/), Montréal.
 
-<div class="page-actions" aria-label="Primary links">
-  <a class="site-button site-button--primary" href="/publications/">View publications</a>
-  <a class="site-button site-button--secondary" href="/file/Academic_CV.pdf">Download CV</a>
-  <a class="site-button site-button--secondary" href="mailto:dane.malenfant@mail.mcgill.ca">Email me</a>
+</div>
+<figure class="home-intro__figure">
+  <img class="home-hero" src="/images/rathlyn-hero.jpg" alt="Dane Malenfant speaking at an event" width="1200" height="688" decoding="async">
+  <figcaption>Research / Community / Conversation</figcaption>
+</figure>
 </div>
 
 My research has been generously supported computationally by the Digital Research Alliance of Canada (DRAC), the Innovation, Development and Technologies (IDT) team at Mila, and the National Energy Research Scientific Computing Center (NERSC), a U.S. Department of Energy Office of Science User Facility.
@@ -32,7 +31,7 @@ Before that, I earned a certificate in French as a Second Language from the [Uni
 
 ---
 
-### Research Interests
+## Research Interests
 
 - **Cooperation and Coordination** in multi-agent environments, with a particular focus on formalizing what constitutes an agent in an interactive environment.
 - The **Credit Assignment Problem** in learning systems, especially in its structural, temporal, and long-horizon forms.
@@ -51,7 +50,7 @@ Currently, I serve on the advisory board of [Indigenous Pathfinders in AI](https
 
 ---
 
-### Selected News and Updates
+## Selected News and Updates
 
 <ol class="timeline-list news-list" aria-label="Selected news and updates">
   <li class="timeline-row" data-reveal>

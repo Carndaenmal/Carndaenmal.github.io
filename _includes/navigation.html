@@ -1,25 +1,27 @@
-<div class="navigation-wrapper">
-	<div class="site-name">
-		<a href="{{ site.url }}">{{ site.title }}</a>
-	</div><!-- /.site-name -->
-  {% capture url %}{{ page.url | remove:'index.html' }}{% endcapture %}
-	<div class="top-navigation">
-		<nav class="top-navigation__scroll" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
-		    <ul>
-		        {% for link in site.links %}
-	            {% assign current_link = false %}
-	            {% if url == link.url %}{% assign current_link = true %}{% endif %}
-	            {% if page.blog_page and link.url == '/blogs/' %}{% assign current_link = true %}{% endif %}
-	            <li><a href="{{ site.url }}{{ link.url }}" {% if current_link %}class="top-navigation-current" aria-current="page"{% endif %}>{{ link.title }}</a></li>
-		        {% endfor %}
-		    </ul>
-		</nav>
-	</div><!-- /.top-navigation -->
-	<button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to dark mode" title="Switch to dark mode">
-		<span class="theme-toggle__icon" aria-hidden="true">
-			<span class="theme-toggle__moon">☾</span>
-			<span class="theme-toggle__sun">☀</span>
-		</span>
-		<span class="theme-toggle__label">Night</span>
-	</button>
-</div><!-- /.navigation-wrapper -->
+<header class="navigation-wrapper">
+  <div class="swiss-topbar">
+    <div class="site-name"><a href="/" aria-label="Dane Malenfant home">DM.</a></div>
+    <div class="swiss-utilities">
+      <span class="swiss-utility-label">Research &amp; writing</span>
+      <a href="/file/Academic_CV.pdf">CV ↗</a>
+      <a href="mailto:{{ site.owner.email }}">Email ↗</a>
+      <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Switch to night mode">
+        <span class="theme-toggle__label">Night mode</span>
+        <span class="theme-toggle__icon" aria-hidden="true"><span class="theme-toggle__moon">◐</span><span class="theme-toggle__sun">◑</span></span>
+      </button>
+    </div>
+  </div>
+  {% assign current_url = page.url | remove: 'index.html' %}
+  <div class="top-navigation">
+    <nav class="top-navigation__scroll" aria-label="Main sections" itemscope itemtype="https://schema.org/SiteNavigationElement">
+      <ul>
+        {% for link in site.links %}
+        {% assign current_link = false %}
+        {% if current_url == link.url %}{% assign current_link = true %}{% endif %}
+        {% if page.blog_page and link.url == '/blogs/' %}{% assign current_link = true %}{% endif %}
+        <li><a href="{{ link.url }}"{% if current_link %} class="top-navigation-current" aria-current="page"{% endif %}><span class="nav-index" aria-hidden="true">0{{ forloop.index }}</span><span>{{ link.title }}</span></a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

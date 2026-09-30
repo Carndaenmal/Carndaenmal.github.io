@@ -15,7 +15,7 @@ last_modified_at: 2026-09-12
 </nav>
 
 <section class="page-section" aria-labelledby="awards-heading">
-  <h2 id="awards-heading">Awards</h2>
+  <h2 id="awards-heading" class="sr-only">Awards</h2>
   <div class="card-grid">
     <article class="content-card content-card--timeline" data-reveal>
       <p class="eyebrow">Academic support</p>

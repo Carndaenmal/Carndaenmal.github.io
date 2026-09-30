@@ -48,7 +48,7 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light dark">
-<meta name="theme-color" id="theme-color" content="#fffdfb">
+<meta name="theme-color" id="theme-color" content="#f6f6f0">
 <script>
   (function () {
     var theme = "light";
@@ -63,7 +63,7 @@
       if (window.matchMedia("(prefers-color-scheme: dark)").matches) theme = "dark";
     }
     document.documentElement.setAttribute("data-theme", theme);
-    document.getElementById("theme-color").setAttribute("content", theme === "dark" ? "#171516" : "#fffdfb");
+    document.getElementById("theme-color").setAttribute("content", theme === "dark" ? "#181516" : "#f6f6f0");
   }());
 </script>
 
@@ -71,7 +71,7 @@
 <!-- Google Webfonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700|PT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&amp;family=Barlow+Condensed:wght@600;700;800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous" />
 
@@ -81,6 +81,7 @@
 <link rel="stylesheet" href="/assets/css/site-enhancements.css">
 {% if page.blog_page %}<link rel="stylesheet" href="/assets/css/blogs.css">{% endif %}
 {% if page.dmhg_lab %}<link rel="stylesheet" href="/assets/css/dmhg.css?v={{ page.dmhg_asset_version | default: 1 }}">{% endif %}
+<link rel="stylesheet" href="/assets/css/swiss-brutalist.css">
 
 <!--[if (lt IE 9) & (!IEMobile)]>
 <link rel="stylesheet" href="/assets/css/ie.css">

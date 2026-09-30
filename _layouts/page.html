@@ -1,49 +1,48 @@
 <!doctype html>
-<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
-
+<html class="no-js" lang="en">
 <head>
-{% include head.html %}
+  {% include head.html %}
 </head>
-
-
-<body class="page{% if page.dmhg_lab %} dmhg-page{% endif %}{% if page.blog_page %} blog-page{% endif %}" itemscope itemtype="http://schema.org/WebPage">
-
-<a class="skip-link" href="#main">Skip to main content</a>
-
-{% include navigation.html %}
-
-{% if page.identity_masthead %}
-<header class="identity-hero" aria-labelledby="identity-name">
-  <p class="identity-hero__eyebrow">{{ page.masthead_eyebrow }}</p>
-  <h1 id="identity-name" itemprop="headline">{{ page.masthead_title }}</h1>
-  <p class="identity-hero__focus">{{ page.masthead_focus }}</p>
-</header>
-{% endif %}
-
-{% if page.image.feature %}<div class="image-wrap">
-  <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
-</div><!-- /.image-wrap -->{% endif %}
-
-<div id="main" role="main"  itemprop="mainContentOfPage">
-  <div class="article-author-top">
-    {% include author-bio.html %}
+<body class="page swiss-brutalist page-{{ page.title | slugify }}{% if page.identity_masthead %} identity-page{% endif %}{% if page.dmhg_lab %} dmhg-page{% endif %}{% if page.blog_page %} blog-page{% endif %}" itemscope itemtype="https://schema.org/WebPage">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="swiss-site">
+    {% include navigation.html %}
+    <main id="main" itemprop="mainContentOfPage">
+      {% if page.identity_masthead %}
+      <header class="identity-hero" aria-labelledby="identity-name">
+        <div class="identity-meta"><p class="identity-hero__eyebrow">01 / {{ page.masthead_eyebrow }}</p><span>McGill / Mila</span></div>
+        <div class="identity-grid">
+          <h1 id="identity-name" itemprop="headline"><span class="identity-first">Dane</span> <span class="identity-last">Malenfant</span></h1>
+          <figure class="identity-portrait">
+            <img src="/images/{{ site.owner.avatar }}" alt="Portrait of {{ site.owner.name }}" width="440" height="391" decoding="async" fetchpriority="high">
+            <figcaption>Dane Malenfant / Montréal</figcaption>
+          </figure>
+        </div>
+        <div class="identity-bottom">
+          <p class="identity-hero__focus">{{ page.masthead_focus }}</p>
+          <div class="page-actions" aria-label="Primary links">
+            <a class="site-button site-button--primary" href="/publications/">View publications</a>
+            <a class="site-button site-button--secondary" href="/file/Academic_CV.pdf">Download CV</a>
+            <a class="site-button site-button--secondary" href="mailto:{{ site.owner.email }}">Email me</a>
+          </div>
+        </div>
+      </header>
+      {% elsif page.blog_post %}
+      <h1 class="sr-only" itemprop="headline">{{ page.title }}</h1>
+      {% else %}
+      <header class="swiss-page-header">
+        <p class="swiss-page-kicker">{% for link in site.links %}{% if link.title == page.title %}0{{ forloop.index }} / {% endif %}{% endfor %}Research &amp; writing</p>
+        <h1 itemprop="headline">{{ page.title }}.</h1>
+        {% if page.description %}<p>{{ page.description }}</p>{% endif %}
+      </header>
+      {% endif %}
+      {% if page.image.feature %}<img class="page-feature-image" src="/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">{% endif %}
+      <article itemscope itemtype="{% if page.blog_post %}https://schema.org/BlogPosting{% else %}https://schema.org/CreativeWork{% endif %}">
+        <div class="article-wrap" itemprop="text">{{ content }}</div>
+      </article>
+    </main>
+    <footer class="site-footer swiss-footer" role="contentinfo">{% include footer.html %}</footer>
   </div>
-  <article itemscope itemtype="{% if page.blog_post %}http://schema.org/BlogPosting{% else %}http://schema.org/CreativeWork{% endif %}">
-    {% unless page.identity_masthead %}<h1 class="sr-only" itemprop="headline">{{ page.title }}</h1>{% endunless %}
-    <div class="article-wrap" itemprop="text">
-      {{ content }}
-    </div><!-- /.article-wrap -->
-  </article>
-</div><!-- /#index -->
-
-<footer class="site-footer" role="contentinfo">
-  {% include footer.html %}
-</footer>
-
-{% include scripts.html %}
-
+  {% include scripts.html %}
 </body>
 </html>

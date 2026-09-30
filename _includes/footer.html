@@ -1,6 +1,19 @@
-<p>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}.</p>
-<p>
-  Built with <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> and hosted on
-  <a href="https://pages.github.com/" rel="nofollow">GitHub Pages</a>.
-  <a href="https://github.com/Carndaenmal/Carndaenmal.github.io">View the source</a>.
-</p>
+<div class="swiss-footer-top">
+  <div class="swiss-footer-identity">
+    <strong>{{ site.owner.name }}</strong>
+    <p>Machine learning researcher · Montréal</p>
+    <a href="mailto:{{ site.owner.email }}">{{ site.owner.email }} ↗</a>
+  </div>
+  <nav class="swiss-socials" aria-label="Social and research profiles">
+    <a href="{{ site.owner.scholar }}">Google Scholar ↗</a>
+    <a href="https://github.com/Carndaenmal">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/{{ site.owner.linkedin }}">LinkedIn ↗</a>
+    <a href="https://x.com/{{ site.owner.twitter }}">X / Twitter ↗</a>
+    <a href="https://bsky.app/profile/{{ site.owner.bluesky }}.bsky.social">Bluesky ↗</a>
+    <a href="https://instagram.com/{{ site.owner.instagram }}">Instagram ↗</a>
+  </nav>
+</div>
+<nav class="swiss-footer-nav" aria-label="Footer sections">
+  {% for link in site.links %}<a href="{{ link.url }}"><span class="nav-index" aria-hidden="true">0{{ forloop.index }}</span> {{ link.title }}</a>{% endfor %}
+</nav>
+<p class="swiss-colophon">&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }}. Built with <a href="https://jekyllrb.com">Jekyll</a> and <a href="https://pages.github.com/">GitHub Pages</a>. <a href="https://github.com/Carndaenmal/Carndaenmal.github.io">View the source ↗</a></p>
