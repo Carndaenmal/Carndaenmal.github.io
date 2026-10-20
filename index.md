@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /
 description: "Dane Malenfant is a machine learning researcher studying reciprocity, credit assignment, continual learning, and AI safety."
-last_modified_at: 2026-10-19
+last_modified_at: 2026-10-20
 identity_masthead: true
 masthead_eyebrow: Machine learning researcher
 masthead_title: Dane Malenfant
@@ -53,6 +53,10 @@ Currently, I serve on the advisory board of [Indigenous Pathfinders in AI](https
 ## Selected News and Updates
 
 <ol class="timeline-list news-list" aria-label="Selected news and updates">
+  <li class="timeline-row" data-reveal>
+    <time datetime="2026-10">October 2026</time>
+    <div><a href="https://openreview.net/forum?id=5YlotAIGcJ">My paper</a> was accepted to the <a href="https://continual-world-models-workshop.github.io/">Continual World Models</a> workshop at NeurIPS 2026.</div>
+  </li>
   <li class="timeline-row" data-reveal>
     <time datetime="2026-10">October 2026</time>
     <div>I received my MSc in Computer Science from McGill University.</div>
