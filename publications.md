@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/index.html
 title: Publications
 description: "Research publications by Dane Malenfant on agentic and multi-agent reinforcement learning, reciprocity, memory, continual learning, generative modelling, and AI governance."
-last_modified_at: 2026-09-29
+last_modified_at: 2026-10-26
 ---
 
 <nav class="section-nav" aria-label="Research programmes">
@@ -138,11 +138,11 @@ last_modified_at: 2026-09-29
       <span class="publication-record-number" aria-hidden="true">03</span>
       <div class="publication-record-copy">
       <div class="publication-feature__status" aria-label="Publication status">
-        <span class="status-badge">Preprint</span>
+        <span class="status-badge">Accepted</span>
         <span class="status-badge status-badge--secondary">Revised v2</span>
         <span class="status-badge status-badge--secondary">Code available</span>
       </div>
-      <p class="publication-feature__eyebrow">arXiv v2 · Revised August 2026 · Presented at World Modeling Workshop 2026</p>
+      <p class="publication-feature__eyebrow">Accepted to Continual World Models Workshop · NeurIPS 2026 · arXiv v2, revised August 2026 · Previously presented at World Modeling Workshop 2026</p>
       <h3 id="worlds-edge-title">Reinforcing the World's Edge: Continual Learning at the Multi-Agent–World Boundary</h3>
       <p class="publication-feature__authors"><strong>Dane Malenfant</strong></p>
 
