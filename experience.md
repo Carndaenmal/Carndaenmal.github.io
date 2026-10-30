@@ -3,7 +3,7 @@ layout: page
 permalink: /experience/index.html
 title: Experience
 description: "Professional experience, academic service, supervision, workshop organizing, judging, and peer review by Dane Malenfant."
-last_modified_at: 2026-10-29
+last_modified_at: 2026-10-30
 ---
 
 <nav class="section-nav" aria-label="Experience sections">
@@ -79,6 +79,10 @@ last_modified_at: 2026-10-29
       <p class="eyebrow">2026</p>
       <h3 id="judging">Judge</h3>
       <ol class="timeline-list timeline-list--progress timeline-list--split" aria-label="Judging activity">
+        <li class="timeline-row">
+          <time datetime="2026-11">November 2026</time>
+          <div><a class="timeline-row__title" href="https://apartresearch.com/sprints/swarm-alignment-2026">Swarm Alignment Hackathon</a><span class="timeline-row__detail">Apart Research</span></div>
+        </li>
         <li class="timeline-row">
           <time datetime="2026">2026</time>
           <div><strong class="timeline-row__title">Digital Minds Research Sprint</strong><span class="timeline-row__detail">Apart Research</span></div>
