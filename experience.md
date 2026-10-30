@@ -84,7 +84,7 @@ last_modified_at: 2026-10-30
           <div><a class="timeline-row__title" href="https://apartresearch.com/sprints/swarm-alignment-2026">Swarm Alignment Hackathon</a><span class="timeline-row__detail">Apart Research</span></div>
         </li>
         <li class="timeline-row">
-          <time datetime="2026">2026</time>
+          <time datetime="2026-08">August 2026</time>
           <div><strong class="timeline-row__title">Digital Minds Research Sprint</strong><span class="timeline-row__detail">Apart Research</span></div>
         </li>
       </ol>
