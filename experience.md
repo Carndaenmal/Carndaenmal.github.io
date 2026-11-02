@@ -3,7 +3,7 @@ layout: page
 permalink: /experience/index.html
 title: Experience
 description: "Professional experience, academic service, supervision, workshop organizing, judging, and peer review by Dane Malenfant."
-last_modified_at: 2026-10-30
+last_modified_at: 2026-11-02
 ---
 
 <nav class="section-nav" aria-label="Experience sections">
@@ -22,7 +22,7 @@ last_modified_at: 2026-10-30
     <article class="content-card" data-reveal>
       <p class="eyebrow">2026 · In person · New York, USA</p>
       <h3><a href="https://veris.ai/">Veris AI</a></h3>
-      <p class="content-card__meta">AI Engineering and Software Intern</p>
+      <p class="content-card__meta">AI Engineering and Software Intern · Completed</p>
       <p class="content-card__description">Developed compositional task-generation pipelines that combine verifiable tasks and their verifiers across OfficeQA document reasoning and AutomationBench workflows. Built service adapters and readback checks for Gmail, Google Drive, Slack, Salesforce, HubSpot, Google Calendar, Calendly, QuickBooks, Airtable, and Notion.</p>
       <p class="content-card__description">Built isolated, reproducible evaluation infrastructure and statistical dashboards for repeated-trial model comparisons. Audited and repaired task environments and judge grading logic, distinguishing agent failures from benchmark issues. Also contributed synthetic financial data, fraud evaluation, simulated-user optimization, and platform reliability fixes.</p>
     </article>
@@ -100,7 +100,7 @@ last_modified_at: 2026-10-30
         </li>
         <li class="timeline-row">
           <time datetime="2026">2026</time>
-          <div><a class="timeline-row__title" href="https://iclr.cc/Conferences/2027/ReviewerGuidelines">Main Track</a><span class="timeline-row__detail">ICLR 2027 · Location to be announced</span></div>
+          <div><a class="timeline-row__title" href="https://iclr.cc/Conferences/2027/ReviewerGuidelines">Main Track</a><span class="timeline-row__detail">ICLR 2027 · California, USA</span></div>
         </li>
         <li class="timeline-row">
           <time datetime="2026">2026</time>

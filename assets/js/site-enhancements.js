@@ -293,7 +293,7 @@
 
       trigger.addEventListener("click", function () {
         lastLightboxTrigger = trigger;
-        lightboxImage.src = sourceImage.currentSrc || sourceImage.src;
+        lightboxImage.src = sourceImage.getAttribute("data-full-src") || sourceImage.currentSrc || sourceImage.src;
         lightboxImage.alt = imageDescription;
         lightboxTitle.textContent = paperTitle;
         lightboxDescription.textContent = figureCaption;

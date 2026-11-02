@@ -94,6 +94,8 @@ html .swiss-brutalist .navigation-wrapper {
 .swiss-brutalist .top-navigation li a:hover { background: var(--site-ink); color: var(--site-surface); }
 .swiss-brutalist .top-navigation li a.top-navigation-current { background: var(--site-accent-fill); color: var(--swiss-on-red); }
 .swiss-brutalist .top-navigation li a:focus-visible { outline-offset: -5px; }
+.swiss-brutalist .top-navigation li a:hover:focus-visible { outline-color: var(--site-surface); }
+.swiss-brutalist .top-navigation li a.top-navigation-current:focus-visible { outline-color: var(--swiss-on-red); }
 
 /* Override the old author-sidebar layout without changing document content. */
 .swiss-brutalist #main { display: block; width: 100%; max-width: none; padding: 0; margin: 0; }

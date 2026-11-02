@@ -6,7 +6,7 @@ sitemap: false
 
 > Dane Malenfant is a machine learning researcher studying agentic and multi-agent reinforcement learning, reciprocity, memory, temporal credit assignment, continual learning, and AI safety.
 
-Dane completed an MSc in Computer Science at McGill University and conducted the research at Mila – The Québec AI Institute in the Learning in Neural Circuits Lab. The canonical website is [danemalenfant.com]({{ site.url }}/).
+Dane received an MSc in Computer Science from McGill University in October 2026 and conducted the research at Mila – The Québec AI Institute in the Learning in Neural Circuits Lab. Dane also completed an AI Engineering and Software internship at Veris AI in New York in 2026, working on compositional task generation and evaluation infrastructure for AI agents. The canonical website is [danemalenfant.com]({{ site.url }}/).
 
 ## Primary pages
 
@@ -23,11 +23,11 @@ Dane completed an MSc in Computer Science at McGill University and conducted the
 ## Selected research
 
 - [The Challenge of Hidden Gifts in Multi-Agent Reinforcement Learning]({{ site.url }}/publications/#hidden-gifts-title): Reciprocal behaviour when helpful actions have delayed or difficult-to-observe benefits; RLC 2026.
-- [KV-streams for Efficient Compaction in Agentic Reinforcement Learning]({{ site.url }}/publications/#kv-streams-title): A plug-and-play approach that streams KV caches across context compaction events, accelerating agentic-RL training by 2.6–5× while enabling recurrent state to emerge through reinforcement learning.
+- [KV-streams for Efficient Compaction in Agentic Reinforcement Learning]({{ site.url }}/publications/#kv-streams-title): A plug-and-play approach that streams KV caches across context compaction events, accelerating agentic-RL training by 2.6–5× while enabling recurrent state to emerge through reinforcement learning; revised arXiv v3 (October 2026).
 - [Contrastive Retrospection: honing in on critical steps for rapid learning and generalization in RL]({{ site.url }}/publications/#conspec-title): Contrastive identification of critical states for reinforcement learning; NeurIPS 2023.
 - [Moral Hazard in Multi-Agent Language Models]({{ site.url }}/publications/#moral-hazard-title): A controlled query–warning–decision game for costly information acquisition and transfer, evaluated on fourteen open-weight and four frontier models; revised arXiv v7 with the CREDIT mechanism-aligned optimizer. [Read the interactive blog and play the game]({{ site.url }}/blogs/dialogue-moral-hazard/) or inspect the [code and reproducibility artifacts](https://github.com/Carndaenmal/dialogue-moral-hazard-game).
 - [Compositional Flow Matching with Factored Velocity Fields]({{ site.url }}/publications/#factored-flow-title): Zero-shot generalization to unseen combinations of generative factors; ICML 2026 workshop spotlight.
-- [Reinforcing the World's Edge: Continual Learning at the Multi-Agent–World Boundary]({{ site.url }}/publications/#worlds-edge-title): Sharp survival guarantees for success-conditioned reusable structure under peer learning, with registered continual-control and cue-MNIST validation; revised arXiv v2. [Code and reproducibility artifacts](https://github.com/Carndaenmal/reinforcing-worlds-edge).
+- [Reinforcing the World's Edge: A Continual Learning Problem in the Multi-Agent-World Boundary]({{ site.url }}/publications/#worlds-edge-title): Sharp survival guarantees for success-conditioned reusable structure under peer learning, with registered continual-control and cue-MNIST validation; accepted to the Continual World Models Workshop at NeurIPS 2026; revised arXiv v3 (September 2026). [Code and reproducibility artifacts](https://github.com/Carndaenmal/reinforcing-worlds-edge).
 - [Inconsistencies in Artificial Intelligence Strategy Alignment of NATO Member States]({{ site.url }}/publications/#nato-policy-title): Comparative analysis of public national and military AI strategies; 2024.
 - [Causality Mining in Fiction]({{ site.url }}/publications/#causality-fiction-title): Causal-relation extraction and domain differences in literary fiction; Text2Story 2022.
 

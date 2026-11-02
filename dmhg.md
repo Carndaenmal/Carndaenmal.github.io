@@ -4,9 +4,9 @@ permalink: /blogs/dialogue-moral-hazard/index.html
 title: Interactive Dialogue Moral Hazard
 description: "Why costly information sharing fails between language agents—and an interactive Dialogue Moral Hazard Game you can play yourself or run with OpenRouter, OpenAI, Anthropic, or Meta."
 date: 2026-09-11
-last_modified_at: 2026-09-11
+last_modified_at: 2026-11-02
 dmhg_lab: true
-dmhg_asset_version: 20260911-7
+dmhg_asset_version: 20261102-1
 blog_page: true
 blog_post: true
 no_analytics: true
@@ -334,7 +334,15 @@ no_analytics: true
       </div>
 
       <figure class="dmhg-chart" id="dmhg-chart-figure">
-        <figcaption>Session trajectory <span>VOI marks correctly used pivotal information; format validity is the share of agents whose work, warning, and final actions followed the required grammar. Attempts with 0% validity are discarded rather than plotted.</span></figcaption>
+        <figcaption>Session trajectory</figcaption>
+        <div class="dmhg-chart__toolbar">
+          <label class="sr-only" for="dmhg-chart-window">Rounds to display</label>
+          <select id="dmhg-chart-window" aria-controls="dmhg-history-chart">
+            <option value="recent">Last 30 rounds</option>
+            <option value="all">Entire session</option>
+          </select>
+          <span class="dmhg-chart__range" id="dmhg-chart-range">No completed rounds</span>
+        </div>
         <div class="dmhg-chart__legend">
           <span><i class="dmhg-legend dmhg-legend--team"></i>Team success <output id="dmhg-chart-latest-team">—</output></span>
           <span><i class="dmhg-legend dmhg-legend--query"></i>Query <output id="dmhg-chart-latest-query">—</output></span>
@@ -343,13 +351,19 @@ no_analytics: true
           <span><i class="dmhg-legend dmhg-legend--voi"></i>VOI <output id="dmhg-chart-latest-voi">—</output></span>
           <span><i class="dmhg-legend dmhg-legend--validity"></i>Format validity <output id="dmhg-chart-latest-validity">—</output></span>
         </div>
-        <svg id="dmhg-history-chart" viewBox="0 0 600 190" role="img" aria-label="No completed rounds yet">
+        <svg id="dmhg-history-chart" viewBox="0 0 600 210" role="img" aria-label="No completed rounds yet">
           <line x1="42" y1="16" x2="42" y2="160" class="dmhg-chart__axis"></line>
           <line x1="42" y1="160" x2="584" y2="160" class="dmhg-chart__axis"></line>
           <line x1="42" y1="88" x2="584" y2="88" class="dmhg-chart__grid"></line>
           <text x="8" y="20">100%</text><text x="16" y="92">50%</text><text x="24" y="164">0%</text>
+          <g id="dmhg-chart-round-labels"></g>
+          <text class="dmhg-chart__round-axis" x="313" y="204" text-anchor="middle">Round</text>
           <g id="dmhg-chart-series"></g>
         </svg>
+        <details class="dmhg-chart__help">
+          <summary>How to read</summary>
+          <p>Each point is one scored round; legend values describe the latest round. VOI marks correctly used pivotal information. Format validity is the share of agents whose work, warning, and final actions followed the required grammar. Attempts with 0% validity are discarded, leaving gaps in the round numbers.</p>
+        </details>
       </figure>
 
       <div class="dmhg-history-wrap">

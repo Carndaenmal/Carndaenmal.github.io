@@ -233,6 +233,9 @@
     metricValidity: $("dmhg-metric-validity"),
     chart: $("dmhg-history-chart"),
     chartSeries: $("dmhg-chart-series"),
+    chartWindow: $("dmhg-chart-window"),
+    chartRange: $("dmhg-chart-range"),
+    chartRoundLabels: $("dmhg-chart-round-labels"),
     chartLatestTeam: $("dmhg-chart-latest-team"),
     chartLatestQuery: $("dmhg-chart-latest-query"),
     chartLatestTransfer: $("dmhg-chart-latest-transfer"),
@@ -1520,30 +1523,57 @@
     });
   }
 
-  function chartPoints(key) {
-    var history = state.history.slice(-30);
-    if (!history.length) return "";
-    var width = 542;
-    var startX = 42;
-    return history.map(function (entry, index) {
-      var x = history.length === 1 ? startX + width / 2 : startX + index * (width / (history.length - 1));
+  function chartHistory() {
+    return ui.chartWindow.value === "all" ? state.history : state.history.slice(-30);
+  }
+
+  function chartX(round, history) {
+    var firstRound = history[0].round;
+    var lastRound = history[history.length - 1].round;
+    return firstRound === lastRound ? 313 : 42 + (round - firstRound) * 542 / (lastRound - firstRound);
+  }
+
+  function chartPoints(key, history) {
+    return history.map(function (entry) {
+      var x = chartX(entry.round, history);
       var raw = key === "teamSuccess" ? (entry.metrics.teamSuccess ? 1 : 0) : entry.metrics[key];
       var y = 160 - clamp(raw, 0, 1) * 144;
       return x.toFixed(1) + "," + y.toFixed(1);
     }).join(" ");
   }
 
-  function latestPoint(key) {
-    var history = state.history.slice(-30);
+  function latestPoint(key, history) {
     if (!history.length) return null;
     var entry = history[history.length - 1];
     var raw = key === "teamSuccess" ? (entry.metrics.teamSuccess ? 1 : 0) : entry.metrics[key];
-    var x = history.length === 1 ? 313 : 584;
+    var x = chartX(entry.round, history);
     return { x: x, y: 160 - clamp(raw, 0, 1) * 144 };
   }
 
   function renderChart() {
+    var history = chartHistory();
     ui.chartSeries.textContent = "";
+    ui.chartRoundLabels.textContent = "";
+    if (!history.length) {
+      ui.chartRange.textContent = "No completed rounds";
+      [ui.chartLatestTeam, ui.chartLatestQuery, ui.chartLatestTransfer,
+        ui.chartLatestLocal, ui.chartLatestVoi, ui.chartLatestValidity].forEach(function (output) {
+        output.textContent = "—";
+      });
+      ui.chart.setAttribute("aria-label", "No completed rounds yet");
+      return;
+    }
+    var firstRound = history[0].round;
+    var lastRound = history[history.length - 1].round;
+    ui.chartRange.textContent = firstRound === lastRound ? "Round " + firstRound : "Rounds " + firstRound + "–" + lastRound;
+    (history.length === 1 ? [firstRound] : [firstRound, lastRound]).forEach(function (round, index) {
+      var label = document.createElementNS("http://www.w3.org/2000/svg", "text");
+      label.setAttribute("x", chartX(round, history).toFixed(1));
+      label.setAttribute("y", "183");
+      label.setAttribute("text-anchor", history.length === 1 ? "middle" : (index === 0 ? "start" : "end"));
+      label.textContent = String(round);
+      ui.chartRoundLabels.appendChild(label);
+    });
     [
       { key: "teamSuccess", className: "dmhg-chart__series dmhg-chart__series--team" },
       { key: "queryRate", className: "dmhg-chart__series dmhg-chart__series--query" },
@@ -1553,10 +1583,10 @@
       { key: "formatValidityRate", className: "dmhg-chart__series dmhg-chart__series--validity" }
     ].forEach(function (series) {
       var polyline = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
-      polyline.setAttribute("points", chartPoints(series.key));
+      polyline.setAttribute("points", chartPoints(series.key, history));
       polyline.setAttribute("class", series.className);
       ui.chartSeries.appendChild(polyline);
-      var point = latestPoint(series.key);
+      var point = latestPoint(series.key, history);
       if (point) {
         var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
         circle.setAttribute("cx", point.x.toFixed(1));
@@ -1574,7 +1604,8 @@
     ui.chartLatestVoi.textContent = percent(latest.realizedValueOfInformation);
     ui.chartLatestValidity.textContent = percent(latest.formatValidityRate);
     ui.chart.setAttribute("aria-label", [
-      "Session trajectory across " + state.history.length + " completed " + (state.history.length === 1 ? "round" : "rounds") + ".",
+      "Session trajectory showing " + history.length + " of " + state.history.length + " scored " + (state.history.length === 1 ? "round" : "rounds") + ".",
+      firstRound === lastRound ? "Round " + firstRound + "." : "Round numbers " + firstRound + " to " + lastRound + ".",
       "Latest round: team success " + percent(latest.teamSuccess ? 1 : 0) + ",",
       "query " + percent(latest.queryRate) + ",",
       "transfer " + percent(latest.realizedTransfer) + ",",
@@ -1781,14 +1812,8 @@
     cell.colSpan = 6;
     row.appendChild(cell);
     ui.historyBody.appendChild(row);
-    ui.chartSeries.textContent = "";
-    ui.chartLatestTeam.textContent = "—";
-    ui.chartLatestQuery.textContent = "—";
-    ui.chartLatestTransfer.textContent = "—";
-    ui.chartLatestLocal.textContent = "—";
-    ui.chartLatestVoi.textContent = "—";
-    ui.chartLatestValidity.textContent = "—";
-    ui.chart.setAttribute("aria-label", "No completed rounds yet");
+    ui.chartWindow.value = "recent";
+    renderChart();
     ui.exportButton.disabled = true;
     ui.inspector.hidden = true;
     hideTurn();
@@ -2034,6 +2059,7 @@
   ui.continuous.addEventListener("click", runContinuously);
   ui.stop.addEventListener("click", stopContinuous);
   ui.reset.addEventListener("click", resetSession);
+  ui.chartWindow.addEventListener("change", renderChart);
   ui.exportButton.addEventListener("click", exportSession);
   window.addEventListener("pagehide", function () {
     clearCredential();

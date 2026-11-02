@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /
 description: "Dane Malenfant is a machine learning researcher studying reciprocity, credit assignment, continual learning, and AI safety."
-last_modified_at: 2026-10-26
+last_modified_at: 2026-11-02
 identity_masthead: true
 masthead_eyebrow: Machine learning researcher
 masthead_title: Dane Malenfant
@@ -12,7 +12,9 @@ masthead_focus: I study cooperation, credit assignment, and behavioural control 
 
 <div class="home-intro" markdown="1">
 <div class="home-intro__text" markdown="1">
-Tānishi, wīpēsākāstēw. I recently completed my MSc thesis in Computer Science at [McGill University](https://www.mcgill.ca/), conducting my research at [Mila – The Québec AI Institute](https://mila.quebec/en) under the supervision of [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/).
+Tānishi, wīpēsākāstēw. I received my MSc in Computer Science from [McGill University](https://www.mcgill.ca/) in October 2026. I conducted my research at [Mila – The Québec AI Institute](https://mila.quebec/en) under the supervision of [Dr. Blake Richards](https://mila.quebec/en/directory/blake-richards) in the [Learning in Neural Circuits (LiNC) lab](https://linclab.mila.quebec/).
+
+I recently completed an AI Engineering and Software internship at [Veris AI](https://veris.ai/) in New York, working on compositional task generation and evaluation infrastructure for AI agents.
 
 I am based in [Mile End](https://www.thetribune.ca/the-mile-end-music-history-montreal-artist/), Montréal.
 

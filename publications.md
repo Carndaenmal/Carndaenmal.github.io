@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/index.html
 title: Publications
 description: "Research publications by Dane Malenfant on agentic and multi-agent reinforcement learning, reciprocity, memory, continual learning, generative modelling, and AI governance."
-last_modified_at: 2026-10-26
+last_modified_at: 2026-11-02
 ---
 
 <nav class="section-nav" aria-label="Research programmes">
@@ -68,12 +68,17 @@ last_modified_at: 2026-10-26
       </div>
       <figure class="publication-record-figure">
         <img
-          src="/images/var_pic.png"
+          src="/images/hidden-gifts-variance-480.webp"
+          srcset="/images/hidden-gifts-variance-480.webp 480w, /images/hidden-gifts-variance-960.webp 960w"
+          sizes="(max-width: 650px) calc(100vw - 73px), (max-width: 850px) 220px, 290px"
+          data-full-src="/images/var_pic.png"
           class="publication-feature__image"
           alt="Variance in collective success across training for four policy-gradient variants"
           data-figure-caption="Figure 5b. Variance in collective success across training for vanilla policy-gradient, maximum-entropy, correction, and self-correction agents. Self-correction produces the lowest variance, making cooperative learning more reliable."
-          width="200"
-          height="183"
+          width="1528"
+          height="1398"
+          loading="lazy"
+          decoding="async"
         >
         <figcaption class="publication-record-caption">Figure 5b. Variance in collective success across training for vanilla policy-gradient, maximum-entropy, correction, and self-correction agents. Self-correction produces the lowest variance, making cooperative learning more reliable.</figcaption>
       </figure>
@@ -139,11 +144,11 @@ last_modified_at: 2026-10-26
       <div class="publication-record-copy">
       <div class="publication-feature__status" aria-label="Publication status">
         <span class="status-badge">Accepted</span>
-        <span class="status-badge status-badge--secondary">Revised v2</span>
+        <span class="status-badge status-badge--secondary">Revised v3</span>
         <span class="status-badge status-badge--secondary">Code available</span>
       </div>
-      <p class="publication-feature__eyebrow">Accepted to Continual World Models Workshop · NeurIPS 2026 · arXiv v2, revised August 2026 · Previously presented at World Modeling Workshop 2026</p>
-      <h3 id="worlds-edge-title">Reinforcing the World's Edge: Continual Learning at the Multi-Agent–World Boundary</h3>
+      <p class="publication-feature__eyebrow">Accepted to Continual World Models Workshop · NeurIPS 2026 · arXiv v3, revised September 2026 · Previously presented at World Modeling Workshop 2026</p>
+      <h3 id="worlds-edge-title">Reinforcing the World's Edge: A Continual Learning Problem in the Multi-Agent-World Boundary</h3>
       <p class="publication-feature__authors"><strong>Dane Malenfant</strong></p>
 
       <dl class="publication-feature__details">
@@ -162,9 +167,9 @@ last_modified_at: 2026-10-26
         <a href="https://arxiv.org/abs/2603.06813">BibTeX</a>
       </nav>
       <div class="publication-copy-sources" hidden>
-        <span data-copy-source="citation">Malenfant, D. (2026). Reinforcing the world's edge: Continual learning at the multi-agent–world boundary. arXiv preprint arXiv:2603.06813. https://doi.org/10.48550/arXiv.2603.06813</span>
+        <span data-copy-source="citation">Malenfant, D. (2026). Reinforcing the world's edge: A continual learning problem in the multi-agent-world boundary. arXiv preprint arXiv:2603.06813. https://doi.org/10.48550/arXiv.2603.06813</span>
         <pre data-copy-source="bibtex">@article{malenfant2026reinforcing,
-  title={Reinforcing the World's Edge: Continual Learning at the Multi-Agent--World Boundary},
+  title={Reinforcing the World's Edge: A Continual Learning Problem in the Multi-Agent-World Boundary},
   author={Malenfant, Dane},
   journal={arXiv preprint arXiv:2603.06813},
   year={2026},
@@ -205,9 +210,9 @@ last_modified_at: 2026-10-26
       <div class="publication-record-copy">
       <div class="publication-feature__status" aria-label="Publication status">
         <span class="status-badge">Preprint</span>
-        <span class="status-badge status-badge--secondary">arXiv v1</span>
+        <span class="status-badge status-badge--secondary">Revised v3</span>
       </div>
-      <p class="publication-feature__eyebrow">arXiv v1 · Submitted September 2026</p>
+      <p class="publication-feature__eyebrow">arXiv v3 · Revised October 2026</p>
       <h3 id="kv-streams-title">KV-streams for Efficient Compaction in Agentic Reinforcement Learning</h3>
       <p class="publication-feature__authors">Emiliano Penaloza, <strong>Dane Malenfant</strong>, Dheeraj Vattikonda, Roger Creus Castanyer, Siddarth Venkatraman, Abhay Puri, Jonathan Light, Matthew James Sargent, Augustine N. Mavor-Parker, Massimo Caccia, Lucas Caccia, Glen Berseth, Esmeralda S. Whitammer, Alessandro Sordoni, Minseon Kim, Marc-Alexandre Côté, Laurent Charlin, and Guillaume Lajoie</p>
 

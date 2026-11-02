@@ -3,7 +3,7 @@ layout: page
 permalink: /presentations/index.html
 title: Presentations
 description: "Invited talks, panels, and research poster presentations by Dane Malenfant."
-last_modified_at: 2026-09-23
+last_modified_at: 2026-11-02
 ---
 
 <nav class="section-nav" aria-label="Presentation sections">
@@ -17,7 +17,7 @@ last_modified_at: 2026-09-23
   <h2 id="invited-talks">Invited Talks</h2>
   <div class="card-grid">
     <article class="content-card" data-reveal>
-      <p class="eyebrow">March 2026 · Panel</p>
+      <p class="eyebrow">April 1, 2026 · Panel</p>
       <h3>The Challenge of Reciprocity in Hidden Gifts</h3>
       <p class="content-card__description">Data Systems: Data as Protection</p>
       <p class="content-card__meta">Arctic Observing Summit</p>

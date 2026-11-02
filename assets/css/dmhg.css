@@ -813,6 +813,61 @@ html[data-theme="dark"] .dmhg-lab {
   font: 400 0.74rem/1.4 "PT Serif", serif;
 }
 
+.dmhg-chart__toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.dmhg-chart__toolbar select {
+  width: auto;
+  max-width: 100%;
+  min-height: 40px;
+  margin: 0;
+  padding: 0.35rem 1.6rem 0.35rem 0.5rem;
+  border: 1px solid var(--site-rule);
+  border-radius: 0;
+  background: var(--dmhg-panel);
+  color: var(--site-ink);
+  font: inherit;
+  font-size: 0.78rem;
+}
+
+.dmhg-chart__toolbar select:focus-visible {
+  outline: 3px solid var(--site-accent);
+  outline-offset: 2px;
+}
+
+.dmhg-chart__range {
+  color: var(--site-muted);
+  font-size: 0.75rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.dmhg-chart__help {
+  margin-top: 0.4rem;
+  color: var(--site-muted);
+  font-size: 0.78rem;
+}
+
+.dmhg-chart__help summary {
+  display: list-item;
+  width: fit-content;
+  min-height: 32px;
+  cursor: pointer;
+}
+
+.dmhg-chart__help p {
+  margin: 0.25rem 0 0;
+  font-size: inherit;
+  line-height: 1.5;
+}
+
+.dmhg-chart__round-axis { font-size: 16px; }
+
 .dmhg-chart__legend {
   display: flex;
   flex-wrap: wrap;
@@ -856,6 +911,8 @@ html[data-theme="dark"] .dmhg-lab {
   color: var(--site-muted);
   font: 400 19px/1 "PT Sans Narrow", sans-serif;
 }
+
+.dmhg-chart svg text { fill: currentColor; }
 
 .dmhg-chart__axis {
   stroke: var(--site-muted);

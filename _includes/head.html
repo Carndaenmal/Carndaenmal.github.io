@@ -1,6 +1,7 @@
 <meta charset="utf-8">
 {% capture meta_title %}{% if page.title %}{{ page.title }} – {% endif %}{{ site.title }}{% endcapture %}
 {% assign meta_description = page.description | default: site.description %}
+{% capture canonical_url %}{{ site.url }}{{ page.url | replace: 'index.html', '' }}{% endcapture %}
 {% if page.image.thumb %}
   {% assign meta_image = site.url | append: '/images/' | append: page.image.thumb %}
 {% else %}
@@ -29,15 +30,14 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="{{ meta_title | strip | escape }}">
 <meta property="og:description" content="{{ meta_description | strip_html | strip_newlines | escape }}">
-<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:url" content="{{ canonical_url | strip }}">
 <meta property="og:site_name" content="{{ site.title }}">
 
 {% if site.google_verify %}<!-- Webmaster Tools verfication -->
 <meta name="google-site-verification" content="{{ site.google_verify }}">{% endif %}
 {% if site.bing_verify %}<meta name="msvalidate.01" content="{{ site.bing_verify }}">{% endif %}
 
-{% capture canonical %}{{ site.url }}{% if site.permalink contains '.html' %}{{ page.url }}{% else %}{{ page.url | remove:'index.html' | strip_slash }}{% endif %}{% endcapture %}
-<link rel="canonical" href="{{ canonical }}">
+<link rel="canonical" href="{{ canonical_url | strip }}">
 {% if site.owner.google_plus %}<link rel="author" href="{{ site.owner.google_plus }}?rel=author">{% endif %}
 
 {% include structured-data.html %}
