@@ -3,7 +3,7 @@ layout: page
 permalink: /presentations/index.html
 title: Presentations
 description: "Invited talks, panels, and research poster presentations by Dane Malenfant."
-last_modified_at: 2026-11-02
+last_modified_at: 2026-11-03
 ---
 
 <nav class="section-nav" aria-label="Presentation sections">
@@ -110,8 +110,7 @@ last_modified_at: 2026-11-02
       <p class="content-card__description"><strong>Dane Malenfant</strong> and Blake Aaron Richards</p>
       <p class="content-card__meta">Third Reinforcement Learning Conference (RLC 2026)</p>
       <div class="content-card__actions">
-        <a href="https://rlj.cs.umass.edu/2026/papers/Paper142.pdf">Paper</a>
-        <a href="https://rlj.cs.umass.edu/2026/papers/Paper142.html">Conference entry</a>
+        <a href="https://rlj.org/papers/malenfant2026the">Paper</a>
       </div>
     </article>
 

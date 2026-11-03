@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/index.html
 title: Publications
 description: "Research publications by Dane Malenfant on agentic and multi-agent reinforcement learning, reciprocity, memory, continual learning, generative modelling, and AI governance."
-last_modified_at: 2026-11-02
+last_modified_at: 2026-11-03
 ---
 
 <nav class="section-nav" aria-label="Research programmes">
@@ -50,10 +50,10 @@ last_modified_at: 2026-11-02
       </dl>
 
       <nav class="publication-feature__links" aria-label="Resources for The Challenge of Hidden Gifts">
-        <a href="https://rlj.cs.umass.edu/2026/papers/Paper142.pdf">Paper</a>
+        <a href="https://rlj.org/papers/malenfant2026the">Paper</a>
         <a href="https://github.com/sfw3r43gegya/Manitokan">Code</a>
         <a href="https://arxiv.org/abs/2505.20579">arXiv</a>
-        <a href="https://rlj.cs.umass.edu/2026/papers/Paper142.html">BibTeX</a>
+        <a href="https://rlj.org/papers/malenfant2026the">BibTeX</a>
       </nav>
       <div class="publication-copy-sources" hidden>
         <span data-copy-source="citation">Malenfant, D., &amp; Richards, B. A. (2026). The challenge of hidden gifts in multi-agent reinforcement learning. Reinforcement Learning Journal, 7.</span>
@@ -62,7 +62,8 @@ last_modified_at: 2026-11-02
   author={Dane Malenfant and Blake Aaron Richards},
   journal={Reinforcement Learning Journal},
   volume={7},
-  year={2026}
+  year={2026},
+  url={https://rlj.org/papers/malenfant2026the}
 }</pre>
       </div>
       </div>
